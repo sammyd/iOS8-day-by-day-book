@@ -3,7 +3,7 @@
 require 'fileutils'
 
 startNumber = 2
-endNumber   = 2
+endNumber   = 39
 pathToBlog  = '../../blogs/iOS8-day-by-day/'
 pathToBook  = 'manuscript'
 
@@ -34,6 +34,6 @@ pathToBook  = 'manuscript'
 
   # 4. Add to Book.txt
   book_locn = File.join(pathToBook, "Book.txt")
-  open(book_locn, 'a') { |f| f.puts "\n" + md_name }
+  open(book_locn, 'a') { |f| f.puts md_name }
 
 end
