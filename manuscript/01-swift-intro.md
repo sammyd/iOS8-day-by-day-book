@@ -10,7 +10,7 @@ but have a read through the rest of this post first!
 
 ## Introduction
 
-![Swift Logo](assets/01/swift_logo.png)
+![Swift Logo](images/01/swift_logo.png)
 
 It won't have gone unnoticed that at WWDC this year, in addition to announcing
 iOS8, they also introduced a new programming language in the form of Swift. This
