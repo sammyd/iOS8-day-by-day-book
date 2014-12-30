@@ -111,6 +111,7 @@ provided with a `UIViewControllerTransitionCoordinatorContext`, from which you
 can find the duration of the animation.
 
 ![Portrait iPad](images/14/ipad_portrait.png)
+
 ![Landscape iPad](images/14/ipad_landscape.png)
 
 You'll note that throughout this there has been no mention of the actual

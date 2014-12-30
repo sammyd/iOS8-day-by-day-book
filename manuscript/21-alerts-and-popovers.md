@@ -51,6 +51,7 @@ horizontal size class will show a traditional popover, but a compact will (by
 default) present using a full-screen modal presentation.
 
 ![Regular width](images/21/popover-regular-width.png)
+
 ![Compact Width](images/21/popover-compact-width.png)
 
 You can configure exactly how the adapted view controller appears (i.e. for 
@@ -181,6 +182,7 @@ in the same way:
     presentViewController(actionSheet, animated: true, completion: nil)
 
 ![ActionSheet Compact Width](images/21/actionsheet-compact-width.png)
+
 ![ActionSheet Regular Width](images/21/actionsheet-regular-width.png)
 
 ## Conclusion

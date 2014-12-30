@@ -165,6 +165,7 @@ This filter can then just be used in the normal way:
 This has the following results:
 
 ![](images/19/chroma_key_sample.jpg)
+
 ![](images/19/chroma_key_output.png)
 
 
@@ -268,6 +269,7 @@ Wiring this up in exactly the same way you did with the color kernel will result
 in the following input and output:
 
 ![Flowers](images/19/flowers.jpg)
+
 ![Sobel Output](images/19/sobel_output.png)
 
 ## Conclusion

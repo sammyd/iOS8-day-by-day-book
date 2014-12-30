@@ -126,6 +126,7 @@ pane of the project settings. This requires that you sign in to your Apple
 developer account, and then acquires the appropriate entitlements for your app.
 
 ![HealthKit Capabilities](images/12/healthkit-capabilities.png)
+
 ![HealthKit Capabilities Enabled](images/12/healthkit-capabilities-enabled.png)
 
 In order to protect users' privacy, HealthKit includes a very granular

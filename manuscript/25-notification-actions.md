@@ -168,6 +168,7 @@ space.
 ![Lock Screen](images/25/lock_screen_swiped.png)
 ![Banner](images/25/banner.png)
 ![Banner](images/25/banner_expanded.png)
+
 - `.Default` - when a notification appears as an alert and the user selects the
 __Options__ button. The alert view will expand to a sheet, where a maximum of
 four actions can be provided to supplement the system __Open__ and __Close__

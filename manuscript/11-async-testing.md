@@ -191,6 +191,7 @@ the user interaction which would be asynchronous - i.e. async testing doesn't ju
 work for long running background processing and network operations.
 
 ![All Tests Green](images/11/all_tests_green.png)
+
 ![All Tests Passed](images/11/all_tests_passed.png)
 
 If you're not already starting to use asynchronous APIs in your apps then it

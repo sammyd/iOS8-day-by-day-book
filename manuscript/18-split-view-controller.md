@@ -45,6 +45,7 @@ And in portrait an overlaid view controller which can be toggled using the left
 button item in the navigation bar:
 
 ![](images/18/ipad_portrait.png)
+
 ![](images/18/ipad_portrait_overlaid.png)
 
 Importantly, the new split view controller requires no differences in code to
