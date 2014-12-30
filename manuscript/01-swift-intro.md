@@ -2,6 +2,8 @@
 
 ![Swift Logo](images/01/swift_logo.png)
 
+{float=left}
+![](images/01/thumbnail.png)
 It won't have gone unnoticed that at WWDC this year, in addition to announcing
 iOS8, they also introduced a new programming language in the form of Swift. This
 is quite a different language from objective-C in that it is strongly-typed and
