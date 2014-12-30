@@ -86,7 +86,7 @@ height, use the `UITableViewAutomaticDimension` constant:
     tableView.rowHeight = UITableViewAutomaticDimension
 
 The constraints need to relate to the `contentView` within a `UITableViewCell`,
-and can be set up in code or in IB. The accompanying project sets up contraints
+and can be set up in code or in IB. The accompanying project sets up constraints
 in IB:
 
 ![Creating Constraints](images/05/creating_constraints.png)
@@ -104,7 +104,7 @@ Auto-sizing table view cells is something that developers have longed for, and
 it's great news that iOS8 introduces this functionality. In many cases, since
 you should already be using auto-layout, you'll just get this functionality for
 free - just a matter of not specifying cell heights. It's definitely worth the
-time to go and ensure that your existing tableviews support this behaviour.
+time to go and ensure that your existing tableviews support this behavior.
 
 As with all articles in this series, the sample project is available on github at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
