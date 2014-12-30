@@ -1,5 +1,7 @@
 # Day 21 :: Alerts and Popovers
 
+{float=left}
+![](images/21/thumbnail.png)
 Presenting new views and view controllers to users on iOS has evolved a lot
 since the original iPhoneOS. This has resulted in a pretty inconsistent state in
 iOS7 - with some presentation methods being device restrictive, and others

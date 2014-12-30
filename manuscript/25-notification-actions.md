@@ -1,5 +1,7 @@
 # Day 25 :: Notification Actions
 
+{float=left}
+![](images/25/thumbnail.png)
 Local and remote notifications have been an integral part of iOS for many years
 now - allowing apps to respond to events even whilst they aren't running.
 Notifications are either silent or visual, with visual notifications taking the

@@ -1,5 +1,7 @@
 # Day 16 :: Navigation Bar Hiding
 
+{float=left}
+![](images/16/thumbnail.png)
 Today's post is quite a short one - a snippet if you will, but that makes it no
 less interesting or useful. Back in iOS7, Safari introduced the ability to show
 and hide the navigation and tool bars by tapping or swiping. This really

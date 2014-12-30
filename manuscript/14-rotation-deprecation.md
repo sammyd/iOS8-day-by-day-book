@@ -1,5 +1,7 @@
 # Day 14 :: Rotation Deprecation
 
+{float=left}
+![](images/14/thumbnail.png)
 It might be scary to discover that as part of embracing adaptive UI in iOS8, the
 view controller rotation methods you've come to love have all been deprecated.
 In fact the new approach to rotation is far simpler and much more coherent.

@@ -1,5 +1,7 @@
 # Day 26 :: AVKit
 
+{float=left}
+![](images/26/thumbnail.png)
 If you want to play a video in iOS then you've traditionally been presented with
 two choices. If you want simple playback with framework provided UI then you
 could use `MPMoviePlayerViewController`, or if you require fine-grain control of

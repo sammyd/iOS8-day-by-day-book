@@ -1,5 +1,7 @@
 # Day 37 :: Autosizing Collection View Cells
 
+{float=left}
+![](images/37/thumbnail.png)
 Way back in chapter 5, we took a look at the new functionality within table
 views that
 allows cells to define their own height - using the power of auto layout. Well,

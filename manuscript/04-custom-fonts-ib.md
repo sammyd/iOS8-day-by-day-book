@@ -1,5 +1,7 @@
 # Day 4 :: Custom Fonts in Interface Builder
 
+{float=left}
+![](images/04/thumbnail.png)
 It is not unreasonable to want to use custom fonts in your apps, and it has been
 possible to do so for a while on iOS. However, it has always been troublesome
 designing the UI in Interface Builder, since you have to build your interface

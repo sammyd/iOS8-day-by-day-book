@@ -1,5 +1,7 @@
 # Day 18 :: UISplitViewController
 
+{float=left}
+![](images/18/thumbnail.png)
 If you've used Xcode's master-detail template in the past then you'll be aware
 of the rather confusing code that it creates. This is because it uses two
 completely different view controller hierarchies depending on the device it's

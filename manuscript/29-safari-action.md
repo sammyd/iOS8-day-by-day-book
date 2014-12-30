@@ -1,5 +1,7 @@
 # Day 29 :: Safari Action Extension
 
+{float=left}
+![](images/29/thumbnail.png)
 This book has covered three of the new extension points so far (sharing,
 today & photo) and today sees the turn of the action extension.
 

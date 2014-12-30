@@ -1,5 +1,7 @@
 # Day 38 :: Handoff
 
+{float=left}
+![](images/38/thumbnail.png)
 One of the key new concepts introduced at WWDC in 2014 was that of Continuity,
 describing the ability to seamlessly switch between devices, and continue your
 task. The underlying technology behind Continuity is called Handoff, and it

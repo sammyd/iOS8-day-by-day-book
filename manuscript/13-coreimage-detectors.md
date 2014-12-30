@@ -1,5 +1,7 @@
 # Day 13 :: CoreImage Detectors
 
+{float=left}
+![](images/13/thumbnail.png)
 CoreImage never tends to get top-billing when looking at new features in iOS,
 and this isn't terribly fair. Over the past few years CoreImage has seen some
 huge advances in performance and functionality, and iOS8 is no exception. In

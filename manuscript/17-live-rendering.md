@@ -1,5 +1,7 @@
 # Day 17 :: Live Rendering in Interface Builder
 
+{float=left}
+![](images/17/thumbnail.png)
 Custom views are a great way of both splitting up your code as a nod towards
 software design best practices, but also allowing the creation of reusable
 components. I've talked about this concept a lot in terms of building custom

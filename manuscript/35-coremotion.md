@@ -1,5 +1,7 @@
 # Day 35 :: CoreMotion
 
+{float=left}
+![](images/35/thumbnail.png)
 The __CoreMotion__ framework is used in iOS to receive data from the plethora of
 motion sensors available on a device. This includes the magnetometer, the
 pedometer and the gyroscope. iPhone 6 and 6 Plus include an altimeter, so

@@ -1,5 +1,7 @@
 # Day 31 :: Using Touch ID to Secure the Keychain
 
+{float=left}
+![](images/31/thumbnail.png)
 The iPhone 5s introduced the world to Touch ID - the ability to authenticate
 with your device using just a finger print. In iOS7 use of this was limited to
 unlocking the device, and purchases against your Apple ID. Developers were

@@ -1,5 +1,7 @@
 # Day 12 :: HealthKit
 
+{float=left}
+![](images/12/thumbnail.png)
 One of the more consumer-oriented features introduced in iOS8 is that of the
 Health app. It was featured in the keynote at WWDC and has received a fair
 amount of hype since that point. In fact some of the world's biggest names in

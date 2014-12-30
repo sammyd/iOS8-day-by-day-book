@@ -1,5 +1,7 @@
 # Day 20 :: Photos Framework
 
+{float=left}
+![](images/20/thumbnail.png)
 Providing access to the images in the system photo gallery is a fairly standard
 requirement for many apps - from social, through to photo editing. iOS has
 provided this ability through many releases, but it has never been particularly

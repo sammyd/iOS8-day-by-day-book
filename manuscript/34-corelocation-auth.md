@@ -1,5 +1,7 @@
 # Day 34 :: CoreLocation Authorization
 
+{float=left}
+![](images/34/thumbnail.png)
 CoreLocation is the framework which gives you access to the geo-location
 functionality of devices within iOS. You'd use if you wanted to find the user's
 currently location. The functionality provided by CoreLocation is obviously very

@@ -1,5 +1,7 @@
 # Day 24 :: Presentation Controllers
 
+{float=left}
+![](images/24/thumbnail.png)
 Back in chapter 21 you saw how UIKit has been updated to give a more
 consistent approach to showing
 alerts, popovers and action sheets. The technology underlying this uses

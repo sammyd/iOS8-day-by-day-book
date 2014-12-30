@@ -1,5 +1,7 @@
 # Day 9 :: Designated Initializers
 
+{float=left}
+![](images/09/thumbnail.png)
 The concept of designated initializers is not new to the Cocoa world - they 
 exist in objective-C, but somewhat informally. Swift formalizes class initialization,
 both in terms of what the different initialization methods should do, and the
