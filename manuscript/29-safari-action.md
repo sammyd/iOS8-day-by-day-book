@@ -257,7 +257,8 @@ preprocessor actually performs the DOM manipulation in order to effect the
 change.
 
 ![Marquee 1](images/29/marquee1.png) 
-![Marquee 2](images/29/marquee2.png) 
+![Marquee 2](images/29/marquee2.png)
+
 ![Marquee 3](images/29/marquee3.png)
 ![Marquee 4](images/29/marquee4.png) 
 

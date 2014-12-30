@@ -163,6 +163,7 @@ which actions to show in different scenarios:
 center and the user drags to the left, or when the notification is a banner and
 the user drags down. These all have a maximum of two actions due to limited
 space.
+
 ![Lock Screen](images/25/lock_screen.png)
 ![Lock Screen](images/25/lock_screen_swiped.png)
 ![Banner](images/25/banner.png)
@@ -171,6 +172,7 @@ space.
 __Options__ button. The alert view will expand to a sheet, where a maximum of
 four actions can be provided to supplement the system __Open__ and __Close__
 actions.
+
 ![Alert](images/25/alert.png)
 ![Alert](images/25/alert_options.png)
 

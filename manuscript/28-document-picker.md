@@ -49,7 +49,8 @@ open and move modes - import and export might be good enough.
 
 I> __Note:__ Since the document picker and menu use iCloud by default, you'll
 I> need to add the iCloud entitlement to your app:
-I> ![iCloud Entitlement](images/28/icloud_entitlement.png)
+
+![iCloud Entitlement](images/28/icloud_entitlement.png)
 
 ## Document Menu
 

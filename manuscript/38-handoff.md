@@ -15,6 +15,7 @@ As ever, the code for today's app is available on the ShinobiControls github at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
 
 ![iPad Map](images/38/ipad_map.png)
+
 ![iPhone Map](images/38/iphone_map.png)
 
 ## Handoff Logistics
