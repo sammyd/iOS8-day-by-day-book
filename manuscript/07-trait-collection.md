@@ -21,11 +21,11 @@ It's available as part of the github repo at
 
 ## Adaptive Layout
 
-iOS8 introduces the concept of __size classes__ - which are used to categorise
+iOS8 introduces the concept of __size classes__ - which are used to categorize
 the amount of space in a particular dimension. There are 2 possible classes - 
 __Regular__ and __Compact__. Every view has particular size classes associated
 with them via a __TraitCollection__. By default these are defined by the device,
-but they can be overriden. A view can then customise it's view according to its
+but they can be overridden. A view can then customize it's view according to its
 size classes. The classes and their use on different devices are outlined below:
 
 |                  | Vertical Size Class | Horizontal Size Class |

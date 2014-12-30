@@ -19,15 +19,15 @@ github repo at
 You'll notice that there are two projects within this repo - one for iOS, one for
 OSX.
 
-> __Note__: At the time of publication, not all the features are available for
-> iOS (beta 4 of Xcode 6). Therefore, the OSX playground is provided for reference.
-> The code is very similar - with like-for-like exchanges where possible. The code
-> snippets in this article will refer to the iOS version.
+W> __Note__: At the time of publication, not all the features are available for
+W> iOS Xcode 6.2β3. Therefore, the OSX playground is provided for reference.
+W> The code is very similar - with like-for-like exchanges where possible. The code
+W> snippets in this article will refer to the iOS version.
 
 The aim of the playground project is to create a view which can draw a cycloid.
 A cycloid is the name of the curve which is traced by a point on the edge of a
 wheel as it rotates. This development process is very representative of what you
-could use a playground for. You can read more about cyloids on
+could use a playground for. You can read more about cycloids on
 [Wikipedia](http://en.wikipedia.org/wiki/Cycloid), and the following image (also
 from Wikipedia) gives you an idea of what you're going to try and create:
 
@@ -173,10 +173,10 @@ speeding this up could offer massive gains in productivity. Even just the
 ability to quicklook a view in playgrounds really can help here, but that's just
 scratching the surface of what's possible.
 
-> __Note:__ Remember throughout this section that at the time of publication,
-animation of `UIView` in playgrounds was not supported. Therefore, in order to
-see it in action, use the OSX version instead. It is very similar code, with a
-few platform differences (including coordinate system differences).
+W> __Note:__ Remember throughout this section that at the time of publication,
+W> animation of `UIView` in playgrounds was not supported. Therefore, in order to
+W> see it in action, use the OSX version instead. It is very similar code, with a
+W> few platform differences (including coordinate system differences).
 
 The sample playground includes a `UIView` subclass called `AnimatingCycloidView`.
 This uses the previously created `Cycloid` class to determine the path of the

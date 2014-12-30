@@ -1,6 +1,6 @@
 # Day 8 :: Today Extension
 
-Way back on day two of this blog series we took a look at the new sharing extension -
+Way back in chapter two we took a look at the new sharing extension -
 which is just one of six new extension points on iOS. Today, it's the chance of
 the today extension, or widget.
 
@@ -48,7 +48,7 @@ see it.
 By default, a widget has a wide left margin - which will not be part of your
 view controller's view. In order to alter this, a new protocol has been
 introduced - `NCWidgetProviding`. This contains methods which allow you to
-customise both the behaviour and the appearance of the widget. One of the
+customize both the behavior and the appearance of the widget. One of the
 methods on this protocol is `widgetMarginInsetsForProposedMarginInsets()` which
 passed you the default margin insets, and allows you to return your own version.
 In the __GitHubToday__ sample project, the following override is used:
@@ -126,7 +126,7 @@ populate itself from this cached event, and then update the cache (and the
 view) when the network operation completes.
 
 The following class (which exists in the common dynamic framework) demonstrates
-the behaviour of a simple cache:
+the behavior of a simple cache:
 
     let mostRecentEventCacheKey = "GitHubToday.mostRecentEvent"
     public class GitHubEventCache {
@@ -232,7 +232,7 @@ downloaded data, whether it be from the app or the widget itself.
 
 The standard user story for a widget is that a user would look at the summary
 and if they want more info, then they can tap the appropriate part of the
-widget. In order to achieve this, then you can utilise the existing iOS
+widget. In order to achieve this, then you can utilize the existing iOS
 URL functionality.
 
 You can define a URL scheme in the __Info__ section of the app's target:

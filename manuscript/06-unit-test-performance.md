@@ -1,7 +1,7 @@
 # Day 6 :: Profiling Unit Tests
 
 Unit tests are widely accepted as incredibly useful tools to aid writing better
-software. They allow you to establish the behaviour of your code before putting
+software. They allow you to establish the behavior of your code before putting
 it in front of end-users, and to ensure that everything works as expected in
 conditions which aren't necessarily default.
 
@@ -141,7 +141,7 @@ is the `BetterMovingAverageCalculator` class, which has the following
 This approach is a common improvement to a moving average - keeping a running
 sum means that the same sum operation is not repeated for every output value.
 
-To see how this fairs in comparison to the original implemention, you can just
+To see how this fairs in comparison to the original implementation, you can just
 update the test class as follows:
 
     let calculatorCreator : () -> MovingAverageCalculator = { return BetterMovingAverageCalculator() }
@@ -156,7 +156,7 @@ If you click on it, you can reveal more result data:
 ![Large improvement](images/06/large_improvement_pic.png)
 
 That's quite a huge difference - well over 95%. It'd be great if it was that easy
-to optimise all code.
+to optimize all code.
 
 If you're happy with this new code, then you can reset the baseline to the new
 calculator, and you'll have changed your benchmark. The results can be checked
@@ -166,7 +166,7 @@ baselines.
 
 ## Conclusion
 
-There is a popular adage in software engineering, that you shouldn't optimise
+There is a popular adage in software engineering, that you shouldn't optimize
 prematurely, so you probably shouldn't be throwing this new functionality all
 over your tests.
 
@@ -174,9 +174,9 @@ However, there are a couple of cases that this new tools really caters for:
 
 - Ensuring that performance regressions are noticed, caught and dealt with or
 accepted.
-- Making optimisation a lot easier when the time comes.
+- Making optimization a lot easier when the time comes.
 
-It can be used in conjuction with a more fine-grained profiler, such as that
+It can be used in conjunction with a more fine-grained profiler, such as that
 provided by instruments to really assist with improving the performance of your
 app.
 
