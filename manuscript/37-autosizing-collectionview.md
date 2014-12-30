@@ -1,7 +1,7 @@
 # Day 37 :: Autosizing Collection View Cells
 
-Way back on [day 5](http://www.shinobicontrols.com/blog/posts/2014/07/24/ios8-day-by-day-day-5-auto-sizing-table-view-cells/)
-of this series, we took a look at the new functionality within table views that
+Way back in chapter 5, we took a look at the new functionality within table
+views that
 allows cells to define their own height - using the power of auto layout. Well,
 imagine a world where you could extend that same principle to collection views.
 How cool would that be?

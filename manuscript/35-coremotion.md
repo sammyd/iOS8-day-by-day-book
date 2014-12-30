@@ -6,7 +6,7 @@ pedometer and the gyroscope. iPhone 6 and 6 Plus include an altimeter, so
 CoreMotion has been updated to support this new sensor. iOS8 also sees some
 other changes to the framework.
 
-In today's blog post you'll see what replaces `CMStepCounter` due to its
+In today's chapter you'll see what replaces `CMStepCounter` due to its
 deprecation, and the new type of activity classification available. There is an
 accompanying app called __LocoMotion__ that demonstrates both how to present
 live motion data, and how to query for historical data. You can grab the source

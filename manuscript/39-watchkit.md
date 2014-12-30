@@ -11,7 +11,7 @@ learn everything there is to know about the SDK then read the documentation, and
 then soak up the excellent content that's been created in the short time the SDK
 has been alive.
 
-This post will discuss what's different between an iOS app, and an Apple Watch
+This article will discuss what's different between an iOS app, and an Apple Watch
 app, what we can do as developers, and a very quick guide to getting started.
 The app that accompanies this post is called __NightWatch__ and provides the
 wearer with instant access to some of the best quotes from this excellent movie.
@@ -253,7 +253,7 @@ You can use pretty much the same techniques for designing your glance layout as
 you did for the full app - with one exception. Users cannot interact with a
 glance - tapping a glance will open the associated watch app.
 
-A glace interface has its counterpart class in the WatchKit extension, in the
+A glance interface has its counterpart class in the WatchKit extension, in the
 same way that the watch app does. It is again a subclass of
 `WKInterfaceController`, and therefore has the same lifecycle.
 

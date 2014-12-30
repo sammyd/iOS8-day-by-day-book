@@ -1,7 +1,7 @@
 # Day 38 :: Handoff
 
 One of the key new concepts introduced at WWDC in 2014 was that of Continuity,
-describing the ability to seemlessly switch between devices, and continue your
+describing the ability to seamlessly switch between devices, and continue your
 task. The underlying technology behind Continuity is called Handoff, and it
 works across both iOS and Yosemite.
 

@@ -182,7 +182,7 @@ framework and configure the entitlements appropriately:
 At this point you can create custom containers, should you wish to, or you can
 stick with the default container created for you.
 
-Notice that there is also a button labeled __CloudKit Dashboard__ that will sned
+Notice that there is also a button labeled __CloudKit Dashboard__ that will send
 your browser to the web dashboard associated with this container. You can read
 more about the dashboard later in this article.
 

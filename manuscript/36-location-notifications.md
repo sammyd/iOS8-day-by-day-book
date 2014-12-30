@@ -19,10 +19,8 @@ within 50m of said pin. The code is available in the iOS8-day-by-day repo at
 
 Since you're going to requesting location-based notifications, you need to ask
 the user for permission to send them notifications and to use their location.
-Both of these have been covered in iOS8 Day-by-Day (notifications on
-[day 25](http://www.shinobicontrols.com/blog/posts/2014/09/09/ios8-day-by-day-day-25-notification-actions)
-and location on [day 34](http://www.shinobicontrols.com/blog/posts/2014/10/16/ios8-day-by-day-day-34-corelocation-authorization)),
-but it's worth having a brief summary.
+Both of these have been covered in iOS8 Day-by-Day (notifications on day 25
+and location on day 34), but it's worth having a brief summary.
 
 User notifications are defined as sounds, alerts and badges that can interrupt
 the user whilst your app isn't in the foreground. These can be triggered both by
@@ -45,8 +43,7 @@ then you'll get an error in the console:
 
 
 Asking the user permission to use their location is a little more complicated -
-and is covered in depth in 
-[day 34](http://www.shinobicontrols.com/blog/posts/2014/10/16/ios8-day-by-day-day-34-corelocation-authorization).
+and is covered in depth in  day 34.
 You need to create a `CLLocationManager()`, that will stay around for the
 lifetime of the view controller (i.e. a property):
 
