@@ -38,3 +38,4 @@ introduction.txt
 37-autosizing-collectionview.md
 38-handoff.md
 39-watchkit.md
+conclusion.md
