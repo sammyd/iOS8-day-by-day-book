@@ -8,46 +8,41 @@ is quite a different language from objective-C in that it is strongly-typed and
 includes some features common to more modern languages.
 
 In the interests of embracing anything and everything that's new and shiny, this
-blog series will exclusively use Swift. There is a wealth of information out
+book will exclusively use Swift. There is a wealth of information out
 there about how to learn Swift, and how to interact with the Cocoa libraries -
 in fact you can't go wrong with starting out by reading through the official
 books:
 
-- [The Swift Programming Language](https://itunes.apple.com/us/book/the-swift-programming-language/id881256329?mt=11&ls=1)
-- [Using Swift with Cocoa and Objective-C](https://itunes.apple.com/us/book/using-swift-cocoa-objective/id888894773?mt=11&ls=1)
+- [The Swift Programming Language](https://itunes.apple.com/us/book/the-swift-programming-language/id881256329)
+- [Using Swift with Cocoa and Objective-C](https://itunes.apple.com/us/book/using-swift-cocoa-objective/id888894773)
 
 You should also check out the official
 [swift blog](https://developer.apple.com/swift/blog/), and some of the other
 [resources](https://developer.apple.com/swift/resources/) made available by
 Apple.
 
-Since there is so much good info out there about how to use Swift, this post is
+Since there is so much good info out there about how to use Swift, this chapter is
 not going to attempt to cover any of that. Instead, it's going to run through
 some of the important gotchas and potential pain points when using Swift for
 the first time - especially when relating to the system frameworks.
 
-There is an Xcode 6 playground which accompanies this post - including short
+There is an Xcode 6 playground which accompanies this chapter - including short
 samples for each of the sections. You can get hold of it on the ShinobiControls
 Github page - at [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
 
-If you have any questions or suggestions of other things to add to this post
-then do let me know - I'll try to keep it up to date throughout the blog series.
-Drop a comment below, or gimme a shout on twitter -
-[@iwantmyrealname](https://twitter.com/iwantmyrealname).
 
+## Initialization
 
-## Initialisation
-
-Swift formalises the concepts surround initialisation of objects somewhat -
-including designated -vs- convenience initialisers, and sets a very specific
-order of the operations to be called within the initialisation phases of an
+Swift formalizes the concepts surround initialization of objects somewhat -
+including designated -vs- convenience initializers, and sets a very specific
+order of the operations to be called within the initialization phases of an
 object. In the coming weeks, there will be an article as part of this series
-which will go into detail about how initialisation works in Swift, and how this
+which will go into detail about how initialization works in Swift, and how this
 affects any objective-C that you write - so look out for this.
 
-There is one other fairly major difference in initialisation between Swift and
-objective-C, and that is return values and initialisation failure. In objective-C
-an initialiser looks a lot like this:
+There is one other fairly major difference in initialization between Swift and
+objective-C, and that is return values and initialization failure. In objective-C
+an initializer looks a lot like this:
 
     - (instancetype)init {
       self = [super init];
@@ -65,10 +60,10 @@ Whereas in Swift:
       super.init()
     }
 
-Notice that in objective-C the initialiser is responsible for 'creating' and then
+Notice that in objective-C the initializer is responsible for 'creating' and then
 returning `self`, but there is no `return` statement in the Swift equivalent.
 This means that there is actually no way in which you can return a `nil` object,
-which is a pattern commonly used to indicate an initialisation failure in objC.
+which is a pattern commonly used to indicate an initialization failure in objC.
 
 This is apparently likely to change in an upcoming release of the language, but
 for now the only workaround is to use class methods which return optional types:
@@ -79,9 +74,9 @@ for now the only workaround is to use class methods which return optional types:
       }
     }
 
-Interestingly, factory methods on objective-C APIs are converted into initialisers
+Interestingly, factory methods on objective-C APIs are converted into initializers
 in Swift, so this approach is not preferred. However, until language support
-arrives, it's the only option for initialisers which have the potential to fail.
+arrives, it's the only option for initializers which have the potential to fail.
 
 ## Mutability
 
@@ -110,7 +105,7 @@ To see this in action, consider the following `struct`:
     }
 
 If you define a variable `struct1` with the `var` keyword then you get the
-following behaviour:
+following behavior:
 
     var struct1 = MyStruct(t: 15, u: "Hello")
     struct1.t = 13 // Error: t is an immutable property
@@ -130,7 +125,7 @@ Here, not only are you unable to mutate the `struct2` reference itself, but you
 are also unable to mutate the struct itself (i.e. the `u` property). This is
 because a struct is a __value type__.
 
-The behaviour is subtly different with a class:
+The behavior is subtly different with a class:
 
     class MyClass {
       let t = 12
@@ -142,7 +137,7 @@ The behaviour is subtly different with a class:
       }
     }
 
-Defining a variable using `var` gives behaviour you might be used to from
+Defining a variable using `var` gives behavior you might be used to from
 objective-C:
 
     var class1 = MyClass(t: 15, u: "Hello")
@@ -152,7 +147,7 @@ objective-C:
 
 You can mutate both the reference itself, and any properties defined using
 `var`, but you are unable to mutate any properties defined with `let`. Compare
-this to the behaviour when the instance is defined with `let`:
+this to the behavior when the instance is defined with `let`:
 
     let class2 = MyClass(t: 12, u: "World")
     class2.u = "Planet" // No error
@@ -162,7 +157,7 @@ Here you are unable to mutate the reference itself, but you __can__ still mutate
 any properties defined with `var` within the class. This is because a class is
 a __reference type__.
 
-This behaviour is fairly easy to understand, and is well-explained in the
+This behavior is fairly easy to understand, and is well-explained in the
 language reference books. There is potential for confusion when looking at
 Swift collection types though.
 
@@ -239,7 +234,7 @@ need to guard around the cast:
 
     let castedParameter = parameter as NSString
 
-A top-tip is to realise that casting arrays is really easy too. All arrays that
+A top-tip is to realize that casting arrays is really easy too. All arrays that
 you'll receive from a Cocoa framework will be of the type `[AnyObject]`, since
 `NSArray` doesn't support generics. However, in nearly every case not only are
 all the elements of the same type, but they are of a known type. You can cast
@@ -279,7 +274,7 @@ protocol that protocol must be an objective-C protocol - and annotated with
     }
 
 This can actually be more effort than you'd expect, since in order that a protocol
-be labelled as `@objc`, all of its properties and method return types must also
+be labeled as `@objc`, all of its properties and method return types must also
 be understood in the objective-C world. This means that you might end up annotating
 loads of classes you thought you only cared about in Swift with `@objc`.
 
