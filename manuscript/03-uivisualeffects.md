@@ -62,7 +62,7 @@ add the content as a subview of the effect view itself, but rather its
 
     blurEffectView.contentView.addSubview(contentView)
 
-Then, you just have to add the `blurEffectView` to your view hierachy and you're
+Then, you just have to add the `blurEffectView` to your view hierarchy and you're
 done.
 
     containerView.addSubview(blurEffectView)
@@ -133,11 +133,11 @@ Then add the `blurEffectView` to your view hierarchy to display it:
 
     containerView.addSubview(blurEffectView)
 
-You can use the same autolayout dance as before to ensure that the view sizes
+You can use the same auto layout dance as before to ensure that the view sizes
 are all correct:
 
 
-    // Prepare autolayout
+    // Prepare auto layout
     contentView.setTranslatesAutoresizingMaskIntoConstraints(false)
     blurEffectView.setTranslatesAutoresizingMaskIntoConstraints(false)
     vibrancyEffectView.setTranslatesAutoresizingMaskIntoConstraints(false)
