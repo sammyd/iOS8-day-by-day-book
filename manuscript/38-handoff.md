@@ -1,13 +1,4 @@
-# iOS8 Day-by-Day :: Day 38 :: Handoff
-
-This post is part of a daily series of posts introducing the most exciting new
-parts of iOS8 for developers - [#iOS8DayByDay](https://twitter.com/search?q=%23iOS8DayByDay).
-To see the posts you've missed check out the [index page](http://shinobicontrols.com/iOS8DayByDay),
-but have a read through the rest of this post first!
-
----
-
-## Introduction
+# Day 38 :: Handoff
 
 One of the key new concepts introduced at WWDC in 2014 was that of Continuity,
 describing the ability to seemlessly switch between devices, and continue your

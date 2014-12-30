@@ -1,14 +1,4 @@
-# iOS8 Day-by-Day :: Day 15 :: NSFormatter
-
-This post is part of a daily series of posts introducing the most exciting new
-parts of iOS8 for developers - [#iOS8DayByDay](https://twitter.com/search?q=%23iOS8DayByDay).
-To see the posts you've missed check out the
-[introduction page](http://www.shinobicontrols.com/ios8daybyday),
-but have a read through the rest of this post first!
-
----
-
-## Introduction
+# Day 15 :: NSFormatter
 
 Many apps that we built represent data flow in some form or another. However,
 since apps are primarily visual it's often important to display this data to the

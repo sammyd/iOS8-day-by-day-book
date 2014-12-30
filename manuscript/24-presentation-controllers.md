@@ -1,14 +1,4 @@
-# iOS8 Day-by-Day :: Day 24 :: Presentation Controllers
-
-This post is part of a daily series of posts introducing the most exciting new
-parts of iOS8 for developers - [#iOS8DayByDay](https://twitter.com/search?q=%23iOS8DayByDay).
-To see the posts you've missed check out the
-[introduction page](http://www.shinobicontrols.com/ios8daybyday),
-but have a read through the rest of this post first!
-
----
-
-## Introduction
+# Day 24 :: Presentation Controllers
 
 Back on [day 21](http://www.shinobicontrols.com/blog/posts/2014/08/26/ios8-day-by-day-day-21-alerts-and-popovers/)
 you saw how UIKit has been updated to give a more consistent approach to showing

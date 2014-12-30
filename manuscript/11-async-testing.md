@@ -1,13 +1,4 @@
-# iOS8 Day-by-Day :: Day 11 :: Asynchronous Testing
-
-This post is part of a daily series of posts introducing the most exciting new
-parts of iOS8 for developers - [#iOS8DayByDay](https://twitter.com/search?q=%23iOS8DayByDay).
-To see the posts you've missed check out the [index page](http://shinobicontrols.com/iOS8DayByDay),
-but have a read through the rest of this post first!
-
----
-
-## Introduction
+# Day 11 :: Asynchronous Testing
 
 This blog series has already taken a look at one of the new features available
 in XCTest, the testing framework in Xcode, in the shape of profiling unit tests -

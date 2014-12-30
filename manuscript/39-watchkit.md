@@ -1,13 +1,4 @@
-# iOS8 Day-by-Day :: Day 39 :: WatchKit
-
-This post is part of a daily series of posts introducing the most exciting new
-parts of iOS8 for developers - [#iOS8DayByDay](https://twitter.com/search?q=%23iOS8DayByDay).
-To see the posts you've missed check out the [index page](http://shinobicontrols.com/iOS8DayByDay),
-but have a read through the rest of this post first!
-
----
-
-## Introduction
+# Day 39 :: WatchKit
 
 Although the Apple Watch was unveiled back in September 2014, developers have
 only recently got hold of an SDK - hidden away inside iOS 8.2. It seems that the

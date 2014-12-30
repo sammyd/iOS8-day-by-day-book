@@ -1,13 +1,4 @@
-# iOS8 Day-by-Day :: Day 37 :: Autosizing Collection View Cells
-
-This post is part of a daily series of posts introducing the most exciting new
-parts of iOS8 for developers - [#iOS8DayByDay](https://twitter.com/search?q=%23iOS8DayByDay).
-To see the posts you've missed check out the [index page](http://shinobicontrols.com/iOS8DayByDay),
-but have a read through the rest of this post first!
-
----
-
-## Introduction
+# Day 37 :: Autosizing Collection View Cells
 
 Way back on [day 5](http://www.shinobicontrols.com/blog/posts/2014/07/24/ios8-day-by-day-day-5-auto-sizing-table-view-cells/)
 of this series, we took a look at the new functionality within table views that

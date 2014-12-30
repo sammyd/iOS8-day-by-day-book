@@ -1,14 +1,4 @@
-# iOS8 Day-by-Day :: Day 23 :: Photo Extension
-
-This post is part of a daily series of posts introducing the most exciting new
-parts of iOS8 for developers - [#iOS8DayByDay](https://twitter.com/search?q=%23iOS8DayByDay).
-To see the posts you've missed check out the
-[introduction page](http://www.shinobicontrols.com/ios8daybyday),
-but have a read through the rest of this post first!
-
----
-
-## Introduction
+# Day 23 :: Photo Extension
 
 iOS8 Day-by-Day has looked at a couple of the new extensions in iO8 already -
 the share extension and the today extension. In today's article you're going to
