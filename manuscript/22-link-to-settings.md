@@ -1,10 +1,10 @@
 # Day 22 :: Linking to Settings App
 
-Today's post is a short one, but it is definitely worth knowing. iOS provides a
+Today's chapter is a short one, but it is definitely worth knowing. iOS provides a
 really nice way to handle app settings through `NSUserDefaults`, and you've long
 been able to integrate your app into the iOS settings app via a Settings bundle.
 However, in order for your user to edit settings they have to make their own way
-to the settings app. iOS8 provides a way to change this.
+to the settings app. iOS8 introduces a way to change this.
 
 The app which accompanies today's post is a simple one - a single page app with
 a button which is linked up to the settings app. There is only one setting,
@@ -80,9 +80,9 @@ Don't forget that with `NSNotificationCenter` you must stop observing:
 This will mean that whenever the user updates any settings then the appearance
 will get updated appropriately.
 
-> __Note:__ There is a bug in the iOS8 betas (last checked beta 5), which means
-that the settings in the settings app are not persisted to NSUserDefaults.
-Therefore this app doesn't behave as expected. This will be fixed very soon.
+W> There is a bug in the iOS8 betas (last checked beta 5), which means
+W> that the settings in the settings app are not persisted to NSUserDefaults.
+W> Therefore this app doesn't behave as expected. This will be fixed very soon.
 
 ## Conclusion
 

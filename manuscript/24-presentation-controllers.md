@@ -1,7 +1,7 @@
 # Day 24 :: Presentation Controllers
 
-Back on [day 21](http://www.shinobicontrols.com/blog/posts/2014/08/26/ios8-day-by-day-day-21-alerts-and-popovers/)
-you saw how UIKit has been updated to give a more consistent approach to showing
+Back in chapter 21 you saw how UIKit has been updated to give a more
+consistent approach to showing
 alerts, popovers and action sheets. The technology underlying this uses
 presentation controllers, which are new to iOS8. It's possible to provide
 your own custom presentation controllers for use in view controller transitions
@@ -265,10 +265,10 @@ expected:
 
 ## Custom Presentation Animation
 
-The focus of today's blog post isn't creating custom animations for view
+The focus of today's chapter isn't creating custom animations for view
 controller transitions. This functionality was introduced back in iOS7 (in fact
-[day 10](http://www.shinobicontrols.com/blog/posts/2013/10/03/ios7-day-by-day-day-10-custom-uiviewcontroller-transitions)
-of iOS7 Day-by-Day covers the architecture in some detail), but it is worth
+chapter 10 of [iOS7 Day-by-Day](https://leanpub.com/iOS7DayByDay) covers the 
+architecture in some detail), but it is worth
 seeing how this interacts with the new presentation controllers.
 
 Custom animations are the realm of the `UIViewControllerAnimatedTransitioning`

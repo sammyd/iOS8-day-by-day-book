@@ -1,6 +1,6 @@
 # Day 29 :: Safari Action Extension
 
-This series has covered three of the new extension points so far (sharing,
+This book has covered three of the new extension points so far (sharing,
 today & photo) and today sees the turn of the action extension.
 
 The action extension is quite similar to the sharing extension - in fact it
@@ -160,11 +160,11 @@ particular type - in this case the content provided from the JS preprocessor
 will be of type `kUTTypePropertyList`. You can load it using the 
 `loadItemForTypeIdentifier(_, options:, completionHandler:)` method.
 
-> __NOTE:__ It's actually very important to call this `loadItemForTypeIdentifier`
-method. If you don't then the javascript preprocessor won't be executed. Here,
-in __MarqueeMaker__ you're not actually interested in the results, but it's
-necessary to call it to ensure that the javascript is invoked, providing the
-functionality for the next section.
+I> __NOTE:__ It's actually very important to call this `loadItemForTypeIdentifier`
+I> method. If you don't then the javascript preprocessor won't be executed. Here,
+I> in __MarqueeMaker__ you're not actually interested in the results, but it's
+I> necessary to call it to ensure that the javascript is invoked, providing the
+I> functionality for the next section.
 
 When run, the above code will result in logged output:
 

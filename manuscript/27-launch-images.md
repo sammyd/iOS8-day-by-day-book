@@ -47,10 +47,10 @@ will be updated:
 
 ![iOS8 Launch Images](images/27/ios8_launch_images.png)
 
-> __Top Tip:__ Until you either populate these new image cells, _or_ provide a
-XIB/Storyboard launch screen, then your app will run in scaled mode on iPhone 6
-and 6 Plus. It's therefore _really_ important to add this when upgrading your
-old apps if you want to properly support the new devices.
+T> __Top Tip:__ Until you either populate these new image cells, _or_ provide a
+T> XIB/Storyboard launch screen, then your app will run in scaled mode on iPhone 6
+T> and 6 Plus. It's therefore _really_ important to add this when upgrading your
+T> old apps if you want to properly support the new devices.
 
 Although this approach is perfectly viable, there are a couple of issues:
 
@@ -97,8 +97,8 @@ menu, and update the __Launch Images Source__ to __Don't Use Asset Catalogs__:
 Once you've done this you can build and run your app and notice that the new
 launch screen is being used in place of the old images, which you can delete.
 
-> __Note:__ It seems that the new launch images don't always work on simulators,
-so be sure to check them out on a device.
+W> __Note:__ It seems that the new launch images don't always work on simulators,
+W> so be sure to check them out on a device.
 
 ## Restrictions on Launch Screen XIBs
 
@@ -115,8 +115,8 @@ You can (and absolutely should) use Auto Layout to layout your UI. Your XIB is
 also fully size-class compliant, which is how you should be adapting the launch
 screen to the different devices it will run on.
 
-For more information about adopting adaptive layout in iOS8 you should check out
-day 7 of iOS8 Day-by-Day.
+For more information about adopting adaptive layout in iOS8 you should check 
+out day 7 of iOS8 Day-by-Day.
 
 ## Conclusion
 

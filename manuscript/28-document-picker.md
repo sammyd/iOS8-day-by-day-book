@@ -9,7 +9,7 @@ picker view controller. This allows you to present UI from within your app which
 allows the user to select documents which are present within iCloud drive, on
 iCloud but managed by another app, and also from 3rd party document providers.
 
-Today's post is a very brief introduction into what you can do and how to do it.
+This chapter is a very brief introduction into what you can do and how to do it.
 It isn't an introduction to working with documents on iOS. Or an introduction to
 using CloudKit. Or an introduction to building your own document providers. If
 you want those then shout at me and I might write them. There is a basic sample
@@ -47,9 +47,9 @@ workflow should be well-defined enough that these options are presented at
 contextually relevant times. For example, your app might not need to use the
 open and move modes - import and export might be good enough.
 
-> __Note:__ Since the document picker and menu use iCloud by default, you'll
-need to add the iCloud entitlement to your app:
-![iCloud Entitlement](images/28/icloud_entitlement.png)
+I> __Note:__ Since the document picker and menu use iCloud by default, you'll
+I> need to add the iCloud entitlement to your app:
+I> ![iCloud Entitlement](images/28/icloud_entitlement.png)
 
 ## Document Menu
 

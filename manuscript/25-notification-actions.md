@@ -10,7 +10,7 @@ iOS8 introduces new notification actions - which allow you to hook into the
 notification system and provide a set of customized actions that the user will
 see and can execute alongside the notification.
 
-Today's post digs into the new notification actions by creating a simple timer
+This chapter digs into the new notification actions by creating a simple timer
 app based on local notifications. Exactly the same principles apply for
 providing custom actions for remote notifications too - just using push
 notifications as a trigger. The sample application is called __NotifyTimely__

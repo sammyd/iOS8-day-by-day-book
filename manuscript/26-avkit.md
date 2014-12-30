@@ -13,7 +13,7 @@ AVKit is new to iOS8 and pulls both scenarios into a common pipeline.
 and sits on top of AVFoundation. It provides contextual video playback UI that
 matches that of the OS, and plays any `AVPlayer` object from AVFoundation.
 
-In today's post you'll discover how easy it is to integrate AVKit into your app,
+In today's chapter you'll discover how easy it is to integrate AVKit into your app,
 and see some of the cool new things you can do. The app which accompanies the
 article is a simple video player, which uses the Photos framework to find videos
 in the user's library, and then plays them using AVKit. You can download the
@@ -43,10 +43,10 @@ just drag one onto the storyboard from the object library:
 In this example, the player is a contained by the `VideoDetailViewController`,
 which sets up the `player` property appropriately.
 
-> __Note:__ If you do reference AVKit within the storyboard, then you may well
-have to manually link against the library yourself - like off've the olden days.
-You can do this from the project settings page, in the _Linked Frameworks and
-Libraries_ panel.
+W> __Note:__ If you do reference AVKit within the storyboard, then you may well
+W> have to manually link against the library yourself - like off've the olden days.
+W> You can do this from the project settings page, in the _Linked Frameworks and
+W> Libraries_ panel.
 
 There are two ways you can create an `AVPlayer` - either with a URL or a
 `PlayerItem`. The URL approach matches the `MPMoviePlayerViewController` use
@@ -73,7 +73,7 @@ playback with fully adaptive and context aware playback controls:
 
 ## Integration with Photos Framework
 
-Back on [day 20](http://www.shinobicontrols.com/blog/posts/2014/08/22/ios8-day-by-day-day-20-photos-framework/)
+Back in chapter 20
 we had a quick run-down of the new Photos framework, and how it can make access
 to the photo library super-easy on iOS8. Well, despite its name, the Photos
 framework also includes access to all of the videos in the user's library, and

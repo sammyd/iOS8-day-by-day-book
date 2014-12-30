@@ -110,7 +110,7 @@ message and preferred style:
                                   preferredStyle: .Alert)
 
 There are two options for the `preferredStyle`, and this represents the
-difference between alerts and actionsheets.
+difference between alerts and action sheets.
 
 The API has been modernized to use closures instead of delegate callbacks, so
 you can add buttons as actions:

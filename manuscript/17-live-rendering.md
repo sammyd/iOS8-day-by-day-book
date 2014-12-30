@@ -1,7 +1,7 @@
 # Day 17 :: Live Rendering in Interface Builder
 
 Custom views are a great way of both splitting up your code as a nod towards
-software design best practices, but also allowing the creation of resusable
+software design best practices, but also allowing the creation of reusable
 components. I've talked about this concept a lot in terms of building custom
 UI Controls - in fact I've given a fair few
 [talks](http://iwantmyreal.name/blog/2013/09/18/the-art-of-custom-ui-controls/)
