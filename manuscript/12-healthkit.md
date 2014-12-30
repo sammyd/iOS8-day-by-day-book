@@ -97,7 +97,7 @@ including:
 - CrossTraining
 - Dance
 - Fishing
-- Hocket
+- Hockey
 - SkatingSports
 - SnowSports
 - StairClimbing
@@ -151,9 +151,9 @@ from. The following method demonstrates requesting access to the data store:
         readTypes: NSSet(array: dataTypesToRead), completion: {
         (success, error) in
           if success {
-            println("User completed authorisation request.")
+            println("User completed authorization request.")
           } else {
-            println("The user cancelled the authorisation request. \(error)")
+            println("The user canceled the authorization request. \(error)")
           }
         })
     }
@@ -319,7 +319,7 @@ anchor date.
 ## Conclusion
 
 On the surface of it the health app seems like a pretty cool idea for iOS8, but
-once you get down into HealthKit then you realise that this could be really
+once you get down into HealthKit then you realize that this could be really
 quite powerful. In creating HealthKit Apple hasn't attempted to create one
 healthcare app to rule them all, but instead has created a framework through
 which the important aspects of healthcare monitoring can interoperate. There is

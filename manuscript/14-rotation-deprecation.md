@@ -36,7 +36,7 @@ rotation causes a trait collection change then your views will all get calls to
 
 For example, in the __RotateToDeprecate__ app, the constraints on the large
 label are set up simply to ensure that it is centered both vertically and
-horizonally in its superview:
+horizontally in its superview:
 
 ![Label Constraints](images/14/constraints.png)
 

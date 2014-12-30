@@ -7,18 +7,16 @@ fact there are some really huge changes, including the ability to create custom
 filter kernels for the first time. But that's not the focus of today's post -
 instead we're going to concentrate on new feature detection algorithms.
 
-Last year a face detector was added to __CoreImage__ - you can read about how to
-use it in
-[day 18](http://www.shinobicontrols.com/blog/posts/2013/10/15/ios7-day-by-day-day-18-detecting-facial-features-with-coreimage)
-of iOS7 Day-by-Day. At the same time a QR code detector was added to
-__AVFoundation__ - see
-[day 16](http://www.shinobicontrols.com/blog/posts/2013/10/11/ios7-day-by-day-day-16-decoding-qr-codes-with-avfoundation),
+Last year a face detector was added to __CoreImage__ - you can read about how
+to use it in chapter 18 of [iOS7 Day-by-Day](https://leanpub.com/iOS7DayByDay).
+At the same time a QR code detector was added to __AVFoundation__ - see
+chapter 16 of the [same book](https://leanpub.com/iOS7DayByDay),
 but it's actually quite hard to use __AVFoundation__ in the general image case.
 Well, the advances in __CoreImage__ in iOS8 improve the situation somewhat.
 
 The __CIDetector__ class was introduced in iOS7, but only contained a facial
-feature detector. iOS8 augments this with rectangle and QR code detection, which
-are the subject of today's article.
+feature detector. iOS8 augments this with rectangle and QR code detection, 
+which are the subject of today's article.
 
 The accompanying project is an app which takes a live camera view and runs the
 frames through __CoreImage__, detecting either rectangles or QR codes. The code
@@ -27,7 +25,9 @@ images you've grabbed from sources other than the camera - making it
 particularly versatile. As usual, the source code is available in the
 iOS8-day-by-day repo on github at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
-Note that since it uses a camera the app has to be run on a physical device.
+
+W> Note that since the app uses a camera the app has to be run on a physical
+W> device.
 
 
 ## Detecting Rectangles
@@ -207,8 +207,7 @@ it's a fun thing to have a play with - and you never know when it might be
 useful.
 
 As ever, the code for the __LiveDetection__ demo app is available on github at 
-[github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day
-). Let me know you like it - follow me and say hi on twitter - I'm
+[github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day). Let me know you like it - follow me and say hi on twitter - I'm
 [@iwantmyrealname](https://twitter.com/iwantmyrealname).
 
 
