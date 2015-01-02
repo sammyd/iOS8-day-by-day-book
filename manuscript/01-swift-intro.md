@@ -321,22 +321,11 @@ system within Swift is built out of enumerations.
 
 Swift is really powerful - and it's going to take us a while to establish best
 practice and work out what idioms and patterns we can now use that weren't
-possible within the constraints of objective-C. This post has outlined some of
+possible within the constraints of objective-C. This article has outlined some of
 the common areas of confusion when moving from objective-C to Swift, but don't
-let this put you off. All of the projects associated with this blog series are
+let this put you off. All of the projects associated with this book are
 written using Swift, and on the most-part are really simple to understand.
 
-There is a playground which contains some of the samples mentioned in this post -
-it's part of the Github repo which accompanies this series. You can get it at
+There is a playground which contains some of the samples mentioned in this chapter -
+it's part of the Github repo which accompanies the book. You can get it at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
-
-If you have any questions or suggestions for additions / updates on this page then
-please do get in contact. You can leave a comment below, or tweet me - I'm
-[@iwantmyrealname](https://twitter.com/iwantmyrealname).
-
-The series starts properly on Monday - with a look at one of the significant new
-APIs within iOS8. Join us then - or use the __subscribe__ button below to get an
-email reminder that a new post has been published.
-
-
-sam
