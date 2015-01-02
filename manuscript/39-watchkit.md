@@ -372,7 +372,7 @@ have been received to drive the notification's appearance:
             }
         ],
         
-        "customKey": "Use this file to define a testing payload for your notifications."
+        "customKey": "Use this file to define a testing payload."
     }
 
 You can provide the title and category as expected, and also provide the actions

@@ -55,7 +55,8 @@ example, the following specifies that you are creating a password entry, for the
 given service and user name:
 
     private func save(token: String) {
-      if let data = token.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false) {
+      if let data = token.dataUsingEncoding(NSUTF8StringEncoding,
+                                            allowLossyConversion: false) {
         
         // Rather than update, just delete and continue
         delete()
@@ -112,14 +113,16 @@ The following demonstrates how to update the previous `save()` method to enforce
 the __user presence__ authentication policy:
 
     private func save(token: String) {
-      if let data = token.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false) {
+      if let data = token.dataUsingEncoding(NSUTF8StringEncoding,
+                                            allowLossyConversion: false) {
         
         // Rather than update, just delete and continue
         delete()
         
         // Create the appropriate access controls
         let accessControl = SecAccessControlCreateWithFlags(kCFAllocatorDefault,
-                            kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly, .UserPresence, nil)
+                            kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly,
+                            .UserPresence, nil)
         
         let keyChainQuery = [
           kSecClass             : kSecClassGenericPassword,
@@ -166,9 +169,11 @@ You can specify the sub-heading within this dialog using the
       var contentsOfKeychain: String?
       
       if let opaque = opaque {
-        let retrievedData = Unmanaged<NSData>.fromOpaque(opaque).takeUnretainedValue()
+        let retrievedData = Unmanaged<NSData>.fromOpaque(opaque)
+                                             .takeUnretainedValue()
         // Convert the data retrieved from the keychain into a string
-        contentsOfKeychain = NSString(data: retrievedData, encoding: NSUTF8StringEncoding)
+        contentsOfKeychain = NSString(data: retrievedData,
+                                      encoding: NSUTF8StringEncoding)
       } else {
         println("Nothing was retrieved from the keychain. Status code \(status)")
       }

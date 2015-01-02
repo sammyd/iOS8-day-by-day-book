@@ -41,7 +41,8 @@ The delegate adopts the `CLLocationDelegateManager` protocol, and in the
 simple case you can just implement the `locationManger(_, didUpdateLocations:)`
 method:
 
-    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+    func locationManager(manager: CLLocationManager!,
+                                        didUpdateLocations locations: [AnyObject]!) {
       if let location = locations.first as? CLLocation {
         // Update the fields as expected:
         latValLabel.text = "\(location.coordinate.latitude)"

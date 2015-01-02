@@ -308,7 +308,8 @@ and `publicCloudDatabase`. Since CloudNotes is currently only supporting private
 notes, then it uses the `privateCloudDatabase` to construct a custom
 `CloudKitNoteManager` object:
 
-    let noteManager = CloudKitNoteManager(database: CKContainer.defaultContainer().privateCloudDatabase)
+    let noteManager = CloudKitNoteManager(database: CKContainer.defaultContainer()
+                                                               .privateCloudDatabase)
 
 `CloudKitNoteManager` is a helper class which implements the following protocol,
 to encompass all the different persistence methods that the app needs:
@@ -496,7 +497,9 @@ In CloudNotes, a `CKQueryOperation` is used in the implementation of
       let queryOperation = CKQueryOperation(query: query)
       queryOperation.desiredKeys = ["title"]
       var records = [Note]()
-      queryOperation.recordFetchedBlock = { record in records.append(CloudKitNote(record: record)) }
+      queryOperation.recordFetchedBlock = {
+        record in records.append(CloudKitNote(record: record))
+      }
       queryOperation.queryCompletionBlock = { _ in callback(notes: records) }
       
       database.addOperation(queryOperation)
@@ -542,7 +545,8 @@ closures to get feedback on the process.
 The `updateNote(note:, callback:)` method is implemented as follows:
 
     func updateNote(note: CloudKitNote, callback:((success: Bool) -> ())?) {
-      let updateOperation = CKModifyRecordsOperation(recordsToSave: [note], recordIDsToDelete: nil)
+      let updateOperation = CKModifyRecordsOperation(recordsToSave: [note],
+                                                     recordIDsToDelete: nil)
       updateOperation.perRecordCompletionBlock = { record, error in
         if error != nil {
           // Really important to handle this here
@@ -552,7 +556,8 @@ The `updateNote(note:, callback:)` method is implemented as follows:
       updateOperation.modifyRecordsCompletionBlock = { saved, _, error in
         if error != nil {
           if error.code == CKErrorCode.PartialFailure.toRaw() {
-            println("There was a problem completing the operation. The following records had problems: \(error.userInfo?[CKPartialErrorsByItemIDKey])")
+            println("There was a problem completing the operation. The following " +
+              "records had problems: \(error.userInfo?[CKPartialErrorsByItemIDKey])")
           }
           callback?(success: false)
         } else {
@@ -572,7 +577,8 @@ The `deleteNote(note:, callback:)` method is almost identical in its
 implementation:
 
     func deleteNote(note: Note, callback: ((success: Bool) -> ())?) {
-      let deleteOperation = CKModifyRecordsOperation(recordsToSave: nil, recordIDsToDelete: [CKRecordID(recordName: note.id)])
+      let deleteOperation = CKModifyRecordsOperation(recordsToSave: nil,
+                                recordIDsToDelete: [CKRecordID(recordName: note.id)])
       deleteOperation.perRecordCompletionBlock = { record, error in
         if error != nil {
           println("Unable to delete record: \(record). Error: \(error)")
@@ -581,7 +587,8 @@ implementation:
       deleteOperation.modifyRecordsCompletionBlock = { _, deleted, error in
         if error != nil {
           if error.code == CKErrorCode.PartialFailure.toRaw() {
-            println("There was a problem completing the operation. The following records had problems: \(error.userInfo?[CKPartialErrorsByItemIDKey])")
+            println("There was a problem completing the operation. The following " +
+              "records had problems: \(error.userInfo?[CKPartialErrorsByItemIDKey])")
           }
           callback?(success: false)
         }

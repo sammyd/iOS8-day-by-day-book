@@ -84,7 +84,8 @@ In __MapOff__, this method is used to get the currently visible range from the
 map, and save it into the `userInfo` dictionary:
 
     override func updateUserActivityState(activity: NSUserActivity) {
-      let regionData = NSData(bytes: &mapView.region, length: sizeof(MKCoordinateRegion))
+      let regionData = NSData(bytes: &mapView.region,
+                              length: sizeof(MKCoordinateRegion))
       activity.userInfo = ["region" : regionData]
     }
 
@@ -134,12 +135,15 @@ Once you've done this, then when a user chooses to continue an activity, your
 app will be started, and two new methods on your application delegate will be
 called:
 
-    func application(application: UIApplication, willContinueUserActivityWithType userActivityType: String) -> Bool {
+    func application(application: UIApplication,
+                willContinueUserActivityWithType userActivityType: String) -> Bool {
       println("Will continue \(userActivityType)")
       return true
     }
     
-    func application(application: UIApplication, continueUserActivity userActivity: NSUserActivity, restorationHandler: ([AnyObject]!) -> Void) -> Bool {
+    func application(application: UIApplication,
+                     continueUserActivity userActivity: NSUserActivity,
+                     restorationHandler: ([AnyObject]!) -> Void) -> Bool {
       if let rootVC = window?.rootViewController {
         restorationHandler([rootVC])
       }
@@ -174,8 +178,9 @@ follows:
         // Extract the data
         let regionData = activity.userInfo!["region"] as NSData
         // Need an empty coordinate region to populate
-        var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0),
-                                          span: MKCoordinateSpan(latitudeDelta: 0.0, longitudeDelta: 0.0))
+        var region = MKCoordinateRegion(
+                    center: CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0),
+                    span: MKCoordinateSpan(latitudeDelta: 0.0, longitudeDelta: 0.0))
         regionData.getBytes(&region, length: sizeof(MKCoordinateRegion))
         mapView.setRegion(region, animated: true)
       }

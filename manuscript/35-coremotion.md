@@ -38,13 +38,15 @@ great for maintaining a responsive app, and is just an instance of
 `NSOperationQueue`:
 
     let oneWeekInterval = 24 * 3600 as NSTimeInterval
-    motionActivityManager.queryActivityStartingFromDate(NSDate(timeIntervalSinceNow: -oneWeekInterval),
-                                                        toDate: NSDate(), toQueue: motionHandlerQueue) {
+    motionActivityManager.queryActivityStartingFromDate(
+                                    NSDate(timeIntervalSinceNow: -oneWeekInterval),
+                                    toDate: NSDate(), toQueue: motionHandlerQueue) {
       (activities, error) in
       if error != nil {
         println("There was an error retrieving the motion results: \(error)")
       }
-      self.activityCollection = ActivityCollection(activities: activities as [CMMotionActivity])
+      self.activityCollection =
+                     ActivityCollection(activities: activities as [CMMotionActivity])
     }
 
 The handler is called with an array of `CMMotionActivity` objects and an error.
@@ -121,7 +123,8 @@ object which contains properties for `numberOfSteps`, `distance`,
 `floorsAscended` and `floorsDescended`. The following code queries for pedometer
 data between two dates:
 
-    pedometer?.queryPedometerDataFromDate(activity?.startDate, toDate: activity?.endDate) {
+    pedometer?.queryPedometerDataFromDate(activity?.startDate,
+                                          toDate: activity?.endDate) {
       (data, error) -> Void in
       if error != nil {
         println("There was an error requesting data from the pedometer: \(error)")
@@ -149,7 +152,8 @@ the current cumulative total from the start date you provided:
         dispatch_async(dispatch_get_main_queue()) {
           self.floorsLabel.text = "\(data.floorsAscended)"
           self.stepsLabel.text = "\(data.numberOfSteps)"
-          self.distanceLabel.text = "\(self.lengthFormatter.stringFromMeters(data.distance))"
+          self.distanceLabel.text =
+                            "\(self.lengthFormatter.stringFromMeters(data.distance))"
         }
       }
     }
@@ -189,7 +193,8 @@ The following implements this functionality:
       } else {
         dispatch_async(dispatch_get_main_queue()) {
           self.altChange += data.relativeAltitude
-          self.altitudeLabel.text = "\(self.lengthFormatter.stringFromMeters(self.altChange))"
+          self.altitudeLabel.text =
+                           "\(self.lengthFormatter.stringFromMeters(self.altChange))"
         }
       }
     }

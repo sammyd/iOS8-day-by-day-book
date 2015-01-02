@@ -31,8 +31,11 @@ permission from the user, you need to specify what types of notifications you'd
 like to use, and then register for them. Here, the only type requested is alert:
 
     // Ask for permission for notifications
-    let notificationSettings = UIUserNotificationSettings(forTypes: UIUserNotificationType.Alert, categories: nil)
-    UIApplication.sharedApplication().registerUserNotificationSettings(notificationSettings)
+    let notificationSettings =
+                UIUserNotificationSettings(forTypes: UIUserNotificationType.Alert,
+                                           categories: nil)
+    UIApplication.sharedApplication()
+                              .registerUserNotificationSettings(notificationSettings)
 
 This will present the user with the following alert:
 
@@ -95,8 +98,8 @@ relative to a given iBeacon.
 The following specifies a circular region with a radius of 50m around the
 coordinate of the pin drop annotation:
 
-    notification.region = CLCircularRegion(center: annotation!.coordinate, radius: 50,
-                                           identifier: "Destination")
+    notification.region = CLCircularRegion(center: annotation!.coordinate,
+                                           radius: 50, identifier: "Destination")
     notification.regionTriggersOnce = true
 
 The `regionTriggersOnce` property allows you specify whether a notification
@@ -123,7 +126,8 @@ will be called when it fires - `application(_, didReceiveLocalNotification:)`.
 If the notification was triggered by a location notification, then it will have
 a non-`nil` `region` property:
 
-    func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
+    func application(application: UIApplication,
+                     didReceiveLocalNotification notification: UILocalNotification) {
       println("\(notification)")
       if notification.region != nil {
         println("It's a location notification!")
