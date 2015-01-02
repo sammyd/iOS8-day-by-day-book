@@ -88,24 +88,26 @@ However, the following approach seems to be reliable:
 which has easily available content for sharing. In the sample project, the
 __ShareAlike__ host app has an image and a share button which will trigger a
 standard UI share sheet:
-        @IBAction func handleShareSampleTapped(sender: AnyObject) {
-          shareContent(sharingText: "Highland Cow", sharingImage: sharingContentImageView.image)
-        }
 
-        // Utility methods
-        func shareContent(#sharingText: String?, sharingImage: UIImage?) {
-          var itemsToShare = [AnyObject]()
+    @IBAction func handleShareSampleTapped(sender: AnyObject) {
+      shareContent(sharingText: "Highland Cow", sharingImage: sharingContentImageView.image)
+    }
 
-          if let text = sharingText {
-            itemsToShare.append(text)
-          }
-          if let image = sharingImage {
-            itemsToShare.append(image)
-          }
+    // Utility methods
+    func shareContent(#sharingText: String?, sharingImage: UIImage?) {
+      var itemsToShare = [AnyObject]()
 
-          let activityViewController = UIActivityViewController(activityItems: itemsToShare, applicationActivities: nil)
-          presentViewController(activityViewController, animated: true, completion: nil)
-        }
+      if let text = sharingText {
+        itemsToShare.append(text)
+      }
+      if let image = sharingImage {
+        itemsToShare.append(image)
+      }
+
+      let activityViewController = UIActivityViewController(activityItems: itemsToShare, applicationActivities: nil)
+      presentViewController(activityViewController, animated: true, completion: nil)
+    }
+
 ![ShareAlike](images/02/sharealike.png)
 2. Develop your extension
 3. To debug and or test, run the scheme associated with your app. Then when you
@@ -221,7 +223,8 @@ extension, including an array of `NSInputItem` objects, called `inputItems`. An
 Each of these attachments represents an item of media - such as an image, a
 video, a file or a link.
 
-    func imageFromExtensionItem(extensionItem: NSExtensionItem, callback: (image: UIImage?)->Void) {
+    func imageFromExtensionItem(extensionItem: NSExtensionItem,
+                                     callback: (image: UIImage?)->Void) {
       for attachment in extensionItem.attachments as [NSItemProvider] {
         ...
       }
@@ -320,8 +323,8 @@ on the view controller:
 
 I> This is a URL for the Request Bin service, which gives you a temporary URL to
 I> allow you to test network operations. The above URL (and the one in the sample
-I> code) won't work for you, but if you visit [requestb.in](http://requestb.in/) then
-I> you can get hold of your own URL for testing.
+I> code) won't work for you, but if you visit [requestb.in](http://requestb.in/)
+I> then you can get hold of your own URL for testing.
 
 As mentioned previously, it's important that extensions put very little strain
 on the limited system resources. Therefore, at the point the __Post__ button
@@ -343,8 +346,9 @@ in its simplest form it must look like this:
 Setting up an `NSURLSession` is pretty standard:
 
     let configName = "com.shinobicontrols.ShareAlike.BackgroundSessionConfig"
-    let sessionConfig = NSURLSessionConfiguration.backgroundSessionConfigurationWithIdentifier(configName)
-    // Extensions aren't allowed their own cache disk space. Need to share with application
+    let sessionConfig = NSURLSessionConfiguration.
+                            backgroundSessionConfigurationWithIdentifier(configName)
+    // Extensions aren't allowed their own cache disk space - share with application
     sessionConfig.sharedContainerIdentifier = "group.ShareAlike"
     let session = NSURLSession(configuration: sessionConfig)
 
@@ -357,8 +361,8 @@ through Xcode:
 
 1. Go to the capabilities tab of the app's target
 2. Enable __App Groups__
-3. Create a new app group, entitled something appropriate. It must start with `group.`.
-In the demo the group is called `group.ShareAlike`
+3. Create a new app group, entitled something appropriate. It must start
+with `group.`. In the demo the group is called `group.ShareAlike`.
 4. Let Xcode go through the process of creating this group for you.
 
 ![App group for host app](images/02/app_groups_host_app.png)
@@ -400,7 +404,8 @@ the image:
 
       // Create the JSON payload
       var jsonError: NSError?
-      let jsonData = NSJSONSerialization.dataWithJSONObject(jsonObject, options: nil, error: &jsonError)
+      let jsonData = NSJSONSerialization.dataWithJSONObject(jsonObject,
+                                              options: nil, error: &jsonError)
       if jsonData {
         request.HTTPBody = jsonData
       } else {

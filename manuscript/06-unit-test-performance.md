@@ -69,7 +69,9 @@ is exactly what is being implemented here. This method is part of the
 `NaiveMovingAverageCalculator` class, which we can then put under test.
 
     class MovingAverageTests: XCTestCase {
-      let calculatorCreator : () -> MovingAverageCalculator = { return NaiveMovingAverageCalculator() }
+      let calculatorCreator : () -> MovingAverageCalculator = {
+        return NaiveMovingAverageCalculator()
+      }
       var calculator: MovingAverageCalculator = NaiveMovingAverageCalculator()
 
       override func setUp() {
@@ -146,7 +148,9 @@ sum means that the same sum operation is not repeated for every output value.
 To see how this fairs in comparison to the original implementation, you can just
 update the test class as follows:
 
-    let calculatorCreator : () -> MovingAverageCalculator = { return BetterMovingAverageCalculator() }
+    let calculatorCreator : () -> MovingAverageCalculator = {
+      return BetterMovingAverageCalculator()
+    }
     var calculator: MovingAverageCalculator = BetterMovingAverageCalculator()
 
 Now running the test suite again will cause the following balloon to appear:

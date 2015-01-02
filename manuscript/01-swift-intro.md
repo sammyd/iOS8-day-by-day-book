@@ -132,7 +132,7 @@ The behavior is subtly different with a class:
     class MyClass {
       let t = 12
       var u: String
-
+      
       init(t: Int, u: String) {
         self.t = t
         self.u = u
@@ -290,7 +290,7 @@ values (which needn't be of the same type), but also contain functions too.
       case IntType (Int)
       case StringType (String)
       case TupleType (Int, String)
-
+      
       func prettyFormat() -> String {
         switch self {
         case .FirstType:

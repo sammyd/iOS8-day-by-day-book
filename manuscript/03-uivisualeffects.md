@@ -88,14 +88,18 @@ the same size as its container.
 Where the `applyEqualSizeConstraints is as follows`:
 
     func applyEqualSizeConstraints(v1: UIView, v2: UIView, includeTop: Bool) {
-      v1.addConstraint(NSLayoutConstraint(item: v1, attribute: .Left, relatedBy: .Equal,
-                                          toItem: v2, attribute: .Left, multiplier: 1, constant: 0))
-      v1.addConstraint(NSLayoutConstraint(item: v1, attribute: .Right, relatedBy: .Equal,
-                                          toItem: v2, attribute: .Right, multiplier: 1, constant: 0))
-      v1.addConstraint(NSLayoutConstraint(item: v1, attribute: .Bottom, relatedBy: .Equal,
-                                          toItem: v2, attribute: .Bottom, multiplier: 1, constant: 0))
-      v1.addConstraint(NSLayoutConstraint(item: v1, attribute: .Top, relatedBy: .Equal,
-                                          toItem: v2, attribute: .Top, multiplier: 1, constant: 0))
+      v1.addConstraint(NSLayoutConstraint(item: v1, attribute: .Left,
+                                  relatedBy: .Equal, toItem: v2, attribute: .Left,
+                                  multiplier: 1, constant: 0))
+      v1.addConstraint(NSLayoutConstraint(item: v1, attribute: .Right,
+                                  relatedBy: .Equal, toItem: v2, attribute: .Right,
+                                  multiplier: 1, constant: 0))
+      v1.addConstraint(NSLayoutConstraint(item: v1, attribute: .Bottom,
+                                  relatedBy: .Equal, toItem: v2, attribute: .Bottom,
+                                  multiplier: 1, constant: 0))
+      v1.addConstraint(NSLayoutConstraint(item: v1, attribute: .Top,
+                                  relatedBy: .Equal, toItem: v2, attribute: .Top,
+                                  multiplier: 1, constant: 0))
     }
 
 In the accompanying demo app, adding this functionality allows the layout of the
@@ -143,7 +147,7 @@ are all correct:
     contentView.setTranslatesAutoresizingMaskIntoConstraints(false)
     blurEffectView.setTranslatesAutoresizingMaskIntoConstraints(false)
     vibrancyEffectView.setTranslatesAutoresizingMaskIntoConstraints(false)
-
+    
     applyEqualSizeConstraints(vibrancyEffectView.contentView, v2: contentView)
     applyEqualSizeConstraints(blurEffectView.contentView, v2: vibrancyEffectView)
     applyEqualSizeConstraints(containerView, v2: blurEffectView)

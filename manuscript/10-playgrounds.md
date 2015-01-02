@@ -116,7 +116,8 @@ following method:
     func pointsForCycloid(numberSamples: UInt) -> [CGPoint] {
       var dataPoints = [CGPoint]()
       for sampleIndex in 0..<numberSamples {
-        let angle = Double(sampleIndex) / Double(numberSamples) * 2.0 * M_PI * numberOfRotations
+        let angle = Double(sampleIndex) / Double(numberSamples)
+                    * 2.0 * M_PI * numberOfRotations
         dataPoints.append(generateDatapoint(angle))
       }
       return dataPoints
@@ -187,7 +188,8 @@ appropriate cycloid and draws it on screen using a `CAShapeLayer`.
     func createCycloidLayer() -> CAShapeLayer {
       let layer = CAShapeLayer()
       layer.bounds = self.bounds
-      layer.position = CGPoint(x: self.bounds.width / 2.0, y: self.bounds.height / 2.0)
+      layer.position = CGPoint(x: self.bounds.width / 2.0,
+                               y: self.bounds.height / 2.0)
       layer.path = self.cycloid.bezierPath(100).CGPath
       layer.fillColor = UIColor.clearColor().CGColor
       layer.strokeColor = UIColor.blueColor().CGColor
@@ -208,7 +210,8 @@ animation method is fairly standard, and just uses `CABasicAnimation` to rotate
 and translate the wheel simultaneously:
 
     func beginAnimation() {
-      self.wheelLayer.setValue(-2 * M_PI * self.cycloid.numberOfRotations, forKeyPath: "transform.rotation.z")
+      self.wheelLayer.setValue(-2 * M_PI * self.cycloid.numberOfRotations,
+                                                  forKeyPath: "transform.rotation.z")
       self.wheelLayer.setValue(self.bounds.width, forKeyPath: "position.x")
       self.cycloidLayer.strokeEnd = 1.0
       
@@ -225,7 +228,8 @@ and translate the wheel simultaneously:
       
       let animationGroup = CAAnimationGroup()
       animationGroup.animations = [animation, translation]
-      animationGroup.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
+      animationGroup.timingFunction = CAMediaTimingFunction(name:
+                                                        kCAMediaTimingFunctionLinear)
       animationGroup.removedOnCompletion = false
       
       wheelLayer.addAnimation(animationGroup, forKey: "wheelSpin")

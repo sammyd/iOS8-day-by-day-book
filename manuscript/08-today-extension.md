@@ -55,9 +55,12 @@ methods on this protocol is `widgetMarginInsetsForProposedMarginInsets()` which
 passed you the default margin insets, and allows you to return your own version.
 In the __GitHubToday__ sample project, the following override is used:
 
-    func widgetMarginInsetsForProposedMarginInsets(defaultMarginInsets: UIEdgeInsets) -> UIEdgeInsets {
-      let newInsets = UIEdgeInsets(top: defaultMarginInsets.top, left: defaultMarginInsets.left-30,
-                                   bottom: defaultMarginInsets.bottom, right: defaultMarginInsets.right)
+    func widgetMarginInsetsForProposedMarginInsets(defaultMarginInsets: UIEdgeInsets)
+                                                  -> UIEdgeInsets {
+      let newInsets = UIEdgeInsets(top: defaultMarginInsets.top,
+                                   left: defaultMarginInsets.left-30,
+                                   bottom: defaultMarginInsets.bottom,
+                                   right: defaultMarginInsets.right)
       return newInsets
     }
 
@@ -141,7 +144,8 @@ the behavior of a simple cache:
       public var mostRecentEvent: GitHubEvent? {
       get {
         if let data = userDefaults.objectForKey(mostRecentEventCacheKey) as? NSData {
-          if let event = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? GitHubEvent {
+          if let event = NSKeyedUnarchiver.unarchiveObjectWithData(data)
+                                                                    as? GitHubEvent {
             return event
           }
         }
@@ -174,7 +178,8 @@ initializer:
 Once you have created a cache in the widget's view controller then you can
 use it to populate the view in `viewDidLoad()`:
 
-    let mostRecentEventCache = GitHubEventCache(userDefaults: NSUserDefaults(suiteName: "group.GitHubToday"))
+    let mostRecentEventCache = GitHubEventCache(userDefaults:
+                                      NSUserDefaults(suiteName: "group.GitHubToday"))
     var currentEvent: GitHubEvent? {
     didSet {
       dispatch_async(dispatch_get_main_queue()) {
@@ -199,7 +204,8 @@ The system will call the `widgetPerformUpdateWithCompletionHandler()` method
 once the widget had been displayed, and at this point you can kick off a network
 request to ensure that the latest data is displayed:
 
-    func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)!) {
+    func widgetPerformUpdateWithCompletionHandler(completionHandler:
+                                                      ((NCUpdateResult) -> Void)!) {
       dataProvider.getEvents("sammyd", callback: {
         events in
         let newestEvent = events[0]
@@ -244,7 +250,8 @@ You can define a URL scheme in the __Info__ section of the app's target:
 As is standard when defining a URL scheme for an app, you also need to implement
 the appropriate method in you app delegate:
 
-    func application(application: UIApplication!, openURL url: NSURL!, sourceApplication: String!, annotation: AnyObject!) -> Bool {
+    func application(application: UIApplication!, openURL url: NSURL!,
+                        sourceApplication: String!, annotation: AnyObject!) -> Bool {
       if let navCtlr = window?.rootViewController as? UINavigationController {
         if let tableCtlr = navCtlr.topViewController as? TableViewController {
           if let eventId = url.lastPathComponent.toInt() {
