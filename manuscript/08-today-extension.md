@@ -285,6 +285,3 @@ The code for this app and widget is available on github at
 Feel free to grab it, try it and break it. Do let me know how you get on - I'm
 really interested to see what widgets I'm going to be adding to my today
 screen in the coming months - I'm [@iwantmyrealname](https://twitter.com/iwantmyrealname)
-
-
-sam

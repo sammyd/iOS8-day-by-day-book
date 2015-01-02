@@ -160,8 +160,3 @@ The code which accompanies this post is in the form of an Xcode 6 playground -
 and demonstrates how the different patterns work. It is part of the day-by-day
 repo on the ShinobiControls github at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
-If you have any questions about this topic, then Apple's Swift book is very
-thorough, or feel free to grab me on twitter - [@iwanymyrealname](https://twitter.com/iwanymyrealname)
-
-
-sam

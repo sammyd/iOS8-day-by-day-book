@@ -155,9 +155,3 @@ The project which accompanies today's post demonstrates setting up a simple
 adaptive layout project using storyboards - and you can grab it from the
 ShinobiControls github at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
-
-Keep the tweets and comments coming!
-
-
-sam
-

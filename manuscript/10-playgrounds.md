@@ -286,7 +286,3 @@ offer huge value.
 Don't forget that the source code which accompanies today's article is on the
 ShinobiControls github at 
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
-Feel free to grab it and gimme a shout on twitter if you have any questions or
-complaints - I'm [@iwantmyrealname](https://twitter.com/iwantmyrealname).
-
-sam

@@ -185,7 +185,4 @@ app.
 The code for this moving average project is available on github at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
 Feel free to fork it, and write a more optimal moving average calculator :)
-As ever, questions / comments below or via [@iwantmyrealname](https://twitter.com/iwantmyrealname).
 
-
-sam
