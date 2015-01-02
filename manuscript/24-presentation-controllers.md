@@ -76,8 +76,10 @@ controller. Note that `init(presentedViewController:, presentingViewController:)
 is the designated initializer of `UIPresentationController`, so it's imperative
 that the super method is called:
 
-    override init(presentedViewController: UIViewController!, presentingViewController: UIViewController!) {
-      super.init(presentedViewController: presentedViewController, presentingViewController: presentingViewController)
+    override init(presentedViewController: UIViewController!,
+                  presentingViewController: UIViewController!) {
+      super.init(presentedViewController: presentedViewController,
+                 presentingViewController: presentingViewController)
       dimmingView.backgroundColor = UIColor(white: 0.0, alpha: 0.5)
     }
 
@@ -146,10 +148,13 @@ extended with a new method for providing a presentation controller. You need to
 create a transitioning delegate object which adopts this protocol and returns
 the presentation controller that you've created:
 
-    class OverlayTransitioningDelegate : NSObject, UIViewControllerTransitioningDelegate {
-      func presentationControllerForPresentedViewController(presented: UIViewController!,
+    class OverlayTransitioningDelegate : NSObject,
+                                              UIViewControllerTransitioningDelegate {
+      func presentationControllerForPresentedViewController(
+                              presented: UIViewController!,
                               presentingViewController presenting: UIViewController!,
-                              sourceViewController source: UIViewController!) -> UIPresentationController! {
+                              sourceViewController source: UIViewController!)
+                              -> UIPresentationController! {
           
         return OverlayPresentationController(presentedViewController: presented,
                                              presentingViewController: presenting)
@@ -167,7 +172,8 @@ Presenting from code involves creating the view controller and then using
 `presentViewController(_, animated:, completion:)` to present it:
 
     @IBAction func handleBouncyPresentPressed(sender: AnyObject) {
-      let overlayVC = storyboard.instantiateViewControllerWithIdentifier("overlayViewController") as UIViewController
+      let overlayVC = storyboard.instantiateViewControllerWithIdentifier(
+                                        "overlayViewController") as UIViewController
       prepareOverlayVC(overlayVC)
       presentViewController(overlayVC, animated: true, completion: nil)
     }
@@ -276,21 +282,26 @@ seeing how this interacts with the new presentation controllers.
 Custom animations are the realm of the `UIViewControllerAnimatedTransitioning`
 protocol, and as such require just two methods to be implemented:
 
-    class BouncyViewControllerAnimator : NSObject, UIViewControllerAnimatedTransitioning {
+    class BouncyViewControllerAnimator : NSObject,
+                                              UIViewControllerAnimatedTransitioning {
       
-      func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
+      func transitionDuration(transitionContext:
+                            UIViewControllerContextTransitioning) -> NSTimeInterval {
         return 0.8
       }
       
-      func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
-        if let presentedView = transitionContext.viewForKey(UITransitionContextToViewKey) {
+      func animateTransition(transitionContext:
+                                              UIViewControllerContextTransitioning) {
+        if let presentedView = transitionContext
+                                          .viewForKey(UITransitionContextToViewKey) {
           let centre = presentedView.center
-          presentedView.center = CGPointMake(centre.x, -presentedView.bounds.size.height)
+          presentedView.center = CGPointMake(centre.x,
+                                            -presentedView.bounds.size.height)
           transitionContext.containerView().addSubview(presentedView)
           
           UIView.animateWithDuration(self.transitionDuration(transitionContext),
-            delay: 0, usingSpringWithDamping: 0.6, initialSpringVelocity: 10.0, options: nil,
-            animations: {
+            delay: 0, usingSpringWithDamping: 0.6, initialSpringVelocity: 10.0,
+            options: nil, animations: {
               presentedView.center = centre
             }, completion: {
               _ in

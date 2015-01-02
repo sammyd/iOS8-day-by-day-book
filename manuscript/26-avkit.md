@@ -93,8 +93,9 @@ Grabbing all the videos from the library using the Photos framework is simple:
 
 And getting thumbnails for the table cells is similarly easy:
 
-      self.imageManager?.requestImageForAsset(videoAsset, targetSize: CGSize(width: 150, height: 150),
-                                              contentMode: .AspectFill, options: nil) {
+      self.imageManager?.requestImageForAsset(videoAsset,
+                                        targetSize: CGSize(width: 150, height: 150),
+                                        contentMode: .AspectFill, options: nil) {
         image, info in
         self.thumbnailImageView.image = image
       }
@@ -106,7 +107,8 @@ requesting the `AVPlayerItem` for might well be remote. Here, the `videoAsset`
 is a property of type `PHAsset`, provided by the master view controller during
 the segue to the detail:
 
-      imageManager?.requestPlayerItemForVideo(videoAsset, options: nil, resultHandler: {
+      imageManager?.requestPlayerItemForVideo(videoAsset, options: nil,
+        resultHandler: {
         playerItem, info in
         self.player = AVPlayer(playerItem: playerItem)
       })
@@ -146,7 +148,8 @@ irritating countdown timer.
 
     func configureView() {
       if let videoAsset = videoAsset {
-        imageManager?.requestPlayerItemForVideo(videoAsset, options: nil, resultHandler: {
+        imageManager?.requestPlayerItemForVideo(videoAsset, options: nil,
+          resultHandler: {
           playerItem, info in
           self.player = self.createPlayerByPrefixingItem(playerItem)
         })

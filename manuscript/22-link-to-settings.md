@@ -56,8 +56,10 @@ You can register for this notification in the standard way:
     override func viewDidLoad() {
       super.viewDidLoad()
       // Do any additional setup after loading the view, typically from a nib.
-      NSNotificationCenter.defaultCenter().addObserver(self, selector: "defaultsChanged", 
-                                  name: NSUserDefaultsDidChangeNotification, object: nil)
+      NSNotificationCenter.defaultCenter().addObserver(self,
+                                  selector: "defaultsChanged", 
+                                  name: NSUserDefaultsDidChangeNotification,
+                                  object: nil)
       configureAppearance()
     }
 

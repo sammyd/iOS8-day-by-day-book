@@ -67,8 +67,10 @@ permissions you require. In the simplest form you can use the following code to
 register for sounds and alerts:
 
     let requestedTypes = UIUserNotificationType.Alert | .Sound
-    let settingsRequest = UIUserNotificationSettings(forTypes: requestedTypes, categories: nil)
-    UIApplication.sharedApplication().registerUserNotificationSettings(settingsRequest)
+    let settingsRequest = UIUserNotificationSettings(forTypes: requestedTypes,
+                                                     categories: nil)
+    UIApplication.sharedApplication()
+                                   .registerUserNotificationSettings(settingsRequest)
 
 `UIUserNotificationType` can have values `.Badge`, `.Sound`, `.Alert` or `.None`,
 and the `categories` parameter is related to custom actions - you'll learn about
@@ -146,7 +148,8 @@ together in a `UIUserNotificationCategory`, via its mutable sister:
     let category = UIMutableUserNotificationCategory()
     category.identifier = timerFiredCategoryString
     category.setActions([restartAction, snoozeAction], forContext: .Minimal)
-    category.setActions([restartAction, snoozeAction, editAction], forContext: .Default)
+    category.setActions([restartAction, snoozeAction, editAction],
+                        forContext: .Default)
 
 The `identifier` is again a string, and is this time used to specify which set
 of actions the system should present to a user when a notification fires. You'll
@@ -185,8 +188,10 @@ code as follows:
 
     let requestedTypes = UIUserNotificationType.Alert | .Sound
     let categories = NSSet(object: timerFiredNotificationCategory())
-    let settingsRequest = UIUserNotificationSettings(forTypes: requestedTypes, categories: categories)
-    UIApplication.sharedApplication().registerUserNotificationSettings(settingsRequest)
+    let settingsRequest = UIUserNotificationSettings(forTypes: requestedTypes,
+                                                     categories: categories)
+    UIApplication.sharedApplication()
+                                   .registerUserNotificationSettings(settingsRequest)
 
 This uses the `categories` argument of `UIUserNoficationSettings()`, but
 providing an `NSSet` of the different categories your app will require.
@@ -207,7 +212,8 @@ time, using the following utility method:
     private func createTimer(fireOffset: Float) -> UILocalNotification {
       let notification = UILocalNotification()
       notification.category = timerFiredCategoryString
-      notification.fireDate = NSDate(timeIntervalSinceNow: NSTimeInterval(fireOffset))
+      notification.fireDate = NSDate(timeIntervalSinceNow:
+                                                          NSTimeInterval(fireOffset))
       notification.alertBody = "Your time is up!"
       return notification
     }
@@ -254,8 +260,10 @@ process when you're in the background.
 The following is the implementation of the handler for local notification in the
 accompanying timer app:
 
-    func application(application: UIApplication, handleActionWithIdentifier identifier: String?,
-                    forLocalNotification notification: UILocalNotification, completionHandler: () -> Void) {
+    func application(application: UIApplication,
+                     handleActionWithIdentifier identifier: String?,
+                    forLocalNotification notification: UILocalNotification,
+                    completionHandler: () -> Void) {
       // Pass the action name onto the manager
       timerNotificationManager.handleActionWithIdentifier(identifier)
       completionHandler()
@@ -305,25 +313,33 @@ currently active (i.e. in the foreground). Although this hasn't changed, it's
 still worth remembering how to create your own alert which appears when the
 foreground app receives a notification:
 
-    func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
+    func application(application: UIApplication,
+      didReceiveLocalNotification notification: UILocalNotification) {
       // Pass the "firing" event onto the notification manager
       timerNotificationManager.timerFired()
       if application.applicationState == .Active {
-        let alert = UIAlertController(title: "NotifyTimely", message: "Your time is up", preferredStyle: .Alert)
+        let alert = UIAlertController(title: "NotifyTimely",
+                                      message: "Your time is up",
+                                      preferredStyle: .Alert)
         // Handler for each of the actions
         let actionAndDismiss = {
           (action: String?) -> ((UIAlertAction!) -> ()) in
           return {
             _ in
             self.timerNotificationManager.handleActionWithIdentifier(action)
-            self.window?.rootViewController?.dismissViewControllerAnimated(true, completion: nil)
+            self.window?.rootViewController?
+                                .dismissViewControllerAnimated(true, completion: nil)
           }
         }
         
-        alert.addAction(UIAlertAction(title: "Dismiss", style: .Cancel, handler: actionAndDismiss(nil)))
-        alert.addAction(UIAlertAction(title: "Restart", style: .Default, handler: actionAndDismiss(restartTimerActionString)))
-        alert.addAction(UIAlertAction(title: "Snooze", style: .Destructive, handler: actionAndDismiss(snoozeTimerActionString)))
-        window?.rootViewController?.presentViewController(alert, animated: true, completion: nil)
+        alert.addAction(UIAlertAction(title: "Dismiss", style: .Cancel,
+                                handler: actionAndDismiss(nil)))
+        alert.addAction(UIAlertAction(title: "Restart", style: .Default,
+                                handler: actionAndDismiss(restartTimerActionString)))
+        alert.addAction(UIAlertAction(title: "Snooze", style: .Destructive,
+                                handler: actionAndDismiss(snoozeTimerActionString)))
+        window?.rootViewController?.presentViewController(alert,
+                                                    animated: true, completion: nil)
       }
     }
 

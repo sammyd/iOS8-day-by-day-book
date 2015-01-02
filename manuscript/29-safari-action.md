@@ -141,9 +141,11 @@ each have `NSItemProvider` objects on the `attachments` property:
         let inputItem = item as NSExtensionItem
         for provider: AnyObject in inputItem.attachments! {
           let itemProvider = provider as NSItemProvider
-          if itemProvider.hasItemConformingToTypeIdentifier(kUTTypePropertyList as NSString) {
-            // You _HAVE_ to call loadItemForTypeIdentifier in order to get the JS injected
-            itemProvider.loadItemForTypeIdentifier(kUTTypePropertyList as NSString, options: nil, completionHandler: {
+          if itemProvider
+                .hasItemConformingToTypeIdentifier(kUTTypePropertyList as NSString) {
+            // You _HAVE_ to call loadItemForTypeIdentifier to get the JS injected
+            itemProvider.loadItemForTypeIdentifier(kUTTypePropertyList as NSString,
+                                                   options: nil, completionHandler: {
               (list, error) in
               if let results = list as? NSDictionary {
                 NSOperationQueue.mainQueue().addOperationWithBlock {
@@ -170,7 +172,7 @@ I> functionality for the next section.
 
 When run, the above code will result in logged output:
 
-    2014-09-23 08:40:55.815 MobileSafari[13553:212239] Unknown activity items supplied: (
+    2014-09-23 08:40:55 MobileSafari[13553:212239] Unknown activity items supplied: (
         "http://www.apple.com/",
         "<WBUPrintPageRenderer: 0x7fa893faccf0>",
         "<UIPrintInfo: 0x7fa896063790>"
@@ -232,11 +234,15 @@ When the user hits the __Done__ button, the following method is executed:
       
       // Parcel them up in an NSExtensionItem
       let extensionItem = NSExtensionItem()
-      let jsDict = [ NSExtensionJavaScriptFinalizeArgumentKey : [ "marqueeTagNames" : marqueeTagNames ]]
-      extensionItem.attachments = [ NSItemProvider(item: jsDict, typeIdentifier: kUTTypePropertyList as NSString)]
+      let jsDict = [ NSExtensionJavaScriptFinalizeArgumentKey :
+                                            [ "marqueeTagNames" : marqueeTagNames ]]
+      extensionItem.attachments = [
+        NSItemProvider(item: jsDict, typeIdentifier: kUTTypePropertyList as NSString)
+      ]
       
       // Send them back to the javascript processor
-      self.extensionContext!.completeRequestReturningItems([extensionItem], completionHandler: nil)
+      self.extensionContext!.completeRequestReturningItems([extensionItem],
+                                                           completionHandler: nil)
     }
 
 This method performs the following:

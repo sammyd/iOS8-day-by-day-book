@@ -73,8 +73,8 @@ moving or exporting, you specify the URL of the file you'd like to work with.
 
 For example, to import a file:
 
-    let importMenu = UIDocumentMenuViewController(documentTypes: [kUTTypeText as NSString],
-                                                         inMode: .Import)
+    let importMenu = UIDocumentMenuViewController(documentTypes:
+                                          [kUTTypeText as NSString], inMode: .Import)
 
 This says that you're interested in text files, and that you'd like to import
 the result.
@@ -116,8 +116,8 @@ you a `UIDocumentPickerViewController` object. Alternatively you can create your
 own using either a URL (for exporting and moving) or document types (for opening
 or importing):
 
-    let documentPicker = UIDocumentPickerViewController(documentTypes: [kUTTypeText as NSString],
-                                                        inMode: .Import)
+    let documentPicker = UIDocumentPickerViewController(documentTypes:
+                                          [kUTTypeText as NSString], inMode: .Import)
 
 Either way, once you have a picker, you again need to set its delegate and then
 present it:

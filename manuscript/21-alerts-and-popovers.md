@@ -29,7 +29,8 @@ the presentation of a view controller in a popover style. You don't create one
 of these directly, but instead one is created for you by UIKit when the 
 `modalPresentationStyle` property on `UIViewController` is set to `.Popover`.
 
-    let popoverVC = storyboard?.instantiateViewControllerWithIdentifier("codePopover") as UIViewController
+    let popoverVC = storyboard?
+          .instantiateViewControllerWithIdentifier("codePopover") as UIViewController
     popoverVC.modalPresentationStyle = .Popover
 
 You can then get hold of the popover presentation controller from the
@@ -70,7 +71,8 @@ the difference being that fullscreen will remove the presenting view controller'
 view, whereas over-fullscreen won't. You can set it with the following delegate
 method:
 
-    func adaptivePresentationStyleForPresentationController(controller: UIPresentationController!) -> UIModalPresentationStyle {
+    func adaptivePresentationStyleForPresentationController
+                (controller: UIPresentationController!) -> UIModalPresentationStyle {
       return .FullScreen
     }
 
@@ -85,8 +87,10 @@ controller for the adaptive display. For example, the following will put the
 popover view controller inside a navigation controller:
 
     func presentationController(controller: UIPresentationController!, 
-              viewControllerForAdaptivePresentationStyle style: UIModalPresentationStyle) -> UIViewController! {
-      return UINavigationController(rootViewController: controller.presentedViewController)
+        viewControllerForAdaptivePresentationStyle style: UIModalPresentationStyle)
+        -> UIViewController! {
+      return UINavigationController(rootViewController:
+                                                  controller.presentedViewController)
     }
 
 And will result in something that looks like this:
@@ -164,9 +168,12 @@ exactly the same way as for an alert:
       (action: UIAlertAction!) in
       self.dismissViewControllerAnimated(true, completion: nil)
     }
-    actionSheet.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: dismissHandler))
-    actionSheet.addAction(UIAlertAction(title: "Delete", style: .Destructive, handler: dismissHandler))
-    actionSheet.addAction(UIAlertAction(title: "OK", style: .Default, handler: dismissHandler))
+    actionSheet.addAction(UIAlertAction(title: "Cancel", style: .Cancel,
+                                        handler: dismissHandler))
+    actionSheet.addAction(UIAlertAction(title: "Delete", style: .Destructive,
+                                        handler: dismissHandler))
+    actionSheet.addAction(UIAlertAction(title: "OK", style: .Default,
+                                        handler: dismissHandler))
 
 Action sheets are adaptive, and when in a regular horizontal size class will
 appear as a popover controller. You can configure the popover controller by

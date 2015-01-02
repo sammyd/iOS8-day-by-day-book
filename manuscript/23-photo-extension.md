@@ -69,7 +69,8 @@ At this point here it is your responsibility to grab hold of the image, provide
 it to your filter and enable the interactive controls which allow the user to
 edit the photo.
 
-    func startContentEditingWithInput(contentEditingInput: PHContentEditingInput?, placeholderImage: UIImage) {
+    func startContentEditingWithInput(contentEditingInput: PHContentEditingInput?,
+                                      placeholderImage: UIImage) {
       input = contentEditingInput
       filter.inputImage = CIImage(image: input?.displaySizeImage)
       thresholdSlider.value = filter.threshold
@@ -116,7 +117,8 @@ to the code used in the CoreImage live detection code from day 13:
       // Calculate the position and size of the image within the GLView
       // This code is equivalent to UIViewContentModeScaleAspectFit
       let imageSize = image.extent().size
-      var drawFrame = CGRectMake(0, 0, CGFloat(glView.drawableWidth), CGFloat(glView.drawableHeight))
+      var drawFrame = CGRectMake(0, 0, CGFloat(glView.drawableWidth),
+                                       CGFloat(glView.drawableHeight))
       let imageAR = imageSize.width / imageSize.height
       let viewAR = drawFrame.width / drawFrame.height
       if imageAR > viewAR {
@@ -205,12 +207,14 @@ object.
 
 The following shows the implementation in __ChromaKey__:
 
-    func finishContentEditingWithCompletionHandler(completionHandler: ((PHContentEditingOutput!) -> Void)!) {
+    func finishContentEditingWithCompletionHandler(completionHandler:
+                                              ((PHContentEditingOutput!) -> Void)!) {
       // Update UI to reflect that editing has finished and output is being rendered.
       thresholdSlider.enabled = false
       
       // Render and provide output on a background queue.
-      dispatch_async(dispatch_get_global_queue(CLong(DISPATCH_QUEUE_PRIORITY_DEFAULT), 0)) {
+      dispatch_async(dispatch_get_global_queue(
+                                        CLong(DISPATCH_QUEUE_PRIORITY_DEFAULT), 0)) {
         // Create editing output from the editing input.
         let output = PHContentEditingOutput(contentEditingInput: self.input)
         
@@ -305,7 +309,8 @@ to extract the filter settings from the provided `NSData` blob:
 
     func importFilterParameters(data: NSData?) {
       if let data = data {
-        if let dataDict = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? [String : AnyObject] {
+        if let dataDict = NSKeyedUnarchiver
+                            .unarchiveObjectWithData(data) as? [String : AnyObject] {
           activeColor = dataDict["color"] as? CIColor ?? activeColor
           threshold   = dataDict["threshold"] as? NSNumber ?? threshold
         }
@@ -325,8 +330,8 @@ which you can populate in the `finishContentEditingWithCompletionHandler()`
 method:
 
     let newAdjustmentData = PHAdjustmentData(formatIdentifier: self.formatIdentifier,
-                                             formatVersion: self.formatVersion,
-                                             data: self.filter.encodeFilterParameters())
+                                          formatVersion: self.formatVersion,
+                                          data: self.filter.encodeFilterParameters())
     output.adjustmentData = newAdjustmentData
 
 This uses another utility method on `ChromaKeyFilter`:
