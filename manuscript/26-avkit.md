@@ -161,7 +161,8 @@ which includes the requested item, and also the `countdown_new.mov` file, locate
 within the app's bundle:
 
     private func createPlayerByPrefixingItem(playerItem: AVPlayerItem) -> AVPlayer {
-      let countdown = AVPlayerItem(URL: NSBundle.mainBundle().URLForResource("countdown_new", withExtension: "mov"))
+      let countdown = AVPlayerItem(URL: NSBundle.mainBundle()
+                            .URLForResource("countdown_new", withExtension: "mov"))
       return AVQueuePlayer(items: [countdown, playerItem])
     }
 

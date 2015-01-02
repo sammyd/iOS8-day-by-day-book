@@ -89,26 +89,27 @@ which has easily available content for sharing. In the sample project, the
 __ShareAlike__ host app has an image and a share button which will trigger a
 standard UI share sheet:
 
-    @IBAction func handleShareSampleTapped(sender: AnyObject) {
-      shareContent(sharingText: "Highland Cow", sharingImage: sharingContentImageView.image)
-    }
-
-    // Utility methods
-    func shareContent(#sharingText: String?, sharingImage: UIImage?) {
-      var itemsToShare = [AnyObject]()
-
-      if let text = sharingText {
-        itemsToShare.append(text)
-      }
-      if let image = sharingImage {
-        itemsToShare.append(image)
+      @IBAction func handleShareSampleTapped(sender: AnyObject) {
+        shareContent(sharingText: "Highland Cow", sharingImage: sharingContentImageView.image)
       }
 
-      let activityViewController = UIActivityViewController(activityItems: itemsToShare, applicationActivities: nil)
-      presentViewController(activityViewController, animated: true, completion: nil)
-    }
+      // Utility methods
+      func shareContent(#sharingText: String?, sharingImage: UIImage?) {
+        var itemsToShare = [AnyObject]()
+
+        if let text = sharingText {
+          itemsToShare.append(text)
+        }
+        if let image = sharingImage {
+          itemsToShare.append(image)
+        }
+
+        let activityViewController = UIActivityViewController(activityItems: itemsToShare, applicationActivities: nil)
+        presentViewController(activityViewController, animated: true, completion: nil)
+      }
 
 ![ShareAlike](images/02/sharealike.png)
+
 2. Develop your extension
 3. To debug and or test, run the scheme associated with your app. Then when you
 hit share then the debugger will automatically attach to the process associated

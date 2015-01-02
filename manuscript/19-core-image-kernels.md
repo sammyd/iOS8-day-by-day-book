@@ -233,8 +233,8 @@ kernel implementation:
       "  vec2 dc = destCoord();\n" +
       "  for (int i=-1; i <= 1; i++) {\n" +
       "    for (int j=-1; j <= 1; j++) {\n" +
-      "      vec4 currentSample = sample(image,
-                                        samplerTransform(image, dc + vec2(i,j)));" +
+      "      vec4 currentSample = sample(image," +
+      "                                 samplerTransform(image, dc + vec2(i,j)));" +
       "      s_x += sobel_x[j+1][i+1] * currentSample.g;\n" +
       "      s_y += sobel_y[j+1][i+1] * currentSample.g;\n" +
       "    }\n" +
