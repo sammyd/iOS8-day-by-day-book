@@ -199,10 +199,3 @@ understandable than it used to be.
 As ever, all the code for today's article is available on the ShinobiControls
 github at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
-Let me know what you think on twitter 
-[@iwantmyrealname](https://twitter.com/iwantmyrealname).
-
-
-sam
-
-

@@ -356,14 +356,4 @@ every day decide to do with them.
 As ever, all the code for today's sample project __NotifyTimely__ is available
 on the ShinobiControls github page at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
-You should take a look, and then praise ShinobiControls for creating this
-material by downloading a trial of our native UI controls suite. Simply click
-the __Get a FREE Trial Here!__ link below. You'll be much loved - in fact - say
-hi to me on twitter ([@iwantmyrealname](https://twitter.com/iwantmyrealname))
-and I'll send you a hug.
-
-sam
-
-
-
 

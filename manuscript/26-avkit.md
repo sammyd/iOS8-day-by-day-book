@@ -193,8 +193,3 @@ As mentioned in the introduction, the accompanying app demos building a simple
 video browser and player for all the videos in the user's library. The source
 code is available on github at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
-Give me a shout if you have any feedback - either in the comments below, or on
-Twitter - I'm [@iwantmyrealname](https://twitter.com/iwantmyrealname).
-
-sam
-

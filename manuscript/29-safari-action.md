@@ -279,11 +279,3 @@ password managers.
 
 As ever, the code for today's post is available on the ShinobiControls github at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
-Take a look and let me know what you think - if you could star the repo that'd
-be super!
-
-Also, let me know on twitter what topics I've not covered yet that you'd be
-interested in reading about - I'm [@iwantmyrealname](https://twitter.com/iwantmyrealname)
-
-
-sam

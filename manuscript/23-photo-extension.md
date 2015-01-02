@@ -367,9 +367,4 @@ the photos app. Pretty cool stuff.
 The source code for today's algorithm is available, as ever, on the
 ShinobiControls github at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
-Take a look at it and let me know if you disagree with it :) Or at least give me
-a follow on twitter - I'm [@iwantmyrealname](https://twitter.com/iwantmyrealname).
-
-sam
-
 

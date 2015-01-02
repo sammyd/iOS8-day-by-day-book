@@ -113,7 +113,7 @@ which gives you some indication of the level of quality that Apple is expecting.
 
 ## Conclusion
 
-There are a couple of different things in today's post - the ability to record
+There are a couple of different things in today's article - the ability to record
 video from a device, and app previews. I think that the ability to record video
 is super-useful - and is something that was never really very easy to achieve in
 the past.
@@ -131,14 +131,3 @@ hard work. Remember, huge amounts of money are spent on creating TV advertising,
 which are also 30s videos. Some of the restrictions that Apple have laid out
 will help level the playing field between those who have money to burn and those
 who don't.
-
-It's early days for this new App Store functionality - it'll be really
-interesting to see how it pans out over the coming months. Let me know your
-opinions on this - gimme a shout on Twitter - I'm 
-[@iwantmyrealname](https://twitter.com/iwantmyrealname).
-
-
-sam
-
-
-

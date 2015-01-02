@@ -181,11 +181,3 @@ relevant to you I urge you to go ahead and implement it.
 The sample app for today's post is pretty simple, and is available on the
 iOS8 Day-by-Day github repo at 
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/iOS8-day-by-day).
-As ever, let me know if you have any comments on twitter at
-[@iwantmyrealname](https://twitter.com/iwantmyrealname). In particular, you
-should say hi if you want the series to continue... if nobody is interested then
-I might just attempt to get my life back ;)
-
-
-sam
-

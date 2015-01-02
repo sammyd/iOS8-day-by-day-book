@@ -126,7 +126,7 @@ This is a welcome improvement to iOS and Xcode, making the development and
 release process that little bit easier, and also delivering app bundle size
 improvements.
 
-However, the biggest takeaway from today's post should be that you need to
+However, the biggest takeaway from today's article should be that you need to
 either provide new launch images or make the change to XIB launch screens if you
 properly want to support the new iPhone 6 and 6 Plus. This isn't particularly
 obvious - since your app will run on the new devices, but it runs in scaled
@@ -137,10 +137,3 @@ Today's app is a little bit different because it was actually created with Xcode
 history might be of some use in looking how this was achieved. It's available in
 the iOS8 Day-by-Day git repo on github at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
-
-Hope you're still enjoying this series - there's still loads of stuff to write
-about, but I'll only do it if it's useful. Drop me a tweet to let me know if you
-want more - I'm [@iwantmyrealname](https://twitter.com/iwantmyrealname).
-
-
-sam

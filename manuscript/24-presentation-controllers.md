@@ -343,12 +343,3 @@ devices.
 
 Don't forget that the code for today's article is available on github at
 [github.com/ShinobiControls/iOS8-day-by-day](https://www.shinobicontrols.com/iOS8-day-by-day).
-You can fork it, have a play with it and see what you think. If you haven't
-already then please star the repo - it's nice to feel loved. In the same vein,
-please do follow me on twitter and send me lots of hugs and kisses - I'm
-[@iwantmyrealname](https://twitter.com/iwantmyrealname).
-
-sam
-
-
-
