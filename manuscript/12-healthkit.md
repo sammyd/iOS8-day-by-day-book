@@ -342,11 +342,3 @@ APIs are modernizing as the ecosystem moves forward.
 
 The code for the accompanying app is available on github at the usual place:
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
-Go grab it, play with it and then complain about it to me on twitter - I'm 
-[@iwantmyrealname](https://twitter.com/iwantmyrealname)
-
-
-sam
-
-
-

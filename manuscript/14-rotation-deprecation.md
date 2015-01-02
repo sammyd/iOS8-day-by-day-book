@@ -127,15 +127,11 @@ be a +90, -90 or 180 rotation or the identity transform.
 ## Conclusion
 
 The thought of having to fix all your custom rotation code might seem daunting
-at first, but in actual effect, this new rotation behavior is far more logical.
+at first, but in actual fact, this new rotation behavior is far more logical.
 It enables you to not even think about rotation in 90% of the cases. You can
 consider your content, and how it should be displayed in different layouts -
 irrespective of not only the orientation but the device itself.
 
 The sample project which accompanies today's post is available on github at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
-If you have any comments or just wanna say hi then hit me up on twitter - I'm
-[@iwantmyrealname](https://twitter.com/iwantmyrealname).
-
-sam
 

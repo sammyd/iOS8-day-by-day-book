@@ -138,8 +138,3 @@ render process that you're used to.
 
 The code for this project is again available in the github repo at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
-Go fork it and then gimme a shout to say hi - I'm 
-[@iwantmyrealname](https://twitter.com/iwantmyrealname) on Twitter.
-
-
-sam

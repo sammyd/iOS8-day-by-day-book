@@ -208,8 +208,4 @@ The code for the __HorseRace__ app is available on the ShinobiControls github at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
 Grab it and take a look at how the tests work. Whatever you do, don't rate it as
 the recommended way to build a game like this - the game is very much secondary
-to the tests here :) You can send me some complaints and hatred - I'm
-[@iwantmyrealname](https://twitter.com/iwantmyrealname) on Twitter.
-
-
-sam
+to the tests here :)

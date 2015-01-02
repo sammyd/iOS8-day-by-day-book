@@ -112,10 +112,3 @@ that was introduced in iOS7.
 You can grab today's sample project from the iOS8 day-by-day github repo on the
 ShinobiControls github at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
-
-
-You should follow me on Twitter - I'd like that very much. I'm 
-[@iwantmyrealname](https://twitter.com/iwantmyrealname).
-
-
-sam

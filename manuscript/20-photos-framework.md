@@ -240,15 +240,8 @@ This new framework makes working with images on the device both much easier for
 the developer and a more seamless experience for the user. In this article 
 you've seen how to access the data models, the images and to perform simple
 model updates. There is even more depth to the framework, which allows you to
-create new assets, and to perform asset content edits as well. If you'd like to
-read an article on some of the more advanced features then drop me a line.
+create new assets, and to perform asset content edits as well.
 
 As ever, the source code is available on the ShinobiControls github at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
-
-You should follow me on twitter - I'm [@iwantmyrealname](https://twitter.com/iwantmyrealname) -
-and let me know if you'd like to read an article about advanced PhotoKit.
-
-sam
-
 

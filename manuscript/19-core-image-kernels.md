@@ -278,8 +278,8 @@ in the following input and output:
 
 CoreImage is great - and often overlooked. This new functionality offers an
 immense amount of power - and is a really easy way to utilize the graphics
-hardware on mobile devices. However, before attempting to craft your own kernels
-, make sure that you've taken a look through the list of 115 off-the-shelf
+hardware on mobile devices. However, before attempting to craft your own kernels,
+make sure that you've taken a look through the list of 115 off-the-shelf
 options. Loads of the common image processing requirements are either already in
 there or can be created by forming a pipeline of them.
 
@@ -292,6 +292,3 @@ The source code for the __FilterBuilder__ project is available on github at
 [github.com/ShinobiControls/iOS8-day-by-day](http://github.com/ShinobiControls/iOS8-day-by-day).
 Take a look and tell me how to improve these kernels. Oh, and follow me on the
 Twitter - I'd like that a lot - [@iwantmyrealname](https://twitter.com/iwantmyrealname).
-
-
-sam

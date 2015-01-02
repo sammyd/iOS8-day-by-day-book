@@ -209,9 +209,5 @@ it's a fun thing to have a play with - and you never know when it might be
 useful.
 
 As ever, the code for the __LiveDetection__ demo app is available on github at 
-[github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day). Let me know you like it - follow me and say hi on twitter - I'm
-[@iwantmyrealname](https://twitter.com/iwantmyrealname).
-
-
-sam
+[github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
 

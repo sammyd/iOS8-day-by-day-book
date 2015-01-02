@@ -186,7 +186,3 @@ the authors) and you can grab your copy from here.
 
 The __NinjaWeapons__ project is available on github, as usual. It's at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
-Find me on twitter and tell me your favorite color - I'm
-[@iwantmyrealname](https://twitter.com/iwantmyrealname).
-
-sam
