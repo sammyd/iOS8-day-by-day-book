@@ -50,8 +50,10 @@ associated with this detector. The following method created a `CIDetector` to be
 used for detecting rectangles:
 
     func prepareRectangleDetector() -> CIDetector {
-      let options = [CIDetectorAccuracy: CIDetectorAccuracyHigh, CIDetectorAspectRatio: 1.0]
-      return CIDetector(ofType: CIDetectorTypeRectangle, context: nil, options: options)
+      let options = [CIDetectorAccuracy: CIDetectorAccuracyHigh,
+                     CIDetectorAspectRatio: 1.0]
+      return CIDetector(ofType: CIDetectorTypeRectangle,
+                        context: nil, options: options)
     }
 
 You can see that the options here are specifying the accuracy as high, with the
@@ -78,8 +80,9 @@ rectangle in a supplied `CIImage`:
         // Get the detections
         let features = detector.featuresInImage(image)
         for feature in features as [CIRectangleFeature] {
-          resultImage = drawHighlightOverlayForPoints(image, topLeft: feature.topLeft, topRight: feature.topRight,
-                                                      bottomLeft: feature.bottomLeft, bottomRight: feature.bottomRight)
+          resultImage = drawHighlightOverlayForPoints(image,
+            topLeft: feature.topLeft, topRight: feature.topRight,
+            bottomLeft: feature.bottomLeft, bottomRight: feature.bottomRight)
         }
       }
       return resultImage
@@ -94,8 +97,9 @@ This method returns a new `CIImage`, which contains a red patch overlaid on the
 source image over the position of the detected rectangle. This uses the utility
 method `drawHighlightOverlayForPoints()` method:
 
-    func drawHighlightOverlayForPoints(image: CIImage, topLeft: CGPoint, topRight: CGPoint,
-                                       bottomLeft: CGPoint, bottomRight: CGPoint) -> CIImage {
+    func drawHighlightOverlayForPoints(image: CIImage, topLeft: CGPoint,
+                                       topRight: CGPoint, bottomLeft: CGPoint,
+                                       bottomRight: CGPoint) -> CIImage {
       var overlay = CIImage(color: CIColor(red: 1.0, green: 0, blue: 0, alpha: 0.5))
       overlay = overlay.imageByCroppingToRect(image.extent())
       overlay = overlay.imageByApplyingFilter("CIPerspectiveTransformWithExtent",
@@ -162,13 +166,15 @@ points, with the addition of `messageString`.
 The following method will again highlight the location of the barcode within the
 provided image, but also return the decoded string:
 
-    func performQRCodeDetection(image: CIImage) -> (outImage: CIImage?, decode: String) {
+    func performQRCodeDetection(image: CIImage) -> (outImage: CIImage?,
+                                                    decode: String) {
       var resultImage: CIImage?
       var decode = ""
       if let detector = detector {
         let features = detector.featuresInImage(image)
         for feature in features as [CIQRCodeFeature] {
-          resultImage = drawHighlightOverlayForPoints(image, topLeft: feature.topLeft, topRight: feature.topRight,
+          resultImage = drawHighlightOverlayForPoints(image,
+            topLeft: feature.topLeft, topRight: feature.topRight,
             bottomLeft: feature.bottomLeft, bottomRight: feature.bottomRight)
           decode = feature.messageString
         }

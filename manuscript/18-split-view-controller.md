@@ -59,9 +59,11 @@ view controller with the appropriate model object is now performed in the
       if segue.identifier == "showDetail" {
         let indexPath = self.tableView.indexPathForSelectedRow()
         if let weapon = weaponProvider?.weapons[indexPath.row] {
-          let controller = (segue.destinationViewController as UINavigationController).topViewController as DetailViewController
+          let destNavVC = segue.destinationViewController as UINavigationController
+          let controller = destNavVC.topViewController as DetailViewController
           controller.weapon = weapon
-          controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem()
+          controller.navigationItem.leftBarButtonItem =
+                                    self.splitViewController.displayModeButtonItem()
           controller.navigationItem.leftItemsSupplementBackButton = true
         }
       }
@@ -101,14 +103,17 @@ creating a container view controller and providing a trait collection override.
 The sample application overrides the horizontal size class based on the width of
 the current view:
 
-    class TraitOverrideViewController: UIViewController, UISplitViewControllerDelegate {
+    class TraitOverrideViewController: UIViewController,
+                                                    UISplitViewControllerDelegate {
       
       override func viewDidLoad() {
         super.viewDidLoad()
         performTraitCollectionOverrideForSize(view.bounds.size)
       }
       
-      override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+      override func viewWillTransitionToSize(size: CGSize,
+                                            withTransitionCoordinator coordinator:
+                                            UIViewControllerTransitionCoordinator) {
         super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
         performTraitCollectionOverrideForSize(size)
       }
@@ -119,7 +124,8 @@ the current view:
           overrideTraitCollection = UITraitCollection(horizontalSizeClass: .Regular)
         }
         for vc in self.childViewControllers as [UIViewController] {
-          setOverrideTraitCollection(overrideTraitCollection, forChildViewController: vc)
+          setOverrideTraitCollection(overrideTraitCollection,
+                                     forChildViewController: vc)
         }
       }
     }
@@ -168,7 +174,8 @@ and set up the display mode button:
       splitVC.delegate = self
       splitVC.preferredPrimaryColumnWidthFraction = 0.3
       let navVC = splitVC.childViewControllers.last as UINavigationController
-      navVC.topViewController.navigationItem.leftBarButtonItem = splitVC.displayModeButtonItem()
+      navVC.topViewController.navigationItem.leftBarButtonItem =
+                                                      splitVC.displayModeButtonItem()
     }
 
 ![UISplitViewController on an iPhone](images/18/iphone_landscape_expanded.png)

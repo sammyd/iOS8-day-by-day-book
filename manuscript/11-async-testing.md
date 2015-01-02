@@ -86,7 +86,8 @@ the test to pass.
 
       override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        // Put setup code here. This method is called before the invocation of
+        // each test method in the class.
 
         // Get hold of the view controller
         let window = UIApplication.sharedApplication().delegate?.window!
@@ -164,9 +165,9 @@ for creating an expectation which uses KVO. The following test demonstrates it
 in action:
 
     func testResetButtonEnabledOnceRaceComplete() {
-      let expectation = keyValueObservingExpectationForObject(viewController.resetButton,
-                                                              keyPath: "enabled",
-                                                              expectedValue: true)
+      let expectation = keyValueObservingExpectationForObject(
+                              viewController.resetButton, keyPath: "enabled",
+                              expectedValue: true)
 
       // Simulate tapping the start race button
       viewController.handleStartRaceButton(viewController.startRaceButton)

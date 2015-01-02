@@ -41,11 +41,14 @@ have some kind of type property to specify what the value represents
 (`categoryType` and `quantityType` respectively). The following demonstrates
 creating a quantity sample for body mass:
 
-    let weightType = HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierBodyMass)
-    let weightValue = HKQuantity(unit: HKUnit(fromString: "kg"), doubleValue: massNumber)
+    let weightType = HKObjectType
+                         .quantityTypeForIdentifier(HKQuantityTypeIdentifierBodyMass)
+    let weightValue = HKQuantity(unit: HKUnit(fromString: "kg"),
+                                 doubleValue: massNumber)
     let metadata = [ HKMetadataKeyWasUserEntered : true ]
     let sample = HKQuantitySample(type: weightType, quantity: weightValue,
-                    startDate: datePicker.date, endDate: datePicker.date, metadata: metadata)  
+                    startDate: datePicker.date, endDate: datePicker.date,
+                    metadata: metadata)  
 
 - `HKObjectType` is a class which represents the aforementioned type property.
 It has methods for creating types such as`quantityTypeForIdentifier()` and
@@ -146,11 +149,14 @@ from. The following method demonstrates requesting access to the data store:
       let dataTypesToRead = [
         HKQuantityType.quantityTypeForIdentifier(HKQuantityTypeIdentifierBodyMass),
         HKQuantityType.quantityTypeForIdentifier(HKQuantityTypeIdentifierHeight),
-        HKQuantityType.quantityTypeForIdentifier(HKQuantityTypeIdentifierBodyMassIndex),
-        HKCharacteristicType.characteristicTypeForIdentifier(HKCharacteristicTypeIdentifierDateOfBirth)
+        HKQuantityType
+                   .quantityTypeForIdentifier(HKQuantityTypeIdentifierBodyMassIndex),
+        HKCharacteristicType
+          .characteristicTypeForIdentifier(HKCharacteristicTypeIdentifierDateOfBirth)
       ]
       
-      self.healthStore?.requestAuthorizationToShareTypes(NSSet(array: dataTypesToWrite),
+      self.healthStore?.requestAuthorizationToShareTypes(
+        NSSet(array: dataTypesToWrite),
         readTypes: NSSet(array: dataTypesToRead), completion: {
         (success, error) in
           if success {
@@ -244,8 +250,8 @@ as the date of birth of the user:
       
       // Calculate the age
       let now = NSDate()
-      let age = NSCalendar.currentCalendar().components(.YearCalendarUnit, fromDate: dob,
-                                                        toDate: now, options: .WrapComponents)
+      let age = NSCalendar.currentCalendar().components(.YearCalendarUnit,
+                                fromDate: dob, toDate: now, options: .WrapComponents)
       
       self.ageLabel.text = "\(age.year)"
     }
@@ -262,10 +268,12 @@ demonstrates how to get a list of body mass samples for the last 2 months:
 
     func perfromQueryForWeightSamples() {
       let endDate = NSDate()
-      let startDate = NSCalendar.currentCalendar().dateByAddingUnit(.CalendarUnitMonth,
-        value: -2, toDate: endDate, options: nil)
+      let startDate = NSCalendar.currentCalendar()
+                .dateByAddingUnit(.CalendarUnitMonth, value: -2, 
+                                  toDate: endDate, options: nil)
       
-      let weightSampleType = HKSampleType.quantityTypeForIdentifier(HKQuantityTypeIdentifierBodyMass)
+      let weightSampleType = HKSampleType
+                        .quantityTypeForIdentifier(HKQuantityTypeIdentifierBodyMass)
       let predicate = HKQuery.predicateForSamplesWithStartDate(startDate,
         endDate: endDate, options: .None)
       

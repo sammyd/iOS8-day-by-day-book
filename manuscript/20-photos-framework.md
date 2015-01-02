@@ -117,7 +117,8 @@ __StarGallery__:
         index, _ in
         if !updatedCache.containsIndex(index) {
           let asset: AnyObject! = self.images[index]
-          self.imageCache.stopCachingImagesForAssets([asset], targetSize: self.targetSize, contentMode: self.contentMode, options: nil)
+          self.imageCache.stopCachingImagesForAssets([asset],
+            targetSize: self.targetSize, contentMode: self.contentMode, options: nil)
           println("Stopping caching image \(index)")
         }
       }
@@ -127,7 +128,8 @@ __StarGallery__:
         index, _ in
         if !self.cachedIndices.containsIndex(index) {
           let asset: AnyObject! = self.images[index]
-          self.imageCache.startCachingImagesForAssets([asset], targetSize: self.targetSize, contentMode: self.contentMode, options: nil)
+          self.imageCache.startCachingImagesForAssets([asset],
+            targetSize: self.targetSize, contentMode: self.contentMode, options: nil)
           println("Starting caching image \(index)")
         }
       }
@@ -208,8 +210,10 @@ request displayed in the collection view:
         let indexPaths = self.collectionView?.indexPathsForVisibleItems()
         for indexPath in indexPaths as [NSIndexPath]{
           if changeDetails.changedIndexes.containsIndex(indexPath.item) {
-            let cell = self.collectionView?.cellForItemAtIndexPath(indexPath) as PhotosCollectionViewCell
-            cell.imageAsset = changeDetails.fetchResultAfterChanges[indexPath.item] as? PHAsset
+            let cell = self.collectionView?
+                      .cellForItemAtIndexPath(indexPath) as PhotosCollectionViewCell
+            cell.imageAsset = changeDetails
+                      .fetchResultAfterChanges[indexPath.item] as? PHAsset
           }
         }
       }
