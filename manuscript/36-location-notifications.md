@@ -158,11 +158,5 @@ approach for geo-fencing like use cases.
 The source code for today's app is available on github at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
 Take a look and fix any problems in a pull-request - it'd be much appreciated.
-Let me know on twitter - [@iwantmyrealname](https://twitter.com/iwantmyrealname).
-
-
-sam
-
-
 
 

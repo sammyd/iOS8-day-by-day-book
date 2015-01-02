@@ -167,10 +167,3 @@ and in easy to understand terms.
 As ever, the code associated with today's post is available on the
 ShinobiControls github at:
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
-
-Hope it's useful - let me know - 
-[@iwantmyrealname](https://twitter.com/iwantmyrealname).
-
-
-sam
-

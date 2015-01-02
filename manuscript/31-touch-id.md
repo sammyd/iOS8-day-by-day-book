@@ -197,10 +197,4 @@ way, and is available on the ShinobiControls github at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
 
 If you are interested in establishing user presence when you don't require the
-Keychain then you can use the LocalAuthentication APIs. If you want me to write
-about it then give me a shout - I'm
-[@iwantmyrealname](https://twitter.com/iwantmyrealname) on twitter.
-
-
-sam
-
+Keychain then you can use the LocalAuthentication APIs.

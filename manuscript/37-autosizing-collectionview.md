@@ -125,7 +125,4 @@ day-by-day repo on github at
 It's pretty simple - I wanted to demo some more advanced uses with a custom
 layout, but didn't get around to it. You should fork the repo and add a cool
 thing that demos this. I might even send you some stickers/pens/t-shirt type
-stuff... Let me know on [@iwantmyrealname](https://twitter.com/iwantmyrealname).
-
-sam
-
+stuff...

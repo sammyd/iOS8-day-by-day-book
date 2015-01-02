@@ -712,12 +712,3 @@ ShinobiControls github at
 Please remember that this project was created to demo CloudKit, and almost
 certainly has problems if you were to try and use it as a real note-taking app.
 Feel free to take it and fix that - I'll happily take a pull request.
-
-I've typed a lot today - I think you should reward me by following me and saying
-hi on twitter - I'm [@iwantmyrealname](https://twitter.com/iwantmyrealname).
-
-
-sam
-
-
-

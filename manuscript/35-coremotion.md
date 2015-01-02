@@ -215,8 +215,3 @@ Today's app (__Locomotion__) demos both the live and historical data
 functionality, and is available on github at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
 
-
-sam
-
-[@iwantmyrealname](https://twitter.com/iwantmyrealname)
-

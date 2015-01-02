@@ -224,8 +224,3 @@ enough to drive significant adoption and changes in my behavior.
 The code for today's sample project, __MapOff__ is available in the iOS8
 Day-by-Day repo on github at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
-
-Take a look and then come up with some really cool ideas for me to use :)
-
-sam
-

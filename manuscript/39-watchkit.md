@@ -437,19 +437,3 @@ and hence user experience, at the highest importance.
 As ever, the code for today's post is available on the ShinobiControls github,
 at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
-I'd very much value your thoughts, opinions and feedback - hit me up on twitter
-at [@iwantmyrealname](https://twitter.com/iwantmyrealname).
-
-I'm expecting this to be the last entry in the iOS8 Day-by-Day blog series. I
-hope you've found them useful, and look forward to the compilation book that
-will be released early next year!
-
-cheers
-
-sam
-x
-
-
-
-
-

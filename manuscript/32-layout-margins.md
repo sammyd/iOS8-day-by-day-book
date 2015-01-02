@@ -154,13 +154,5 @@ documentation from Apple though, and so can be quite confusing at first.
 The __Marginal__ app which demos these concepts is available on the
 ShinobiControls github at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
-It'd be mega if you award it a star - as I'm writing this the repo is very close
-to 1000 stars.
-
-Any comments then gimme a shout on twitter - I'm
-[@iwantmyrealname](https://twitter.com/iwantmyrealname).
-
-
-sam
 
 
