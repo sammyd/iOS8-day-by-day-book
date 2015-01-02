@@ -181,11 +181,9 @@ so it's good to have it ready to go in iOS8.
 Go and give it a try, but remember not to go wild with it - keep concerns of
 performance and energy usage at the forefront of your mind.
 
-Don't forget that the code which accompanies this blog series is all available
+Don't forget that the code which accompanies this book is all available
 on github at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
 Feel free to send any pull requests or issues you find, or gimme a
 shout on twitter -
 [@iwantmyrealname](https://twitter.com/iwantmyrealname).
-
-sam

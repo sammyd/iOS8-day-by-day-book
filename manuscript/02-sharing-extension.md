@@ -456,12 +456,3 @@ The code for this project is available on github at
 In order to get the uploading working, you will need to ensure that you've got
 a shared container configured correctly, although the project file should do
 most of that for you.
-
-Look out for future articles in the iOS8 Day-by-Day series which will investigate
-some of the other new extensions available in iOS8.
-
-Any questions / comments / complaints then drop me a tweet - I'm
-[@iwantmyrealname](https://twitter.com/iwantmyrealname).
-
-
-sam

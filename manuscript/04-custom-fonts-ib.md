@@ -58,14 +58,10 @@ You can run your app up again now, and this time you'll see it working!
 
 ## Conclusion
 
-Today's was quite a short post, but it represents a fix in Interface Builder which
+Today's was quite a short chapter, but it represents a fix in Interface Builder which
 has been niggling at developers for a long time. I think that the little bits
 and pieces like this that Apple has been working on within the developer toolset
 demonstrates their commitment to making the process much more friendly.
 
 As ever, the demo project is available on github at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
-If you have any questions, comments, or just want to say hi, I'm
-[@iwantmyrealname](https://twitter.com/iwantmyrealname) on twitter.
-
-sam

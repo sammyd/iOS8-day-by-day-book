@@ -110,7 +110,3 @@ time to go and ensure that your existing tableviews support this behavior.
 
 As with all articles in this series, the sample project is available on github at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
-If you have any questions then feel free to comment below or hit me up on
-twitter - I'm [@iwantmyrealname](https://twitter.com/iwantmyrealname).
-
-sam
