@@ -2,13 +2,15 @@
 
 {float=left}
 ![](images/01/thumbnail.png)
+
 It won't have gone unnoticed that at WWDC this year, in addition to announcing
 iOS8, they also introduced a new programming language in the form of Swift. This
 is quite a different language from objective-C in that it is strongly-typed and
 includes some features common to more modern languages.
 
-{float=right}
+{width=20%,float=right}
 ![](images/01/swift_logo.png)
+
 In the interests of embracing anything and everything that's new and shiny, this
 book will exclusively use Swift. There is a wealth of information out
 there about how to learn Swift, and how to interact with the Cocoa libraries -
