@@ -1,6 +1,6 @@
 # Day 1 :: Swift for Blaggers
 
-{float=left}
+{width=10%,float=left}
 ![](images/01/thumbnail.png)
 
 It won't have gone unnoticed that at WWDC this year, in addition to announcing
