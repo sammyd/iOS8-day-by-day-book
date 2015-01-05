@@ -17,7 +17,7 @@ Well, in iOS8 it is finally possible to have table view cells which can autosize
 themselves. In this project we'll take a look at how easy it is to implement,
 with a demo associated with dynamic type and with custom cells.
 
-As with all articles in this series, the sample project is available on github at
+As with all articles in this series, the sample project is available at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
 
 ## Using the 'stock' table view cells
@@ -108,5 +108,6 @@ you should already be using auto-layout, you'll just get this functionality for
 free - just a matter of not specifying cell heights. It's definitely worth the
 time to go and ensure that your existing tableviews support this behavior.
 
-As with all articles in this series, the sample project is available on github at
+As with all articles in this series, the sample project is available to download 
+or clone from the Shinobi github at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
