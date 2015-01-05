@@ -1,7 +1,8 @@
 # Day 33 :: CloudKit
 
-{float=left}
+{width=10%,float=left}
 ![](images/33/thumbnail.png)
+
 Apple introduced iCloud to the world a couple of years ago, and since then has
 been introducing new ways for developers to utilize it. First was iCloud
 CoreData, which is meant to be a completely seamless way of persisting and

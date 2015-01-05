@@ -1,7 +1,8 @@
 # Day 8 :: Today Extension
 
-{float=left}
+{width=10%,float=left}
 ![](images/08/thumbnail.png)
+
 Way back in chapter two we took a look at the new sharing extension -
 which is just one of six new extension points on iOS. Today, it's the chance of
 the today extension, or widget.

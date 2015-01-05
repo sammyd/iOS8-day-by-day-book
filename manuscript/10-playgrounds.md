@@ -1,7 +1,8 @@
 # Day 10 :: Xcode 6 Playgrounds
 
-{float=left}
+{width=10%,float=left}
 ![](images/10/thumbnail.png)
+
 Playgrounds are a completely new concept in Xcode 6 - bringing the world of a
 completely interactive code development environment with the powerful new language
 that is Swift. Using a playground feels very much like a powered-up REPL - combining

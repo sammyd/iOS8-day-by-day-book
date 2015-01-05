@@ -1,7 +1,8 @@
 # Day 27 :: Launch Images
 
-{float=left}
+{width=10%,float=left}
 ![](images/27/thumbnail.png)
+
 One of the new features in iOS8 and Xcode 6 that has maybe slipped under the
 radar a little is an update in the ways you can specify launch screens.
 Traditionally, these have been images which are display immediately on app

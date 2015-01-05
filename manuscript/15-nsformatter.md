@@ -1,7 +1,8 @@
 # Day 15 :: NSFormatter
 
-{float=left}
+{width=10%,float=left}
 ![](images/15/thumbnail.png)
+
 Many apps that we built represent data flow in some form or another. However,
 since apps are primarily visual it's often important to display this data to the
 user. This requires converting numbers, dates etc to strings which the user will

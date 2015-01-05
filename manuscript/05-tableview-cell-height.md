@@ -1,7 +1,8 @@
 # Day 5 :: Auto-sizing table view cells
 
-{float=left}
+{width=10%,float=left}
 ![](images/05/thumbnail.png)
+
 In iOS7 developers were introduced to the concept of dynamic type - which allows
 the user to change the font size used within apps, via the settings panel. This
 is really powerful, and can drastically improve the user experience for users

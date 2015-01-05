@@ -1,7 +1,8 @@
 # Day 19 :: CoreImage Kernels
 
-{float=left}
+{width=10%,float=left}
 ![](images/19/thumbnail.png)
+
 CoreImage regularly pops up in the Day-by-Day series, but is underused in the 
 wild, often because it is misunderstood. It provides highly optimized image
 processing algorithms, in the form of filters and detectors, which can easily be

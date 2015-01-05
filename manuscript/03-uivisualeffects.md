@@ -1,7 +1,8 @@
 # Day 3 :: UIVisualEffects
 
-{float=left}
+{width=10%,float=left}
 ![](images/03/thumbnail.png)
+
 As part of the iOS7 refresh the concept of visual depth within an app was
 introduced. This include some stunning visual effects involving live-filtering
 content in the background of the current view. This can be seen all over iOS7 -

@@ -1,7 +1,8 @@
 # Day 2 :: Sharing Extension
 
-{float=left}
+{width=10%,,float=left}
 ![](images/02/thumbnail.png)
+
 A __huge__ new feature in iOS8 is the introduction of support for extensions.
 These are areas in which developers can enhance the operating system, including
 both 3rd-party apps and Apple-provided apps, with their own features and

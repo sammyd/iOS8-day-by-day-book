@@ -1,7 +1,8 @@
 # Day 30 :: App Previews
 
-{float=left}
+{width=10%,float=left}
 ![](images/30/thumbnail.png)
+
 The screenshots that adorn your app's page in the App Store have always been
 incredibly important in advertising your app - giving a flavor of what a user
 can expect and attempting to get them to push the all-important __Buy__ button.

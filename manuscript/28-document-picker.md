@@ -1,7 +1,8 @@
 # Day 28 :: Document Picker
 
-{float=left}
+{width=10%,float=left}
 ![](images/28/thumbnail.png)
+
 It has always been hard work to get content from one app to another on iOS.
 Although possible, it is not generally a well-understood workflow, and therefore
 results in users deciding that it is not possible.

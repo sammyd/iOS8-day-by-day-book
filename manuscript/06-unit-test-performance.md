@@ -1,7 +1,8 @@
 # Day 6 :: Profiling Unit Tests
 
-{float=left}
+{width=10%,float=left}
 ![](images/06/thumbnail.png)
+
 Unit tests are widely accepted as incredibly useful tools to aid writing better
 software. They allow you to establish the behavior of your code before putting
 it in front of end-users, and to ensure that everything works as expected in

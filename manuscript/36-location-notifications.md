@@ -1,7 +1,8 @@
 # Day 36 :: Location Notifications
 
-{float=left}
+{width=10%,float=left}
 ![](images/36/thumbnail.png)
+
 iOS8 saw some changes to the way notifications work - particularly around
 authorization and local notifications. Local notifications can be triggered on a
 timer, and new to iOS based on location region monitoring.

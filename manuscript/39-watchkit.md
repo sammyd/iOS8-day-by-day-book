@@ -1,7 +1,8 @@
 # Day 39 :: WatchKit
 
-{float=left}
+{width=10%,float=left}
 ![](images/39/thumbnail.png)
+
 Although the Apple Watch was unveiled back in September 2014, developers have
 only recently got hold of an SDK - hidden away inside iOS 8.2. It seems that the
 Apple Watch has really caught the imagination of iOS developers from across the

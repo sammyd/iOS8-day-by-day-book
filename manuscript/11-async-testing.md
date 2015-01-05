@@ -1,7 +1,8 @@
 # Day 11 :: Asynchronous Testing
 
-{float=left}
+{width=10%,float=left}
 ![](images/11/thumbnail.png)
+
 This book has already taken a look at one of the new features available
 in XCTest, the testing framework in Xcode, in the shape of profiling unit
 tests - you can check it out in chapter 6.

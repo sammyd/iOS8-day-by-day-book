@@ -1,7 +1,8 @@
 # Day 7 :: Adaptive Layout and UITraitCollection
 
-{float=left}
+{width=10%,float=left}
 ![](images/07/thumbnail.png)
+
 Adaptive UI is probably the most important concept to be introduced in iOS8. It
 might not seem like it at first, but abstracting the UI away from dependencies
 on things like device and orientation, allows closer concentration on the design

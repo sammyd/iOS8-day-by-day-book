@@ -1,7 +1,8 @@
 # Day 32 :: Layout Margins
 
-{float=left}
+{width=10%,float=left}
 ![](images/32/thumbnail.png)
+
 If you've been using the Pin menu in Xcode 6 then you might have noticed the addition of a slightly mystical option - __Constrain to margins__:
 
 ![Constrain to Margins](images/32/constrain_to_margins.png)

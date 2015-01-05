@@ -1,7 +1,8 @@
 # Day 22 :: Linking to Settings App
 
-{float=left}
+{width=10%,float=left}
 ![](images/22/thumbnail.png)
+
 Today's chapter is a short one, but it is definitely worth knowing. iOS provides a
 really nice way to handle app settings through `NSUserDefaults`, and you've long
 been able to integrate your app into the iOS settings app via a Settings bundle.
