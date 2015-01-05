@@ -76,8 +76,8 @@ will always appear.
 
 You have a couple of options for this property - the simplest being turning it
 into a dictionary (the alternative is to write a custom predicate), with keys
-which specify different media types. Since __MarqueeMaker__ needs to operate on
-web pages, one key is used: `NSExtensionActivationSupportsWebPageWithMaxCount`,
+which specify different media types. Since __MarqueeMaker__ operates on
+web pages, only `NSExtensionActivationSupportsWebPageWithMaxCount` is used,
 with a value of `1` - since the extension only works for a single web page at a
 time:
 
@@ -125,8 +125,8 @@ target:
 
 To tell your extension that you've provided a JS preprocessor file, you need to
 head back to the __Info.plist__ and add a new key to the `NSExtensionAttributes`
-dictionary. `NSExtensionJavaScriptPreprocessingFile` should be set to the name
-of the JS file __without__ the `.js` extension:
+dictionary. The value associated with the `NSExtensionJavaScriptPreprocessingFile`
+key should be set to the name of the JS file __without__ the `.js` extension:
 
 ![Preprocessing](images/29/preprocessing.png)
 
@@ -257,8 +257,8 @@ that can be easily converted to JSON (i.e. array/dictionary).
 3. You then provide this dictionary as an attachment to the `NSExtensionItem`,
 with type `kUTTypePropertyList` - the same type you used to extract data _sent
 from_ the preprocessor.
-4. Finally, you send the extension item back to the preprocessor by calling 
-`completeRequestReturningItems(_, completionHandler:)` on the extension context.
+4. Finally, you call `completeRequestReturningItems(_, completionHandler:)` on the
+extension context to send the extension item back to the preprocessor.
 
 In the case of __MarqueeMaker__ the UI of the extension is used to determine
 _which_ of the HTML tags should be wrapped in `<marquee>` tags. The javascript
@@ -284,5 +284,6 @@ possibilities here are huge - in the WWDC keynote, a translation engine was
 demoed using action extensions, and already we're seeing innovative uses by
 password managers.
 
-As ever, the code for today's post is available on the ShinobiControls github at
+As ever, the code for today's post is available to clone, download or fork on the
+ShinobiControls github at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).

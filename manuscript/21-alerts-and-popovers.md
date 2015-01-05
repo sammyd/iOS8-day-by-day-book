@@ -18,7 +18,7 @@ This post won't go into depth on presentation controllers (that may well appear
 in a later article), but instead focuses on what you need to know to update your
 apps to the new iOS8 way of presenting popovers, alerts and action sheets.
 
-The sample app which accompanies this project is available on github at
+The sample app which accompanies this project is available at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
 
 ## Pop Overs
@@ -204,6 +204,6 @@ becoming device agnostic has made it an ideal time to rethink the way they work.
 It's an area that you should make sure you are aware of - it's a lot more
 understandable than it used to be.
 
-As ever, all the code for today's article is available on the ShinobiControls
-github at
+As ever, all the code for the app which accompanies today's article is available on
+the ShinobiControls github at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).

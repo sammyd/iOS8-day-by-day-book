@@ -137,12 +137,12 @@ the __user presence__ authentication policy:
       }
     }
 
-Note that the access control object specifies both the accessibility and the
-authentication policy (one helpfully using a string, the other an enum).
-This is then provided to the key chain query with the `kSecAttrAccessControl`
-key. Due to the CoreFoundation bridging, the `SecAccessControlCreateWithFlags()`
-actually has a return type `Unmanaged<SecAccessControl>`, so here you need to
-call `takeUnretainedValue()`.
+I> __Note:__ The access control object specifies both the accessibility and the
+I> authentication policy (one helpfully using a string, the other an enum).
+I> This is then provided to the key chain query with the `kSecAttrAccessControl`
+I> key. Due to the CoreFoundation bridging, the `SecAccessControlCreateWithFlags()`
+I> actually has a return type `Unmanaged<SecAccessControl>`, so here you need to
+I> call `takeUnretainedValue()`.
 
 Now, when you request secret retrieval on a Touch ID device, you'll be presented
 with the following UI:

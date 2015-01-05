@@ -112,10 +112,9 @@ Which will produce the following:
 
 ## Document Picker
 
-If you've implement the document menu, then the delegate callback will return
-you a `UIDocumentPickerViewController` object. Alternatively you can create your
-own using either a URL (for exporting and moving) or document types (for opening
-or importing):
+If you've implemented the document menu, then when the delegate callback gets called, it will return you a `UIDocumentPickerViewController` object. Alternatively
+you can create your own using either a URL (for exporting and moving) or document
+types (for opening or importing):
 
     let documentPicker = UIDocumentPickerViewController(documentTypes:
                                           [kUTTypeText as NSString], inMode: .Import)

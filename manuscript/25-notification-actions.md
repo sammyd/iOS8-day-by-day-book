@@ -159,7 +159,7 @@ notifications, a new `category` key has been added to the JSON spec for push
 messages, and the value should be one of the notification categories you've
 registered for your app.
 
-You then call `setActions(_, forContext:)` to add the actions to then
+Call `setActions(_, forContext:)` to add the actions to the
 `UIMutableUserNotificationCategory`. The first parameter is just an array of the
 actions you wish to add, and the second parameter is of type `UIUserNotificationActionContext`,
 which can be either `.Minimal` or `.Default`. This context parameter is used
@@ -249,9 +249,9 @@ still exist and work, but two new ones have been added:
 Clearly the only difference between these two methods is the original source of
 the notification - all of the other parameters are the same.
 
-The action identifier argument is a string, and matches the `identifer` property
-on the `UIUserNotificationAction` you created. This is used to determine which
-button the user actually pressed.
+The action identifier argument is a string, that corresponds to the `identifer`
+property on the previously-created `UIUserNotificationAction` . This is used to
+determine which button the user actually pressed.
 
 The `completionHandler` argument is a closure which you need to call once you've
 finished processing the action. It's great that you're provided this - it means

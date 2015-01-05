@@ -82,7 +82,7 @@ iOS8 adds finer granularity on the privacy controls for location access. Namely,
 a user can choose whether an app should be allowed to track their location even
 when it's in the background, as opposed to in the foreground or not at all.
 
-In order to support this, there are two new methods on `CLLocationManager` - 
+To support this, there are two new methods on `CLLocationManager` - 
 `requestWhenInUseAuthorization()` and `requestAlwaysAuthorization()`. The names
 of these methods make it pretty obvious what they do:
 

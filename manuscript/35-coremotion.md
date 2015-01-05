@@ -116,8 +116,8 @@ the current device.
 
 Again, you can request both live data, and historical data. Historical data is
 provided through the `queryPedometerDataFromDate(_, toDate:, withHandler:)` and
-live data via `startPedometerUpdatesFromDate(_, withHandler:)` and
-`stopPedometerUpdates()`.
+live data deliveries are provided via
+`startPedometerUpdatesFromDate(_, withHandler:)` and `stopPedometerUpdates()`.
 
 Both of these handlers have two parameters: an `NSError` and a `CMPedometerData`
 object which contains properties for `numberOfSteps`, `distance`, 

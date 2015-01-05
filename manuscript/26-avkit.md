@@ -28,7 +28,7 @@ menu.
 
 ## Using AVKit to play a video
 
-AVKit is an incredibly simple framework - consisting of just one class on iOS - 
+AVKit is a very simple framework - consisting of just one class on iOS - 
 `AVPlayerViewController`. This is a subclass of `UIViewController` with a few
 additional properties associated with video playback. The most important of
 these is the `player` property, which is of type `AVPlayer`. This is a class

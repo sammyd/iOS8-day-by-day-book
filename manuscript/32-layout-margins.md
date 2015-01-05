@@ -112,7 +112,7 @@ changed - allowing you to update your layout appropriately.
 
 ## Preserving Superview Layout Margins
 
-There is one remaining property on `UIView` that's related to layout margins - 
+There is one remaining margin-related property on `UIView` - 
 `preservesSuperviewLayoutMargins`. This is a `Bool` with a default value of 
 `false`. It describes the very specific situation where the layout of a subview
 is relative to the a layout margin, but this layout margin is _outside_ the

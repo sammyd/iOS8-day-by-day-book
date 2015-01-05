@@ -327,8 +327,8 @@ if this fails at any point, the filter will resort to its default values:
 In order for the extension to be able to resume an existing edit, then when an
 edit is completed, it needs to write this `adjustmentData` back to the Photos
 framework. The `PHContentEditingOutput` object has an `adjustmentData` property
-which you can populate in the `finishContentEditingWithCompletionHandler()`
-method:
+which you can populate in your implementation of the completion method,
+`finishContentEditingWithCompletionHandler()`:
 
     let newAdjustmentData = PHAdjustmentData(formatIdentifier: self.formatIdentifier,
                                           formatVersion: self.formatVersion,

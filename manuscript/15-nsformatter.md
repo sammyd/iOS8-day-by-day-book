@@ -285,4 +285,4 @@ localization for free.
 
 The code for this post is all available in a playground which you can get from
 the ShinobiControls github at
-[github.com/ShinobiControls/ios8-day-by-day].
+[github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).

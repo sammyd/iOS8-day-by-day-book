@@ -35,7 +35,7 @@ item size on the flow layout. This is new to iOS8 and plays a similar role to
 its counterpart in `UITableView`.
 
 To size cells in the past you had two options; one was to set the `itemSize`
-property on `UICollectionViewFlowLayout` - applying the same size to every cell
+on `UICollectionViewFlowLayout` - applying the same size to every cell
 within the collection view. For more fine-grained control on the cell sizes you
 could implement the `collectionView(_, layout:, sizeForItemAtIndexPath:)` method
 on `UICollectionViewDelegateFlowLayout`, however the responsibility for
@@ -93,7 +93,7 @@ is essentially what the specialized panels in IB do anyway.
 
 In order to allow a cell (or indeed any reusable item in a collection view) to
 determine its own size, a new method has been added to `UICollectionReusableView` -
-in the form of `preferredLayoutAttributesFittingAttributes(_:)`. This method
+`preferredLayoutAttributesFittingAttributes(_:)`. This method
 gives a cell the opportunity to return the layout attributes it would like to be
 displayed with, given the ones the layout has provided.
 

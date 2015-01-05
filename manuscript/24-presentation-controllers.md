@@ -18,7 +18,8 @@ presentation. It uses some of the view controller transitioning animation
 concepts introduced in iOS7 alongside the new presentation controller concepts
 to create an easy-to-understand, reusable presentation component.
 
-As ever, the source code is available on the ShinobiControls github, at
+As ever, the source code is available to clone, download or fork on the
+ShinobiControls github, at
 [github.com/ShinobiControls/iOS8-day-by-day](https://www.shinobicontrols.com/iOS8-day-by-day).
 
 ## The role of the Presentation Controller
@@ -143,8 +144,8 @@ view by 30 points on each edge.
 
 ## Using the custom Presentation Controller
 
-iOS7 introduced customizable view controller transitions via the
-`UIViewControllerTransitioningDelegate` protocol. In iOS8, this has been
+The `UIViewControllerTransitioningDelegate` protocol was introduced in iOS7 powers
+customizable view controller transitions. In iOS8, this has been
 extended with a new method for providing a presentation controller. You need to
 create a transitioning delegate object which adopts this protocol and returns
 the presentation controller that you've created:
@@ -353,5 +354,5 @@ entire adaptive approach to app design. In the long run I think it'll result in
 easier to understand, more maintainable apps, which work on a huge variety of
 devices.
 
-Don't forget that the code for today's article is available on github at
+Don't forget that the code for today's article is available at
 [github.com/ShinobiControls/iOS8-day-by-day](https://www.shinobicontrols.com/iOS8-day-by-day).

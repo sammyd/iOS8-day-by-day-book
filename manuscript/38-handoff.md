@@ -14,7 +14,7 @@ called __MapOff__ and is a simple map view. When you open the app via Handoff on
 a different device, then the currently visible region on the first map will be
 transferred to the receiving device.
 
-As ever, the code for today's app is available on the ShinobiControls github at
+As ever, the code for today's app is available on github at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
 
 ![iPad Map](images/38/ipad_map.png)
@@ -227,6 +227,5 @@ is a good step towards a solution. I'll be really interested to see how
 different apps use this, and whether the integration within the OS is good
 enough to drive significant adoption and changes in my behavior.
 
-The code for today's sample project, __MapOff__ is available in the iOS8
-Day-by-Day repo on github at
+The code for today's sample project, __MapOff__ is available to clone, fork or download from the iOS8 Day-by-Day repo on github at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).

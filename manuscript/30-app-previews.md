@@ -64,11 +64,6 @@ This will allow you to create a simple video, that at the very least will allow
 you to record the source material to cut together to build your complete demo
 video.
 
-<video src="assets/sampleVideo.mov"
-             controls
-             height=480 width=268>
-</video>
-
 ## Video Considerations
 
 Although this sorts the technicalities of actually getting video from a device
