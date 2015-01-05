@@ -1,7 +1,5 @@
 # Day 1 :: Swift for Blaggers
 
-![Swift Logo](images/01/swift_logo.png)
-
 {float=left}
 ![](images/01/thumbnail.png)
 It won't have gone unnoticed that at WWDC this year, in addition to announcing
@@ -9,6 +7,8 @@ iOS8, they also introduced a new programming language in the form of Swift. This
 is quite a different language from objective-C in that it is strongly-typed and
 includes some features common to more modern languages.
 
+{float=right}
+![](images/01/swift_logo.png)
 In the interests of embracing anything and everything that's new and shiny, this
 book will exclusively use Swift. There is a wealth of information out
 there about how to learn Swift, and how to interact with the Cocoa libraries -
@@ -29,8 +29,8 @@ some of the important gotchas and potential pain points when using Swift for
 the first time - especially when relating to the system frameworks.
 
 There is an Xcode 6 playground which accompanies this chapter - including short
-samples for each of the sections. You can get hold of it on the ShinobiControls
-Github page - at [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
+samples for each of the sections. You can get hold of it at
+[github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
 
 
 ## Initialization
