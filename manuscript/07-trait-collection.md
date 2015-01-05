@@ -152,6 +152,5 @@ You should definitely spend some time becoming acquainted with IB in Xcode 6 - i
 offers a lot of improvements over previous versions.
 
 The project which accompanies today's post demonstrates setting up a simple
-adaptive layout project using storyboards - and you can grab it from the
-ShinobiControls github at
+adaptive layout project using storyboards - and you can grab it at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).

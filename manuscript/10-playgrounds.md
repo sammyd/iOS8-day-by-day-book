@@ -33,7 +33,7 @@ could use a playground for. You can read more about cycloids on
 [Wikipedia](http://en.wikipedia.org/wiki/Cycloid), and the following image (also
 from Wikipedia) gives you an idea of what you're going to try and create:
 
-![Cycloid](images/10/Cycloid_f.gif)
+![Cycloid](images/10/cycloid_animation_2.png)
 
 ## Interactive Coding & Timelines
 
@@ -260,11 +260,11 @@ slider at the bottom of the timeline to track backwards and forwards in time.
 The frames of the view animation are captured so you can see exactly how the
 animation is behaving.
 
-![Cycloid Animation 1](images/10/cycloid_animation_1.png)
-![Cycloid Animation 2](images/10/cycloid_animation_2.png)
-![Cycloid Animation 3](images/10/cycloid_animation_3.png)
-![Cycloid Animation 4](images/10/cycloid_animation_4.png)
-![Cycloid Animation 5](images/10/cycloid_animation_5.png)
+![](images/10/cycloid_animation_1.png)
+![](images/10/cycloid_animation_2.png)
+![](images/10/cycloid_animation_3.png)
+![](images/10/cycloid_animation_4.png)
+![](images/10/cycloid_animation_5.png)
 
 The `XCPShowView()` method is using a method called
 `XCPSetExecutionShouldContinueIndefinitely` under the hood. This method allows
