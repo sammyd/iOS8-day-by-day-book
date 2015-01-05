@@ -136,6 +136,7 @@ It enables you to not even think about rotation in 90% of the cases. You can
 consider your content, and how it should be displayed in different layouts -
 irrespective of not only the orientation but the device itself.
 
-The sample project which accompanies today's post is available on github at
+The sample project which accompanies today's post is available on the
+ShinobiControls github page at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
 

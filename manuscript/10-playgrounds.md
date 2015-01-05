@@ -23,7 +23,7 @@ You'll notice that there are two projects within this repo - one for iOS, one fo
 OSX.
 
 W> __Note__: At the time of publication, not all the features are available for
-W> iOS Xcode 6.2β3. Therefore, the OSX playground is provided for reference.
+W> iOS Xcode 6.2b3. Therefore, the OSX playground is provided for reference.
 W> The code is very similar - with like-for-like exchanges where possible. The code
 W> snippets in this article will refer to the iOS version.
 

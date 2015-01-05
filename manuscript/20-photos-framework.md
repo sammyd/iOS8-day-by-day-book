@@ -139,9 +139,9 @@ __StarGallery__:
 
 As the user scrolls, this method is called with an array of `NSIndexPath`
 objects for the visible cells. This method determines whether the cache needs
-updating, based on the visible cells, and the `cachePreheatSize`. It then
-updates the caching image manager with the `stopCachingImagesForAssets()` and 
-`startCachingImagesForAssets()` methods.
+updating, based on the visible cells, and the `cachePreheatSize`. It then uses the
+the `stopCachingImagesForAssets()` and `startCachingImagesForAssets()` methods
+to update the caching image manager.
 
 Note that obtaining the image from a caching image manager is exactly the same
 as the base `PHImageManager` - and it will obtain the image even if it doesn't
@@ -224,9 +224,9 @@ This implementation then determines which of the visible cells are affected by
 this change, and provides them with the updated model object, which will update
 the appearance appropriately.
 
-Note that in addition to the `fetchResultAfterChanges` and `changedIndexes`, the
-`PHFetchResultChanges` class also includes details of inserted, deleted and
-moved objects.
+I> __Note:__ In addition to the `fetchResultAfterChanges` and `changedIndexes`, the
+I> `PHFetchResultChanges` class also includes details of inserted, deleted and
+I> moved objects.
 
 This now completes the 'favoriting' functionality of the __StarGallery__ app -
 tapping the _star_ icon will toggle the favorite status:
@@ -247,6 +247,7 @@ you've seen how to access the data models, the images and to perform simple
 model updates. There is even more depth to the framework, which allows you to
 create new assets, and to perform asset content edits as well.
 
-As ever, the source code is available on the ShinobiControls github at
+As ever, the source code for today's sample photo app __StarGallery__ is available
+on the ShinobiControls github at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
 

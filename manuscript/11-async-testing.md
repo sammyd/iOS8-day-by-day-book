@@ -79,8 +79,8 @@ method:
       waitForExpectationsWithTimeout(5, handler: nil)
     }
 
-- The `XCTestCase` class has a method to create an `XCTestExpectation` in the form
-of `expectationWithDescription()`. This expectation must be fulfilled in order for
+- Use `expectationWithDescription()` on `XCTestCase` to create an
+`XCTestExpectation` This expectation must be fulfilled in order for
 the test to pass.
 - `raceController` is a property on the test class which is populated in the
 `setUp()` method:
@@ -206,7 +206,7 @@ It's great to see that Apple has been concentrating on improving the testing
 tools available within the IDE. It shows a commitment to modern software development
 and writing high-quality code.
 
-The code for the __HorseRace__ app is available on the ShinobiControls github at
+The code for the __HorseRace__ app is available at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
 Grab it and take a look at how the tests work. Whatever you do, don't rate it as
 the recommended way to build a game like this - the game is very much secondary

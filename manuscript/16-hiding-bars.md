@@ -60,7 +60,7 @@ again you can get hold of the gesture recognizer via the
 Clearly a fairly common use case would be to hide the bars when there is a
 restriction on vertical space. In the new world of adaptive layout this
 corresponds to having a __compact__ vertical size class. This functionality is
-again provided as a boolean property in the form of
+again provided as a boolean property - 
 `hidesBarsWhenVerticallyCompact`. Setting this to true will cause the bars to
 disappear when the container becomes vertically compact. Note that you can use
 this together with the tap and swipe properties to get the bars to re-appear in

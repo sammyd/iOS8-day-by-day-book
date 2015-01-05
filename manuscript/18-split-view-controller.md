@@ -162,9 +162,12 @@ adapts to the current circumstance - so it will show/hide an overlaid master VC,
 or toggle between always visible and hidden otherwise. This button is accessible
 via the `displayModeButtonItem()` method.
 
-The width of the split is also configurable via the
-`preferredPrimaryColumnWidthFraction`, `minimumPrimaryColumnWidth` and
-`maximumPrimaryColumnWidth` properties on `UISplitViewController`.
+The width of the split is also configurable via the following properties on
+`UISplitViewController`:
+
+- `preferredPrimaryColumnWidthFraction`
+- `minimumPrimaryColumnWidth`
+- `maximumPrimaryColumnWidth`
 
 The following code is used in __NinjaWeapons__ to configure both the split width
 and set up the display mode button:

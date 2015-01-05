@@ -308,7 +308,7 @@ created by a different app. This is exactly the functionality provided by
 above. Since it is a long-running query it must be canceled by calling the
 `stopQuery(_:)` method on `HKHealthStore`.
 
-Another query type worth mentioning is the anchored query, represented by the
+Another query type worth mentioning is the anchored query, represented by
 `HKAnchoredObjectQuery`, which will provide you a pointer to the most recent
 result returned. You can then re-run the query at a later stage and only get
 newer results returned. This means that you don't have to repeatedly process the
@@ -349,5 +349,6 @@ Admittedly HealthKit is only going affect developers of apps in this space, but
 it is certainly worth taking a look at it. It gives you an idea of how Apple's
 APIs are modernizing as the ecosystem moves forward.
 
-The code for the accompanying app is available on github at the usual place:
+The code for the accompanying app is available on github at the usual place on the
+ShinobiControls github:
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).

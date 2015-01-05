@@ -159,7 +159,7 @@ this time with the detector type string being `CIDetectorTypeQRCode`:
       return CIDetector(ofType: CIDetectorTypeQRCode, context: nil, options: options)
     }
 
-And then exactly the same procedure is used to actually perform the detection -
+Exactly the same procedure is used to actually perform the detection -
 calling `featuresInImage()` and providing a `CIImage`. This time it will return
 an array of `CIQRCodeFeature` objects - each of which has the same corner
 points, with the addition of `messageString`.
@@ -215,6 +215,7 @@ __AVFoundation__. Although you might not be able to use it directly in your apps
 it's a fun thing to have a play with - and you never know when it might be
 useful.
 
-As ever, the code for the __LiveDetection__ demo app is available on github at 
+As ever, the code for the __LiveDetection__ demo app is available to fork, clone
+or download from the ShinobiControls github at 
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
 

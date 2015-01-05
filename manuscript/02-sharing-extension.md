@@ -1,6 +1,6 @@
 # Day 2 :: Sharing Extension
 
-{width=10%,,float=left}
+{width=10%,float=left}
 ![](images/02/thumbnail.png)
 
 A __huge__ new feature in iOS8 is the introduction of support for extensions.

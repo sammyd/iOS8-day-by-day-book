@@ -48,9 +48,9 @@ view:
 
 And that's it! The objective-C equivalent is `IB_DESIGNABLE`.
 
-If you need to provide any custom setup for the IB view then you can override
-the `prepareForInterfaceBuilder()` method, which will get called only when
-rendering inside interface builder.
+You can override the `prepareForInterfaceBuilder()` method if you need to provide
+any custom setup for the IB view. This will get called only when rendering inside
+interface builder.
 
 
 ## `@IBInspectable`

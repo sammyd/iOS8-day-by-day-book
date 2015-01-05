@@ -291,7 +291,7 @@ optimizing the kernel itself. This is the inner loop of something which will run
 millions of times to process a camera image. It needs to be as fast as possible.
 It's worth learning about GLSL, specifically the CoreImage dialect.
 
-The source code for the __FilterBuilder__ project is available on github at
+The source code for __FilterBuilder__ is available on github at
 [github.com/ShinobiControls/iOS8-day-by-day](http://github.com/ShinobiControls/iOS8-day-by-day).
 Take a look and tell me how to improve these kernels. Oh, and follow me on the
 Twitter - I'd like that a lot - [@iwantmyrealname](https://twitter.com/iwantmyrealname).

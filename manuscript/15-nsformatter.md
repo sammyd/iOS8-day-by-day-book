@@ -172,7 +172,7 @@ from those used to measure other lengths - e.g. human height is rarely measured
 in yards. `NSLengthFormatter` has a boolean `forPesonHeightUse` property which
 controls this behavior.
 
-If you only require the units, as opposed to the number with the units then the
+If you only require units, as opposed to the number and units then the
 `unitsStringFromValue(,unit:)` method allows will do that for you. It respects
 the current `unitStyle`, and uses the provided `value` to determine whether or
 not the unit should be plural.
