@@ -1,4 +1,6 @@
-introduction.md
+preface.md
+acknowledgments.md
+about-this-book.md
 01-swift-intro.md
 02-sharing-extension.md
 03-uivisualeffects.md
@@ -38,4 +40,4 @@ introduction.md
 37-autosizing-collectionview.md
 38-handoff.md
 39-watchkit.md
-conclusion.md
+appendix.md
