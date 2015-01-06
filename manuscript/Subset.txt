@@ -2,7 +2,6 @@
 frontmatter.txt
 
 preface.md
-acknowledgments.md
 about-this-book.md
 
 
