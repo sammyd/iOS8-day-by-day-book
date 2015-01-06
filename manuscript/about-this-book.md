@@ -73,8 +73,8 @@ clear. It's left as an exercise to the reader.
 
 ## Project Code
 
-All of the code that accompanies this book is open source - and available on github
-at 
+All of the code for the projects that accompany this book is open source - and
+available on github at 
 [github.com/ShinobiControls/ios8-day-by-day](https://github.com/ShinobiControls/ios8-day-by-day).
 You can go there to download, clone or fork all 39 chapters' worth of code.
 

@@ -20,7 +20,7 @@ it up. Then try and work out how to do something slightly different. Yeah, thing
 will break, but that's how we learn. Luckily, in most of software, it doesn't matter
 that things break. In fact, we make a living out of it.
 
-T> ## Learn by Playing
+C> __Learn by Playing__
 
 ## Useful resources
 
