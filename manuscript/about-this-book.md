@@ -1,6 +1,7 @@
 # About this book
 
-__iOS8: Day-by-Day__ is a book born out of a collection of articles posted on a blog
+__iOS8: Day-by-Day__ is a book born out of a collection of articles posted on the
+ShinobiControls blog
 at [shinobicontrols.com/iOS8DayByDay](http://shinobicontrols.com/iOS8DayByDay). As
 such, each chapter is entirely self-contained, and can be read completely
 independently. It is not aimed at people who are new to iOS or programming. There are
