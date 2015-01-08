@@ -18,7 +18,7 @@ see it "in the wild", not just "on paper", as it is in the documentation.
 the tech outline itself. This includes problems encountered and their associated
 workarounds.
 - A great understanding of how to update your existing apps to ensure compatibility
-with iOS8.
+with iOS 8.
 - Hours of fun. Well, maybe...
 
 ## What you won't get from this book
@@ -27,7 +27,7 @@ with iOS8.
 resources for this.
 - An introduction or exploration of finer points in Swift. Chapter 1 will cover some
 of the headline issues, but the rest is left to the reader.
-- A deep-dive into every new feature/framework in iOS8. This book is designed to be enough
+- A deep-dive into every new feature/framework in iOS 8. This book is designed to be enough
 to make you aware of what features are available, and how to get started with them.
 Once you've got to that point, you'll be at home with the documentation.
 - Recantation of the documentation. The book is very much designed to be
@@ -42,9 +42,9 @@ their order. You can pick and choose your way through just the chapters that int
 you - treating the book entirely as a reference.
 
 However, since the content makes up a comprehensive review of the new technologies
-introduced in iOS8, reading the book in a more traditional, linear manner is
+introduced in iOS 8, reading the book in a more traditional, linear manner is
 perfectly valid. This is likely to result in you gaining a better understanding of
-iOS8 as a whole, but at the cost of learning about things you will probably never
+iOS 8 as a whole, but at the cost of learning about things you will probably never
 use.
 
 

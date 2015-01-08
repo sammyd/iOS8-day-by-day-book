@@ -3,7 +3,7 @@
 {width=10%,float=left}
 ![](images/02/thumbnail.png)
 
-A __huge__ new feature in iOS8 is the introduction of support for extensions.
+A __huge__ new feature in iOS 8 is the introduction of support for extensions.
 These are areas in which developers can enhance the operating system, including
 both 3rd-party apps and Apple-provided apps, with their own features and
 functionality. There are 6 extensions applicable to iOS:
@@ -15,7 +15,7 @@ functionality. There are 6 extensions applicable to iOS:
 - Storage providers
 - Custom keyboards
 
-We'll cover some of these in later chapters of iOS8 Day-by-Day, but today's article
+We'll cover some of these in later chapters of iOS 8 Day-by-Day, but today's article
 is focused on sharing extensions.
 
 Sharing extensions give you, the developer of an app, to show an icon on the
@@ -202,7 +202,7 @@ by the host app to perform some simple operation - it would be rude to suddenly
 attempt to steal the limited system resources from your host. Therefore all
 uploading needs to happen as a background process (helpfully introduced in
 `NSURLSession` in iOS7). You're probably thinking that this'll be easy - you can
-just refer to the relevant chapter in [iOS7 Day-by-Day](https://leanpub.com/ios7daybyday)
+just refer to the relevant chapter in [iOS 7 Day-by-Day](https://leanpub.com/ios7daybyday)
 and you'll be done. Well, that's not quite true.
 
 There are a couple of complications with this. First of all, it's not trivial to
@@ -447,7 +447,7 @@ you can expect to see results like this:
 
 ## Conclusion
 
-Sharing extensions are just one of the extensions available to developers in iOS8,
+Sharing extensions are just one of the extensions available to developers in iOS 8,
 and represents Apple opening up the operating system in a way they've been
 asked to do for a while. Interestingly, it's done in a way that has prioritized
 security and privacy, arguably at a small cost of customizability.

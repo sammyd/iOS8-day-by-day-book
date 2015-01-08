@@ -50,7 +50,7 @@ integration with `UIDocument`, take a look at the
 
 In order to Handoff from an app, it needs to prepare an maintain one or more
 `NSUserActivity` objects. These encapsulate what the user is currently doing,
-allowing it to be resumed on another device. iOS8 introduces some new features
+allowing it to be resumed on another device. iOS 8 introduces some new features
 on `UIResponder` for handling user activities - one of which is a `userActivity`
 property. Since `UIViewController` is a subclass of `UIResponder`, you can use
 the new features to ease the Handoff workflow.
@@ -219,7 +219,7 @@ you could visit a website on your Mac, and then Handoff to an iOS app on your
 iPhone - I really can't wait for more websites to start implementing this kind
 of functionality.
 
-Handoff is one of the coolest things to be introduced in iOS8. It feels to me
+Handoff is one of the coolest things to be introduced in iOS 8. It feels to me
 like a window into the future of personal computing, and goes some way to
 solving a common problem. It's a very "Apple" problem and solution: "Why should
 it matter which of my devices I'm using?". That's a technology problem, and this
@@ -227,5 +227,5 @@ is a good step towards a solution. I'll be really interested to see how
 different apps use this, and whether the integration within the OS is good
 enough to drive significant adoption and changes in my behavior.
 
-The code for today's sample project, __MapOff__ is available to clone, fork or download from the iOS8 Day-by-Day repo on github at
+The code for today's sample project, __MapOff__ is available to clone, fork or download from the iOS 8 Day-by-Day repo on github at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).

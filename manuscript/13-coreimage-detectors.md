@@ -5,20 +5,20 @@
 
 CoreImage never tends to get top-billing when looking at new features in iOS,
 and this isn't terribly fair. Over the past few years CoreImage has seen some
-huge advances in performance and functionality, and iOS8 is no exception. In
+huge advances in performance and functionality, and iOS 8 is no exception. In
 fact there are some really huge changes, including the ability to create custom
 filter kernels for the first time. But that's not the focus of today's post -
 instead we're going to concentrate on new feature detection algorithms.
 
 Last year a face detector was added to __CoreImage__ - you can read about how
-to use it in chapter 18 of [iOS7 Day-by-Day](https://leanpub.com/iOS7DayByDay).
+to use it in chapter 18 of [iOS 7 Day-by-Day](https://leanpub.com/iOS7DayByDay).
 At the same time a QR code detector was added to __AVFoundation__ - see
 chapter 16 of the [same book](https://leanpub.com/iOS7DayByDay),
 but it's actually quite hard to use __AVFoundation__ in the general image case.
-Well, the advances in __CoreImage__ in iOS8 improve the situation somewhat.
+Well, the advances in __CoreImage__ in iOS 8 improve the situation somewhat.
 
-The __CIDetector__ class was introduced in iOS7, but only contained a facial
-feature detector. iOS8 augments this with rectangle and QR code detection, 
+The __CIDetector__ class was introduced in iOS 7, but only contained a facial
+feature detector. iOS 8 augments this with rectangle and QR code detection, 
 which are the subject of today's article.
 
 The accompanying project is an app which takes a live camera view and runs the

@@ -3,12 +3,12 @@
 {width=10%,float=left}
 ![](images/07/thumbnail.png)
 
-Adaptive UI is probably the most important concept to be introduced in iOS8. It
+Adaptive UI is probably the most important concept to be introduced in iOS 8. It
 might not seem like it at first, but abstracting the UI away from dependencies
 on things like device and orientation, allows closer concentration on the design
 itself, and less on the mechanics of implementation.
 
-The most significant aspect to adaptive UI in iOS8 is adaptive layout - that is
+The most significant aspect to adaptive UI in iOS 8 is adaptive layout - that is
 layout which can automatically change depending on particular characteristics
 of the container.
 
@@ -16,7 +16,7 @@ This leads on to having universal storyboards - i.e. a single storyboard which
 can be used on multiple devices. This might well make storyboards an even more
 attractive proposition.
 
-Today's post will give a quick introduction to adaptive layout in iOS8. The
+Today's post will give a quick introduction to adaptive layout in iOS 8. The
 accompanying project demonstrates a universal storyboard, with varying layouts.
 It's available as part of the github repo at
 [github.com/shinobicontrols/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
@@ -24,7 +24,7 @@ It's available as part of the github repo at
 
 ## Adaptive Layout
 
-iOS8 introduces the concept of __size classes__ - which are used to categorize
+iOS 8 introduces the concept of __size classes__ - which are used to categorize
 the amount of space in a particular dimension. There are 2 possible classes - 
 __Regular__ and __Compact__. Every view has particular size classes associated
 with them via a __TraitCollection__. By default these are defined by the device,

@@ -16,12 +16,12 @@ abstract class - and more specifically the `NSNumberFormatter` and
 across them in your app development - e.g. converting an `NSDate` object to a
 string for display in an `UILabel`.
 
-iOS8 adds to this family of `NSFormatter` concrete implementations with some new
+iOS 8 adds to this family of `NSFormatter` concrete implementations with some new
 date/time formatters and some physical quantity formatters. This article will
 take a quick tour of the new formatters, and how to use them.
 
 The sample code which accompanies this post is in the form of a Xcode 6
-playground, and is available in the iOS8 Day-by-Day git repo on the
+playground, and is available in the iOS 8 Day-by-Day git repo on the
 ShinobiControls github at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
 
@@ -274,7 +274,7 @@ is identical to a traditional "kilocalorie". Luckily, before I go off on a rant,
 Formatting values is hard enough in the locale you use every day, but attempting
 to get it right across all locales is near-enough impossible. In the past
 numbers and dates have been possible through the existing `NSFormatter`
-subclasses, but iOS8 adds some great new formatters to ease this pain.
+subclasses, but iOS 8 adds some great new formatters to ease this pain.
 
 This new functionality isn't something that you're likely to be able to rush out
 and use immediately to implement some cool new feature, but it's one of those

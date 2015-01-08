@@ -9,7 +9,7 @@ Notifications are either silent or visual, with visual notifications taking the
 form of alerts or banners which the user can interact with. The interaction is
 very limited though - either dismissing the notification or opening the app.
 
-iOS8 introduces new notification actions - which allow you to hook into the
+iOS 8 introduces new notification actions - which allow you to hook into the
 notification system and provide a set of customized actions that the user will
 see and can execute alongside the notification.
 
@@ -33,7 +33,7 @@ In the past you had to request permission from the user for some aspects of
 remote notifications, but not for local notifications. And the type of remote
 notification (silent versus user) was mixed in with the request.
 
-In iOS8 these two orthogonal concepts have been split out: an app has to
+In iOS 8 these two orthogonal concepts have been split out: an app has to
 register both for its interest in receiving remote notifications, and also for
 the specific types of user notifications it would like to utilize (for both
 remote and local use).
@@ -62,7 +62,7 @@ user's attention. The source for these can be either remote or local
 notifications and, since they can be quite disruptive, require the user's
 permission.
 
-In iOS8, this is done using the `registerUserNotificationSettings()` method on 
+In iOS 8, this is done using the `registerUserNotificationSettings()` method on 
 `UIApplication`, providing a `UIUserNotificationSettings` object to specify what
 permissions you require. In the simplest form you can use the following code to
 register for sounds and alerts:
@@ -203,7 +203,7 @@ custom actions, so let's see how to do that with local notifications.
 ## Firing Actions
 
 To support these new user notification categories, `UILocalNotification` has a
-new `category` property in iOS8. This is a string, and its value should either
+new `category` property in iOS 8. This is a string, and its value should either
 be `nil`, or match the `identifier` of one of the categories registered with the
 app.
 
@@ -357,7 +357,7 @@ This produces an alert like this:
 ## Conclusion
 
 The most important part of today's post is that you absolutely __must__ update
-your existing apps. Otherwise, come iOS8, users will no longer see the
+your existing apps. Otherwise, come iOS 8, users will no longer see the
 notifications you'd expect them to. The API for registering for notifications is
 pretty simple, and separating out the arrival vector from the user notification
 permissions makes it easier for both developers and users to understand.

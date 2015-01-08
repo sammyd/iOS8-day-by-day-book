@@ -3,13 +3,13 @@
 {width=10%,float=left}
 ![](images/36/thumbnail.png)
 
-iOS8 saw some changes to the way notifications work - particularly around
+iOS 8 saw some changes to the way notifications work - particularly around
 authorization and local notifications. Local notifications can be triggered on a
 timer, and new to iOS based on location region monitoring.
 
 It was possible to set up geofencing and present users with notifications when
-they enter or leave an specified region in iOS7, but it was far from easy to set
-up. This has all become a lot easier in iOS8, but location-based notifications
+they enter or leave an specified region in iOS 7, but it was far from easy to set
+up. This has all become a lot easier in iOS 8, but location-based notifications
 gaining first-class support.
 
 The app which accompanies today's post is called __NearlyThere__ and allows a
@@ -22,7 +22,7 @@ within 50m of said pin. The code is available in the iOS8-day-by-day repo at
 
 Since you're going to requesting location-based notifications, you need to ask
 the user for permission to send them notifications and to use their location.
-Both of these have been covered in iOS8 Day-by-Day (notifications on day 25
+Both of these have been covered in iOS 8 Day-by-Day (notifications on day 25
 and location on day 34), but it's worth having a brief summary.
 
 User notifications are defined as sounds, alerts and badges that can interrupt

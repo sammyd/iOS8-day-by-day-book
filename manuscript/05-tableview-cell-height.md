@@ -3,7 +3,7 @@
 {width=10%,float=left}
 ![](images/05/thumbnail.png)
 
-In iOS7 developers were introduced to the concept of dynamic type - which allows
+In iOS 7 developers were introduced to the concept of dynamic type - which allows
 the user to change the font size used within apps, via the settings panel. This
 is really powerful, and can drastically improve the user experience for users
 with varying qualities of eye-sight.
@@ -14,7 +14,7 @@ define the height of cells in the table view. This would mean either
 pre-calculating the values, or calculating them on the fly, neither of which was
 easy. Surely there must be a better way?
 
-Well, in iOS8 it is finally possible to have table view cells which can autosize
+Well, in iOS 8 it is finally possible to have table view cells which can autosize
 themselves. In this project we'll take a look at how easy it is to implement,
 with a demo associated with dynamic type and with custom cells.
 
@@ -25,7 +25,7 @@ As with all articles in this series, the sample project is available at
 
 When you first create a table view, chances are you've just used the stock
 table view cells - of which there are 4 styles (basic, left detail, right detail,
-and subtitle). In iOS8, the labels in the base `UITableViewCell` are pre-configured
+and subtitle). In iOS 8, the labels in the base `UITableViewCell` are pre-configured
 for dynamic type. This means that they adapt to the text size specified in the
 device settings panel.
 
@@ -66,12 +66,12 @@ can end up writing layout code twice - once for size calculations and once for
 display. This process can take a long time to perform - and involves entirely
 up-front calculations.
 
-iOS7 introduced `estimatedRowHeight`, which transformed the row-height requests
+iOS 7 introduced `estimatedRowHeight`, which transformed the row-height requests
 into lazy calculations - only requesting the height for a row once it is about to
 be displayed on the screen. However, it still required you to calculate the row
 height yourself.
 
-In iOS8, you can still use these approaches, however, cells can now be responsible
+In iOS 8, you can still use these approaches, however, cells can now be responsible
 for their own sizing - via autolayout. This is both great from an ease-of-use
 perspective and also from a software design angle. A cell is responsible for its
 own layout, so it makes sense that it should also be responsible for determining
@@ -104,7 +104,7 @@ label:
 ## Conclusion
 
 Auto-sizing table view cells is something that developers have longed for, and
-it's great news that iOS8 introduces this functionality. In many cases, since
+it's great news that iOS 8 introduces this functionality. In many cases, since
 you should already be using auto-layout, you'll just get this functionality for
 free - just a matter of not specifying cell heights. It's definitely worth the
 time to go and ensure that your existing tableviews support this behavior.

@@ -3,7 +3,7 @@
 {width=10%,float=left}
 ![](images/27/thumbnail.png)
 
-One of the new features in iOS8 and Xcode 6 that has maybe slipped under the
+One of the new features in iOS 8 and Xcode 6 that has maybe slipped under the
 radar a little is an update in the ways you can specify launch screens.
 Traditionally, these have been images which are display immediately on app
 launch, before the live app UI is ready to go. With the introduction of the new
@@ -32,23 +32,23 @@ to account the fact that iPads can launch apps in both portrait and landscape
 orientations, and the existence of both retina and non-retina screens, this
 means that you need to create a total of 6 different launch images:
 
-![iOS7 Launch Images](images/27/ios7_launch_images.png)
+![iOS 7 Launch Images](images/27/ios7_launch_images.png)
 
 The addition of iPhone 6 and iPhone 6 Plus actually means that you have to
 produce three more launch images - since the iPhone 6 Plus can actually launch
 apps in landscape.
 
-If you open an iOS7 app in Xcode 6 and head on over to the __LaunchImage__ asset
+If you open an iOS 7 app in Xcode 6 and head on over to the __LaunchImage__ asset
 in the asset catalog, then you might expect that there would be some new empty
 spaces to fill, but this isn't the case. You first need to enable the new iOS8-
 only types, which can be done using the attributes inspector:
 
 ![Upgrading the asset library](images/27/upgrading_asset_library.png)
 
-Having checked the two boxes associated with iOS8 iPhone orientations, the asset
+Having checked the two boxes associated with iOS 8 iPhone orientations, the asset
 will be updated:
 
-![iOS8 Launch Images](images/27/ios8_launch_images.png)
+![iOS 8 Launch Images](images/27/ios8_launch_images.png)
 
 T> __Top Tip:__ Until you either populate these new image cells, _or_ provide a
 T> XIB/Storyboard launch screen, then your app will run in scaled mode on iPhone 6
@@ -70,7 +70,7 @@ Surely there's a better way?
 As Apple's Human Interface Guide suggests that your launch screen should
 probably look like the first screen that a user sees, then wouldn't it be great
 if you could create the launch screen in the same way as you create your UI?
-Well, with iOS8 you can - by providing a launch screen as a XIB.
+Well, with iOS 8 you can - by providing a launch screen as a XIB.
 
 When you create a new iOS project in Xcode 6 then it'll automatically create a
 XIB launch screen file and set up the project correctly to use it, but upgrading
@@ -118,8 +118,8 @@ You can (and absolutely should) use Auto Layout to layout your UI. Your XIB is
 also fully size-class compliant, which is how you should be adapting the launch
 screen to the different devices it will run on.
 
-For more information about adopting adaptive layout in iOS8 you should check 
-out day 7 of iOS8 Day-by-Day.
+For more information about adopting adaptive layout in iOS 8 you should check 
+out day 7 of iOS 8 Day-by-Day.
 
 ## Conclusion
 
@@ -136,5 +136,5 @@ mode.
 Today's app is a little bit different because it was actually created with Xcode
 5 and then upgraded to include the new launch XIBs in Xcode 6. As such, the git
 history might be of some use in looking how this was achieved. It's available in
-the iOS8 Day-by-Day git repo on github at
+the iOS 8 Day-by-Day git repo on github at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).

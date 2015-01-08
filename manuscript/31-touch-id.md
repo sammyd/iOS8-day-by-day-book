@@ -4,12 +4,12 @@
 ![](images/31/thumbnail.png)
 
 The iPhone 5s introduced the world to Touch ID - the ability to authenticate
-with your device using just a finger print. In iOS7 use of this was limited to
+with your device using just a finger print. In iOS 7 use of this was limited to
 unlocking the device, and purchases against your Apple ID. Developers were
 desperate to get hold of an API to allow them to use this secure and convenient
 method of authentication in their own apps. In iOS 8 this is now possible.
 
-There are two classes of problem that you can solve using Touch ID in iOS8 -
+There are two classes of problem that you can solve using Touch ID in iOS 8 -
 authentication to access content of the Keychain, and confirming user presence
 for your own app's usage. Today's article takes a look at how to use Touch ID in
 tandem with the Keychain. If you want to know more about using Touch ID to
@@ -76,7 +76,7 @@ given service and user name:
 This actually works out quite nicely in Swift - the dictionary is bridged to its
 CoreFoundation counterpart, as are the strings and NSData object.
 
-iOS8 adds the concept of Access Control Lists (ACL) to the Keychain. These are
+iOS 8 adds the concept of Access Control Lists (ACL) to the Keychain. These are
 used to specify the _accessibility_ and _authentication_ associated with the
 keychain item to which they are applied:
 

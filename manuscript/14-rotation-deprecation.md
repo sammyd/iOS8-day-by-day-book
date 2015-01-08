@@ -3,22 +3,22 @@
 {width=10%,float=left}
 ![](images/14/thumbnail.png)
 
-It might be scary to discover that as part of embracing adaptive UI in iOS8, the
+It might be scary to discover that as part of embracing adaptive UI in iOS 8, the
 view controller rotation methods you've come to love have all been deprecated.
 In fact the new approach to rotation is far simpler and much more coherent.
 
-In today's article you'll learn about how iOS8 deals with device rotation, and
+In today's article you'll learn about how iOS 8 deals with device rotation, and
 what you need to do to get your apps up to scratch.
 
 The accompanying app is a simple app called __RotateToDeprecate__, which
 demonstrates how you can build a layout which rotates elegantly and then further
 customize the rotation behavior. You can find the source code for the app in the
-iOS8 Day-by-Day github repo at
+iOS 8 Day-by-Day github repo at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
 
 ## Auto Layout to the rescue
 
-The underlying principle for rotation in iOS8 is that from the point of view of
+The underlying principle for rotation in iOS 8 is that from the point of view of
 the content, a rotation is simply a bounds change. Nothing more complicated than
 that.
 
@@ -72,7 +72,7 @@ customize the rotation functionality.
 
 The second argument to this method is a `UIViewControllerTransitionCoordinator`,
 which you'll no doubt remember from the forest of protocols associated with
-custom view controller transitions. In iOS8 their functionality has been
+custom view controller transitions. In iOS 8 their functionality has been
 extended to supporting transitioning within a view controller as well as between
 two view controllers.
 

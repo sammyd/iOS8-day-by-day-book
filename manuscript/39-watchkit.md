@@ -7,7 +7,7 @@ Although the Apple Watch was unveiled back in September 2014, developers have
 only recently got hold of an SDK - hidden away inside iOS 8.2. It seems that the
 Apple Watch has really caught the imagination of iOS developers from across the
 world, and as such there have been loads of in-depth articles, opinion pieces
-and videos created covering it. iOS8 Day-by-Day has always been intended to be
+and videos created covering it. iOS 8 Day-by-Day has always been intended to be
 short overview of new technologies so that intermediate developers can hit the
 ground running. Today's post on Apple Watch is no different. If you want to
 learn everything there is to know about the SDK then read the documentation, and
@@ -399,7 +399,7 @@ options for tackling this problem:
 - __Copy/Paste__ Yeah, we know it's the root of all evil, but you might find it
 easier to start with this approach and then refactor your code to something
 nicer later on.
-- __Framework__ iOS8 introduced the ability to create dynamic frameworks - i.e.
+- __Framework__ iOS 8 introduced the ability to create dynamic frameworks - i.e.
 places where shared code and functionality can reside, and be accessed from
 other frameworks (i.e. apps and extensions) from within the same application
 bundle. This is actually the approach taken in __NightWatch__. The

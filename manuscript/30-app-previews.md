@@ -6,10 +6,10 @@
 The screenshots that adorn your app's page in the App Store have always been
 incredibly important in advertising your app - giving a flavor of what a user
 can expect and attempting to get them to push the all-important __Buy__ button.
-Back when iOS7 was first announced I wrote a blog post about how given the new,
+Back when iOS 7 was first announced I wrote a blog post about how given the new,
 flatter UI design, screenshots just weren't going to cut it any more 
 ([iOS7: What does it mean for developers?](http://www.shinobicontrols.com/blog/posts/2013/07/01/ios7-what-does-it-mean-for-developers)),
-and it seems that Apple agree. Starting with iOS8, you can now upload a short
+and it seems that Apple agree. Starting with iOS 8, you can now upload a short
 video to demo your app, to be displayed alongside the screenshots in the App
 Store.
 
@@ -30,8 +30,8 @@ using AirPlay and a 3rd-party app on OSX. AirPlay has low resolution, and a high
 compression ratio - allowing it to work over wireless networks. This means that
 a recording from a device looks shabby at best.
 
-New to iOS8 and OSX Yosemite, it's now possible to record directly from the
-device onto your computer. In fact, when you plug in an iOS8 device (via a
+New to iOS 8 and OSX Yosemite, it's now possible to record directly from the
+device onto your computer. In fact, when you plug in an iOS 8 device (via a
 lightning cable) it appears as a new camera.
 
 To record a video, you need to start out by opening QuickTime. Note, that by
@@ -48,7 +48,7 @@ This will open a new window and tell you that you need to select a camera:
 
 ![No Camera](images/30/no_camera_selected.png)
 
-If your iOS8 device is connected via a lightning cable then you'll be able to
+If your iOS 8 device is connected via a lightning cable then you'll be able to
 select it as a camera from the source menu:
 
 ![Select Camera](images/30/select_camera.png)

@@ -7,7 +7,7 @@ Way back in chapter two we took a look at the new sharing extension -
 which is just one of six new extension points on iOS. Today, it's the chance of
 the today extension, or widget.
 
-Widgets allow you to add content to the today screen on a device. Until iOS8, this
+Widgets allow you to add content to the today screen on a device. Until iOS 8, this
 area has been sacred - with only system apps being allowed to display anything
 there. This new extension point will allow you to bring small amounts of relevant
 info to your users, in an easily accessible fashion.
@@ -92,7 +92,7 @@ be to add the source files to both targets:
 ![Code in two targets](images/08/code_in_two_targets.png)
 
 This approach will definitely work, but will result in the same functionality
-being created in two binaries. Luckily, there's a better way. iOS8 introduces
+being created in two binaries. Luckily, there's a better way. iOS 8 introduces
 the concept of a dynamically library, and a widget can use the same library
 as the host app. Therefore the best approach is to create a dynamic framework,
 and put all the common code in there.
@@ -280,7 +280,7 @@ the `extensionContext` to link from the widget to the relevant row in the app:
 
 ## Conclusion
 
-All the extensions are a really cool new feature of iOS8 - they represent the
+All the extensions are a really cool new feature of iOS 8 - they represent the
 beginning of Apple opening up the operating system for devs. The today extension
 could be hugely powerful - offering the chance to really improve the user
 experience. However, it's important to use it wisely. If there's a massive

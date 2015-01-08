@@ -11,7 +11,7 @@ chained together in a light-weight processing pipeline.
 One of the restrictions with CoreImage on iOS devices has always been that you
 are restricted to using the provided filter kernels. This has meant that it is
 incredibly difficult to use the GPU to perform any bespoke image processing.
-However, iOS8 changes this - with the introduction of custom kernels in
+However, iOS 8 changes this - with the introduction of custom kernels in
 CoreImage.
 
 This post gives a brief introduction into the new custom kernel functionality -
@@ -51,7 +51,7 @@ to the processing chain will not involve any calculation until the point at
 which the output image is required.
 
 iOS comes with 115 built-in image filters available for you to use in your image
-processing pipelines, but iOS8 allows you to create your own filters from custom
+processing pipelines, but iOS 8 allows you to create your own filters from custom
 kernels. These are represented by the `CIKernel` class, which contains a string
 of the kernel method itself, written in GLSL.
 
@@ -198,7 +198,7 @@ image, and require the equivalent rect in the input image. ROI stands for Region
 of Interest, and it is used by the filter to determine which part of the input
 image needs to be loaded into the graphics hardware to allow processing of a
 particular region of the output image. This is in part due to the fact that the
-architecture of CoreImage has been updated with iOS8 (and OSX 10.10) to support
+architecture of CoreImage has been updated with iOS 8 (and OSX 10.10) to support
 processing images much larger than the graphics memory can cope with. Slicing
 the image into sections allows efficient use of both the graphics memory and the
 processing power of the GPU.

@@ -3,7 +3,7 @@
 {width=10%,float=left}
 ![](images/12/thumbnail.png)
 
-One of the more consumer-oriented features introduced in iOS8 is that of the
+One of the more consumer-oriented features introduced in iOS 8 is that of the
 Health app. It was featured in the keynote at WWDC and has received a fair
 amount of hype since that point. In fact some of the world's biggest names in
 healthcare have already put their names behind it as being a huge step forward
@@ -330,7 +330,7 @@ anchor date.
 
 ## Conclusion
 
-On the surface of it the health app seems like a pretty cool idea for iOS8, but
+On the surface of it the health app seems like a pretty cool idea for iOS 8, but
 once you get down into HealthKit then you realize that this could be really
 quite powerful. In creating HealthKit Apple hasn't attempted to create one
 healthcare app to rule them all, but instead has created a framework through

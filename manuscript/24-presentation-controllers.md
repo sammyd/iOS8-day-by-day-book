@@ -6,7 +6,7 @@
 Back in chapter 21 you saw how UIKit has been updated to give a more
 consistent approach to showing
 alerts, popovers and action sheets. The technology underlying this uses
-presentation controllers, which are new to iOS8. It's possible to provide
+presentation controllers, which are new to iOS 8. It's possible to provide
 your own custom presentation controllers for use in view controller transitions
 and presentations.
 
@@ -15,7 +15,7 @@ for, what they can do and how to create your own. The project which accompanies
 today's post is called __BouncyPresent__ and shows how to use a custom
 presentation controller to create a customized modal view controller
 presentation. It uses some of the view controller transitioning animation
-concepts introduced in iOS7 alongside the new presentation controller concepts
+concepts introduced in iOS 7 alongside the new presentation controller concepts
 to create an easy-to-understand, reusable presentation component.
 
 As ever, the source code is available to clone, download or fork on the
@@ -28,7 +28,7 @@ Whenever a view controller appears on the screen of an iOS device, it is said to
 be presented. The improvements to alerts and the suchlike discussed in day 21
 included consolidating all the different techniques into using view controllers,
 so that they too become view controller presentations. In order to control how a
-view controller is presented, iOS8 introduces `UIPresentationController`.
+view controller is presented, iOS 8 introduces `UIPresentationController`.
 
 UIKit uses a presentation controller to manage the presentation of view
 controllers from the moment they appear, through their lifetime, until they are
@@ -46,7 +46,7 @@ the presented view controller.
 
 On the surface of it, presentation controllers don't allow you to do anything
 that you couldn't do before using the view controller transitioning system
-in iOS7, but the responsibilities are much clearer. An animation controller is
+in iOS 7, but the responsibilities are much clearer. An animation controller is
 responsible for the animation and the display of the view controller's content,
 and the presentation controller is responsible for the appearance of everything
 else. In the past, view controllers were responsible for views which weren't
@@ -144,8 +144,8 @@ view by 30 points on each edge.
 
 ## Using the custom Presentation Controller
 
-The `UIViewControllerTransitioningDelegate` protocol was introduced in iOS7 powers
-customizable view controller transitions. In iOS8, this has been
+The `UIViewControllerTransitioningDelegate` protocol was introduced in iOS 7 powers
+customizable view controller transitions. In iOS 8, this has been
 extended with a new method for providing a presentation controller. You need to
 create a transitioning delegate object which adopts this protocol and returns
 the presentation controller that you've created:
@@ -276,8 +276,8 @@ expected:
 ## Custom Presentation Animation
 
 The focus of today's chapter isn't creating custom animations for view
-controller transitions. This functionality was introduced back in iOS7 (in fact
-chapter 10 of [iOS7 Day-by-Day](https://leanpub.com/iOS7DayByDay) covers the 
+controller transitions. This functionality was introduced back in iOS 7 (in fact
+chapter 10 of [iOS 7 Day-by-Day](https://leanpub.com/iOS7DayByDay) covers the 
 architecture in some detail), but it is worth
 seeing how this interacts with the new presentation controllers.
 
@@ -335,7 +335,7 @@ interesting bounce.
 ## Conclusion
 
 On the surface of it you might not think that presentation controllers offer you
-much more functionality than you had in iOS7. In some respects you'd be correct.
+much more functionality than you had in iOS 7. In some respects you'd be correct.
 However, the much better software design with the separation of concerns and
 single responsibility goes a long way to understanding the protocol soup that is
 view controller presentations.

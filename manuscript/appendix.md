@@ -3,10 +3,10 @@
 ## The road ahead
 
 So where next? In completing this book, you now know everything there is to know
-about iOS8 right? Unfortunately, that's not quite true. You've got a good grounding
+about iOS 8 right? Unfortunately, that's not quite true. You've got a good grounding
 in the most important new technologies available, but by no means all of them. You
 can find out about some of the others by watching the WWDC videos, or reading the
-Apple documentation for iOS8.
+Apple documentation for iOS 8.
 
 You'll also need to dig deeper into the features you wish to utilize in your apps,
 but once again, the Apple documentation is a good place to head. Don't forget that,
@@ -30,7 +30,7 @@ and to take your apps to the next level:
 - [shinobicontrols.com/iOS8DayByDay](http://shinobicontrols.com/iOS8DayByDay). The
 original blog post series from which this book was born. 
 - [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day). 
-__iOS8 Day-by-Day Source Code__ is all hosted on Github, so you can clone, download
+__iOS 8 Day-by-Day Source Code__ is all hosted on Github, so you can clone, download
 and fork it. Give it a go, and feel free to send across pull requests.
 - [developer.apple.com/devcenter/ios](https://developer.apple.com/devcenter/ios/index.action).
 __Apple Documentation__ is the canonical place to go to find out about all the
@@ -47,7 +47,7 @@ some more advanced techniques.
 - [asciiwwdc.com](http://asciiwwdc.com/) __ASCII WWDC__ contains searchable
 transcripts from the recent years of WWDC - including 2014. This is an excellent
 resource if you can't face trawling through yet another video.
-- [Ray Wenderlich Swift/iOS8 Books Bundle](http://www.raywenderlich.com/store/swift-tutorials-bundle?source=visualputty).
+- [Ray Wenderlich Swift/iOS 8 Books Bundle](http://www.raywenderlich.com/store/swift-tutorials-bundle?source=visualputty).
 Ray's site is full of fantastic tutorials, and every year the team puts together some
 tutorial based books about the new releases. This year was no different - in fact I
 wrote 5 chapters about adaptive layout. If you prefer your learning in tutorial form,

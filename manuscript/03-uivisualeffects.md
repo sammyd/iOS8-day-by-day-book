@@ -3,16 +3,16 @@
 {width=10%,float=left}
 ![](images/03/thumbnail.png)
 
-As part of the iOS7 refresh the concept of visual depth within an app was
+As part of the iOS 7 refresh the concept of visual depth within an app was
 introduced. This include some stunning visual effects involving live-filtering
-content in the background of the current view. This can be seen all over iOS7 -
+content in the background of the current view. This can be seen all over iOS 7 -
 from the navigation bar blurring the content as it scrolls underneath it, to the
 background of control center.
 
-This type of filter is computationally expensive, and in iOS7, developers weren't
+This type of filter is computationally expensive, and in iOS 7, developers weren't
 provided with an API to the underlying hardware-accelerate functionality, so we
 all built our own versions. Most of these were on the CPU, and therefore often
-weren't performant enough to cope with live-views. In iOS8 there's a new option
+weren't performant enough to cope with live-views. In iOS 8 there's a new option
 available in the form of `UIVisualEffects`. Apple has made their underlying
 implementation publicly accessible, so now you too can get cool blurring-style
 effects in your apps.
@@ -178,10 +178,10 @@ entire window or screen in order for the effect to be visible.
 
 ## Conclusion
 
-This is a really powerful feature of iOS8 - and will really allow developers to
+This is a really powerful feature of iOS 8 - and will really allow developers to
 easily create apps which sit really well within the depth-model introduced in
-iOS7. It was a little disappointing that this ability wasn't available in iOS7,
-so it's good to have it ready to go in iOS8.
+iOS 7. It was a little disappointing that this ability wasn't available in iOS 7,
+so it's good to have it ready to go in iOS 8.
 
 Go and give it a try, but remember not to go wild with it - keep concerns of
 performance and energy usage at the forefront of your mind.

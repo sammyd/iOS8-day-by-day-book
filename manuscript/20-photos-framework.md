@@ -6,7 +6,7 @@
 Providing access to the images in the system photo gallery is a fairly standard
 requirement for many apps - from social, through to photo editing. iOS has
 provided this ability through many releases, but it has never been particularly
-easy. In iOS8, a new __PhotoKit__ framework has been introduced, which provides
+easy. In iOS 8, a new __PhotoKit__ framework has been introduced, which provides
 complete access to the user's photo gallery - from the models which make up the
 library data structure, through to the automatic retrieval of images from within
 iCloud.

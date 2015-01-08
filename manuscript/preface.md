@@ -32,8 +32,8 @@ solving problems, than about feature discovery.
 
 This book started out life as a series of 39 blog posts, imaginatively titled "iOS8:
 Day-by-Day". The motivation behind the blog series was to cover the many great new
-features in iOS8, at a "feature-discovery" level. Each post introduced a feature new
-to iOS8, before running through the details you need to get started. Since every post
+features in iOS 8, at a "feature-discovery" level. Each post introduced a feature new
+to iOS 8, before running through the details you need to get started. Since every post
 has an accompanying project, it wasn't limited to regurgitating the documentation,
 but included experiences from actually using the new frameworks - common pitfalls,
 and areas not covered by the documentation.

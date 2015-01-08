@@ -11,7 +11,7 @@ and before, CoreLocation provided this functionality automatically, but this is
 no longer the case.
 
 In today's article you'll discover the different options for privacy with
-CoreLocation introduced in iOS8, and how you need to update your apps to use
+CoreLocation introduced in iOS 8, and how you need to update your apps to use
 them.
 
 The app which accompanies today's post is a simple route tracking app called
@@ -62,23 +62,23 @@ method:
 This extracts the details we're interested in from the `CLLocation` object, and
 updates the display appropriately.
 
-If you build and run an app which contains this code in iOS8, you'll see
+If you build and run an app which contains this code in iOS 8, you'll see
 something like:
 
 ![Doesn't Work](images/34/not_working.png)
 
-Eh? The updates aren't appearing. This would have worked in iOS7 (with a bit of
+Eh? The updates aren't appearing. This would have worked in iOS 7 (with a bit of
 hand-waving about Swift).
 
-This is because in iOS7, the location manager was responsible for asking the
+This is because in iOS 7, the location manager was responsible for asking the
 user whether they wanted to allow access to the CoreLocation services. This is
-no longer true in iOS8 - despite the lack of error messages, there's a problem
+no longer true in iOS 8 - despite the lack of error messages, there's a problem
 with your current code.
 
 
 ## New Methods on CoreLocationManager
 
-iOS8 adds finer granularity on the privacy controls for location access. Namely,
+iOS 8 adds finer granularity on the privacy controls for location access. Namely,
 a user can choose whether an app should be allowed to track their location even
 when it's in the background, as opposed to in the foreground or not at all.
 
@@ -131,7 +131,7 @@ And fill in an appropriate string:
 If you run your app up yet again you'll notice that it still doesn't work. This
 is getting kinda ridiculous now.
 
-This is because that key (`NSLocationUsageDescription`) is ignored in iOS8 and
+This is because that key (`NSLocationUsageDescription`) is ignored in iOS 8 and
 later. Instead, two new keys have been introduces, corresponding to the two
 privacy modes introduced before:
 

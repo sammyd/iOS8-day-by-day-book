@@ -9,7 +9,7 @@ allows cells to define their own height - using the power of auto layout. Well,
 imagine a world where you could extend that same principle to collection views.
 How cool would that be?
 
-Well, in iOS8, you can! This functionality is built in to the flow layout, and
+Well, in iOS 8, you can! This functionality is built in to the flow layout, and
 is easy to access when building your own layouts. In today's brief post you'll
 discover how to use auto-sizing cells within a flow layout, and a little bit
 about the underlying implementation. The sample app is available in the
@@ -31,7 +31,7 @@ every side of the cell:
 ![Cell Constraints](images/37/cell_constraints2.png)
 
 The other thing that you need to do to enable autosizing is specify an estimated
-item size on the flow layout. This is new to iOS8 and plays a similar role to
+item size on the flow layout. This is new to iOS 8 and plays a similar role to
 its counterpart in `UITableView`.
 
 To size cells in the past you had two options; one was to set the `itemSize`

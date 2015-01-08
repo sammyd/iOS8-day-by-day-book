@@ -57,7 +57,7 @@ constraint. An auto layout constraint describes a relationship between two view
 objects, and each of these has an associated attribute that specifies what
 aspect of the view the layout engine should be using during the layout process.
 For example, there are attributes for left edge, right edge etc. In order to
-support layout margins, the `NSLayoutAttribute` enum has been updated in iOS8 to
+support layout margins, the `NSLayoutAttribute` enum has been updated in iOS 8 to
 include the following margin-related cases:
 
     enum NSLayoutAttribute : Int {

@@ -6,7 +6,7 @@
 The __CoreMotion__ framework is used in iOS to receive data from the plethora of
 motion sensors available on a device. This includes the magnetometer, the
 pedometer and the gyroscope. iPhone 6 and 6 Plus include an altimeter, so
-CoreMotion has been updated to support this new sensor. iOS8 also sees some
+CoreMotion has been updated to support this new sensor. iOS 8 also sees some
 other changes to the framework.
 
 In today's chapter you'll see what replaces `CMStepCounter` due to its
@@ -22,8 +22,8 @@ code from the ShinobiControls github at
 At the highest level, CoreMotion offers estimates of "activity" data - i.e. an
 estimate of what the user is actually doing. This is the result of a
 classification algorithm which takes all the motion sensors (along with other
-data) into account. In iOS7, the activities could be classified into
-__running__, __walking__, __automotive__ and __stationary__. iOS8 adds a new
+data) into account. In iOS 7, the activities could be classified into
+__running__, __walking__, __automotive__ and __stationary__. iOS 8 adds a new
 classification in the form of __cycling__.
 
 Getting hold of motion activity data can take place in two different ways -
@@ -58,7 +58,7 @@ A `CMMotionActivity` object has some `Bool` properties, which determine which
 kind of activity was detected. These comprise `stationary`, `walking`, `running`,
 `automotive`, `cycling` and `unknown`. There are various rules which specify
 when each of these can occur (e.g. `unknown` will only be true when the device
-has just been turned on) and most of them were present in iOS7. iOS8 adds the
+has just been turned on) and most of them were present in iOS 7. iOS 8 adds the
 cycling state. The activity also has a `startDate` and a `confidence`.
 
 The first time you run an app, CoreMotion will present the user with
@@ -105,8 +105,8 @@ the `isActivityAvailable()`
 
 ## Pedometer Data
 
-iOS7 introduced the ability to quantify the walking behavior of the user via the
-`CMStepCounter` class. Well, that lasted all of a year - iOS8 deprecates it in
+iOS 7 introduced the ability to quantify the walking behavior of the user via the
+`CMStepCounter` class. Well, that lasted all of a year - iOS 8 deprecates it in
 place of the much more generically named `CMPedometer`. This new class adds
 functionality for measuring distance and floors climbed, where available.
 

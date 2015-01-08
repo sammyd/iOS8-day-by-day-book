@@ -5,10 +5,10 @@
 
 Presenting new views and view controllers to users on iOS has evolved a lot
 since the original iPhoneOS. This has resulted in a pretty inconsistent state in
-iOS7 - with some presentation methods being device restrictive, and others
+iOS 7 - with some presentation methods being device restrictive, and others
 creating views in second UIWindow objects.
 
-iOS8 introduces the concept of a presentation controller, in the form of 
+iOS 8 introduces the concept of a presentation controller, in the form of 
 `UIPresentationController`. This is used to control the process of presenting
 new view controllers in every scenario. This means that the way you use alerts,
 popovers and action sheets has changed, to make a much more coherent and self-
@@ -16,7 +16,7 @@ consistent system.
 
 This post won't go into depth on presentation controllers (that may well appear
 in a later article), but instead focuses on what you need to know to update your
-apps to the new iOS8 way of presenting popovers, alerts and action sheets.
+apps to the new iOS 8 way of presenting popovers, alerts and action sheets.
 
 The sample app which accompanies this project is available at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
@@ -105,7 +105,7 @@ still show as a standard popover controller.
 
 In the past, alerts were actually a subclass of `UIView`, which were then
 displayed in a new `UIWindow`. This caused all kinds of issues with rotation and
-really doesn't fit the adaptive rotation-agnostic world of iOS8. Since alerts
+really doesn't fit the adaptive rotation-agnostic world of iOS 8. Since alerts
 are just another way to present content, they have been brought in-line with the
 rest of UIKit, in that it is just a `UIViewController` that is displayed using
 the `presentViewController()` method.

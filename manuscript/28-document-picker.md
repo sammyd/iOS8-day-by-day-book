@@ -7,7 +7,7 @@ It has always been hard work to get content from one app to another on iOS.
 Although possible, it is not generally a well-understood workflow, and therefore
 results in users deciding that it is not possible.
 
-This is set to change in iOS8 with the introduction of the unified document
+This is set to change in iOS 8 with the introduction of the unified document
 picker view controller. This allows you to present UI from within your app which
 allows the user to select documents which are present within iCloud drive, on
 iCloud but managed by another app, and also from 3rd party document providers.
@@ -179,5 +179,5 @@ compared to working with `NSFileCoordinator` and security-scoped URLs. If it's
 relevant to you I urge you to go ahead and implement it.
 
 The sample app for today's post is pretty simple, and is available on the
-iOS8 Day-by-Day github repo at 
+iOS 8 Day-by-Day github repo at 
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/iOS8-day-by-day).

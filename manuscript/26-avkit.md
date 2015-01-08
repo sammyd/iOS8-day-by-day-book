@@ -11,7 +11,7 @@ rendered through an `AVPlayerLayer`. The problem with these approaches is that
 the former doesn't give you much control over the playback process, whereas the
 latter requires that you create your own UI.
 
-AVKit is new to iOS8 and pulls both scenarios into a common pipeline.
+AVKit is new to iOS 8 and pulls both scenarios into a common pipeline.
 `AVPlayerViewController` effectively deprecates `MPMovePlayerViewController`,
 and sits on top of AVFoundation. It provides contextual video playback UI that
 matches that of the OS, and plays any `AVPlayer` object from AVFoundation.
@@ -78,7 +78,7 @@ playback with fully adaptive and context aware playback controls:
 
 Back in chapter 20
 we had a quick run-down of the new Photos framework, and how it can make access
-to the photo library super-easy on iOS8. Well, despite its name, the Photos
+to the photo library super-easy on iOS 8. Well, despite its name, the Photos
 framework also includes access to all of the videos in the user's library, and
 with that comes the ability to use AVKit for easy playback.
 

@@ -13,10 +13,10 @@ with idiom checks and repetition.
 The fundamental principle is sound - you can't use the same view controller
 hierarchy on all devices. However, there is no reason that this shouldn't be
 abstracted away from the developer into the framework itself. This is exactly
-what iOS8 does - with the introduction of adaptive view controller hierarchies.
+what iOS 8 does - with the introduction of adaptive view controller hierarchies.
 
 In the master-detail scenario this means that a `UISplitViewController` can now be
-used on all devices. It retains the same appearance on an iPad as in iOS7, but
+used on all devices. It retains the same appearance on an iPad as in iOS 7, but
 on an iPhone it appears as a navigation controller.
 
 In today's article you're going to learn more about what this means for your
@@ -192,7 +192,7 @@ use cases, but is easily extendable to cover more esoteric requirements.
 
 If you want to dive head-first into the new `UISplitViewController` in loads
 more detail then I've written an entire chapter on the topic in the Ray
-Wenderlich iOS8 By Tutorials book. It comes highly recommended (by me, as one of
+Wenderlich iOS 8 By Tutorials book. It comes highly recommended (by me, as one of
 the authors) and you can grab your copy from here.
 
 The __NinjaWeapons__ project is available on github, as usual. It's at

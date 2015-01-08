@@ -7,7 +7,7 @@ Apple introduced iCloud to the world a couple of years ago, and since then has
 been introducing new ways for developers to utilize it. First was iCloud
 CoreData, which is meant to be a completely seamless way of persisting and
 syncing a object graph across devices. This suffered from all kinds of issues,
-and iOS8 introduces something which pretends to be much less in the form of
+and iOS 8 introduces something which pretends to be much less in the form of
 CloudKit.
 
 CloudKit offers very little magic in terms of data-syncing, and has no elements

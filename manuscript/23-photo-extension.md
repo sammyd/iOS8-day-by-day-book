@@ -3,7 +3,7 @@
 {width=10%,float=left}
 ![](images/23/thumbnail.png)
 
-iOS8 Day-by-Day has looked at a couple of the new extensions in iO8 already -
+iOS 8 Day-by-Day has looked at a couple of the new extensions in iOS 8 already -
 the share extension and the today extension. In today's article you're going to
 learn the basics behind the photo extension.
 

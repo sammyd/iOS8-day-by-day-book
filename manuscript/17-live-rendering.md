@@ -26,7 +26,7 @@ The sample project which accompanies this project contains the code from for the
 __RWKnobControl__ I created for a tutorial on building custom controls over
 on [RayWenderlich.com](http://www.raywenderlich.com/56885/custom-control-for-ios-tutorial-a-reusable-knob).
 The code has been translated into Swift, but other than that remains the same.
-You can get hold of this project in the iOS8 day-by-day repo on github at
+You can get hold of this project in the iOS 8 day-by-day repo on github at
 [github.com/ShinobiControls/iOS8-day-by-day](https://github.com/ShinobiControls/iOS8-day-by-day).
 
 
