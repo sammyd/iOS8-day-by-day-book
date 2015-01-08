@@ -1,19 +1,19 @@
 # Preface
 
-Apple's WorldWide Developer Conference (WWDC) of 2014 was held, as ever in San
+Apple's WorldWide Developer Conference (WWDC) of 2014 was held, as ever, in San
 Francisco in June. It was the first event that introduced a formal ticket lottery
 system, the previous year having sold out via the "internet connection lottery" in
 just two minutes. There were high hopes and expectations from the event - what had
 Apple been working on? What new coolness would be unleashed upon the developer world?
 
-In the developer world, the headline-grabbing news was the introduction of Swift: a
-new programming language that represents the future of programming Apple devices.
-Understandably, the world got incredibly excited about this, and a world of experts
+The headline-grabbing news was the introduction of Swift: a
+new language that represents the future of programming Apple devices.
+Understandably, the world got incredibly excited about this, and a plethora of experts
 in programming language design suddenly appeared out of nowhere. This spawned many
 blog posts, tutorials, books, talks and other content to allow developers to get a
 handle on Swift.
 
-This response was great. However, I think the response overshadowed the other
+This response was great. However, I think the it overshadowed the other
 announcements that formed iOS 8 (and OSX Yosemite). iOS 8 introduced many thousands
 of new APIs, with some fantastic new functionality, but got significantly less
 attention than it deserved since it wasn't the new, shiny thing in the room. iOS8

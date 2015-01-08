@@ -12,7 +12,7 @@ You'll also need to dig deeper into the features you wish to utilize in your app
 but once again, the Apple documentation is a good place to head. Don't forget that,
 particularly with newer technologies, there is often additional information available
 in the header files associated with the frameworks. It's always worth investigating
-those if you can't find the information you can find in the formal documentation.
+those if you can't find the answers you need in the formal documentation.
 
 The most important aspect to improving as an iOS developer (as in life) is to try
 stuff out. We learn by playing. Grab the source code from a chapter you like, and run

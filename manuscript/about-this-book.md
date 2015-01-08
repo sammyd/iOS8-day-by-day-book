@@ -17,7 +17,7 @@ see it "in the wild", not just "on paper", as it is in the documentation.
 - "Lessons learnt" from creating the app. Often these parts can be more valuable than
 the tech outline itself. This includes problems encountered and their associated
 workarounds.
-- A great understanding in how to update your existing apps to ensure compatibility
+- A great understanding of how to update your existing apps to ensure compatibility
 with iOS8.
 - Hours of fun. Well, maybe...
 
@@ -27,7 +27,7 @@ with iOS8.
 resources for this.
 - An introduction or exploration of finer points in Swift. Chapter 1 will cover some
 of the headline issues, but the rest is left to the reader.
-- A deep-dive into every new feature/framework in iOS8. This is designed to be enough
+- A deep-dive into every new feature/framework in iOS8. This book is designed to be enough
 to make you aware of what features are available, and how to get started with them.
 Once you've got to that point, you'll be at home with the documentation.
 - Recantation of the documentation. The book is very much designed to be
