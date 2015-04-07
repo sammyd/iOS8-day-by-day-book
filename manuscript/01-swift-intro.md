@@ -104,7 +104,7 @@ If it is a reference type, such as a class then it will be mutable.
 To see this in action, consider the following `struct`:
 
     struct MyStruct {
-      let t = 12
+      let t: Int
       var u: String
     }
 
@@ -132,7 +132,7 @@ because a struct is a __value type__.
 The behavior is subtly different with a class:
 
     class MyClass {
-      let t = 12
+      let t: Int
       var u: String
       
       init(t: Int, u: String) {
@@ -236,7 +236,7 @@ following pattern a lot:
 If you know that you've definitely been passed a string, you don't necessarily
 need to guard around the cast:
 
-    let castedParameter = parameter as NSString
+    let castedParameter = parameter as! NSString
 
 A top-tip is to realize that casting arrays is really easy too. All arrays that
 you'll receive from a Cocoa framework will be of the type `[AnyObject]`, since
@@ -246,7 +246,7 @@ an entire array in both the conditional and unconditional ways expressed above,
 with the following syntax:
 
     func someArrayFunc(parameter: [AnyObject]!) {
-      let newArray = parameter as [String]
+      let newArray = parameter as! [String]
       // Do something with your strings :)
     }
 
@@ -264,6 +264,9 @@ specified protocol, which you could do as follows:
     if let class1AsMyProtocol = class1 as? MyProtocol {
       // We're in
     }
+
+> __NOTE:__ Swift 1.2 allows checking conformance of Swift-only protocols, so
+> the following is no longer accurate.
 
 However, this will have an error, because in order to check conformance of a
 protocol that protocol must be an objective-C protocol - and annotated with
