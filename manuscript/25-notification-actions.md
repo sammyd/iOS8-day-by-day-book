@@ -188,14 +188,14 @@ ensure that you register them with the system, by updating your registration
 code as follows:
 
     let requestedTypes = UIUserNotificationType.Alert | .Sound
-    let categories = NSSet(object: timerFiredNotificationCategory())
+    let categories = Set(arrayLiteral: timerFiredNotificationCategory())
     let settingsRequest = UIUserNotificationSettings(forTypes: requestedTypes,
                                                      categories: categories)
     UIApplication.sharedApplication()
                                    .registerUserNotificationSettings(settingsRequest)
 
 This uses the `categories` argument of `UIUserNoficationSettings()`, but
-providing an `NSSet` of the different categories your app will require.
+providing a `Set` of the different categories your app will require.
 
 Now you've done that, your app is ready to display these notifications with
 custom actions, so let's see how to do that with local notifications.

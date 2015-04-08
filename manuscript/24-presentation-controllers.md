@@ -151,12 +151,12 @@ create a transitioning delegate object which adopts this protocol and returns
 the presentation controller that you've created:
 
     class OverlayTransitioningDelegate : NSObject,
-                                              UIViewControllerTransitioningDelegate {
+                                        UIViewControllerTransitioningDelegate {
       func presentationControllerForPresentedViewController(
-                              presented: UIViewController!,
-                              presentingViewController presenting: UIViewController!,
-                              sourceViewController source: UIViewController!)
-                              -> UIPresentationController! {
+                              presented: UIViewController,
+                      presentingViewController presenting: UIViewController,
+                              sourceViewController source: UIViewController)
+                              -> UIPresentationController? {
           
         return OverlayPresentationController(presentedViewController: presented,
                                              presentingViewController: presenting)
@@ -324,7 +324,10 @@ responsibilities.
 The other thing you need to remember to do is to update the transitioning
 delegate so that UIKit knows there is a custom animator it should be using:
 
-    func animationControllerForPresentedController(presented: UIViewController!, presentingController presenting: UIViewController!, sourceController source: UIViewController!) -> UIViewControllerAnimatedTransitioning! {
+    func animationControllerForPresentedController(presented: UIViewController,
+      presentingController presenting: UIViewController,
+      sourceController source: UIViewController)
+      -> UIViewControllerAnimatedTransitioning? {
       return BouncyViewControllerAnimator()
     }
 

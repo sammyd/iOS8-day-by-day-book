@@ -47,7 +47,7 @@ great for maintaining a responsive app, and is just an instance of
         println("There was an error retrieving the motion results: \(error)")
       }
       self.activityCollection =
-                     ActivityCollection(activities: activities as [CMMotionActivity])
+              ActivityCollection(activities: activities as! [CMMotionActivity])
     }
 
 The handler is called with an array of `CMMotionActivity` objects and an error.
@@ -154,7 +154,7 @@ the current cumulative total from the start date you provided:
           self.floorsLabel.text = "\(data.floorsAscended)"
           self.stepsLabel.text = "\(data.numberOfSteps)"
           self.distanceLabel.text =
-                            "\(self.lengthFormatter.stringFromMeters(data.distance))"
+           "\(self.lengthFormatter.stringFromMeters(data.distance as! Double))"
         }
       }
     }
@@ -193,9 +193,9 @@ The following implements this functionality:
         println("There was an error obtaining altimeter data: \(error)")
       } else {
         dispatch_async(dispatch_get_main_queue()) {
-          self.altChange += data.relativeAltitude
+          self.altChange += data.relativeAltitude as! Double
           self.altitudeLabel.text =
-                           "\(self.lengthFormatter.stringFromMeters(self.altChange))"
+          "\(self.lengthFormatter.stringFromMeters(self.altChange as! Double))"
         }
       }
     }

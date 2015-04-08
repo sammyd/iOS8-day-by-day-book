@@ -139,13 +139,13 @@ each have `NSItemProvider` objects on the `attachments` property:
       super.viewDidLoad()
       
       for item: AnyObject in self.extensionContext!.inputItems {
-        let inputItem = item as NSExtensionItem
+        let inputItem = item as! NSExtensionItem
         for provider: AnyObject in inputItem.attachments! {
-          let itemProvider = provider as NSItemProvider
+          let itemProvider = provider as! NSItemProvider
           if itemProvider
-                .hasItemConformingToTypeIdentifier(kUTTypePropertyList as NSString) {
+                .hasItemConformingToTypeIdentifier(kUTTypePropertyList as! String) {
             // You _HAVE_ to call loadItemForTypeIdentifier to get the JS injected
-            itemProvider.loadItemForTypeIdentifier(kUTTypePropertyList as NSString,
+            itemProvider.loadItemForTypeIdentifier(kUTTypePropertyList as! String,
                                                    options: nil, completionHandler: {
               (list, error) in
               if let results = list as? NSDictionary {
@@ -238,7 +238,7 @@ When the user hits the __Done__ button, the following method is executed:
       let jsDict = [ NSExtensionJavaScriptFinalizeArgumentKey :
                                             [ "marqueeTagNames" : marqueeTagNames ]]
       extensionItem.attachments = [
-        NSItemProvider(item: jsDict, typeIdentifier: kUTTypePropertyList as NSString)
+        NSItemProvider(item: jsDict, typeIdentifier: kUTTypePropertyList as! String)
       ]
       
       // Send them back to the javascript processor

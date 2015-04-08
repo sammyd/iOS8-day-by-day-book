@@ -63,10 +63,10 @@ given service and user name:
         delete()
                 
         let keyChainQuery = [
-          kSecClass       : kSecClassGenericPassword,
-          kSecAttrService : serviceIdentifier,
-          kSecAttrAccount : accountName,
-          kSecValueData   : data
+          kSecClass as! String       : kSecClassGenericPassword,
+          kSecAttrService as! String : serviceIdentifier,
+          kSecAttrAccount as! String : accountName,
+          kSecValueData as! String   : data
         ]
         
         SecItemAdd(keyChainQuery, nil)
@@ -126,11 +126,11 @@ the __user presence__ authentication policy:
                             .UserPresence, nil)
         
         let keyChainQuery = [
-          kSecClass             : kSecClassGenericPassword,
-          kSecAttrService       : serviceIdentifier,
-          kSecAttrAccount       : accountName,
-          kSecValueData         : data,
-          kSecAttrAccessControl : accessControl.takeUnretainedValue()
+          kSecClass as! String             : kSecClassGenericPassword,
+          kSecAttrService as! String       : serviceIdentifier,
+          kSecAttrAccount as! String       : accountName,
+          kSecValueData as! String         : data,
+          kSecAttrAccessControl as! String : accessControl.takeUnretainedValue()
         ]
         
         SecItemAdd(keyChainQuery, nil)
@@ -154,12 +154,12 @@ You can specify the sub-heading within this dialog using the
 
     private func load() -> String? {
       let keyChainQuery = [
-        kSecClass              : kSecClassGenericPassword,
-        kSecAttrService        : serviceIdentifier,
-        kSecAttrAccount        : accountName,
-        kSecReturnData         : true,
-        kSecMatchLimit         : kSecMatchLimitOne,
-        kSecUseOperationPrompt : "Authenticate to retrieve your secret!"
+        kSecClass as! String              : kSecClassGenericPassword,
+        kSecAttrService as! String        : serviceIdentifier,
+        kSecAttrAccount as! String        : accountName,
+        kSecReturnData as! String         : true,
+        kSecMatchLimit as! String         : kSecMatchLimitOne,
+        kSecUseOperationPrompt as! String : "Authenticate to retrieve secret!"
       ]
       
       var extractedData: Unmanaged<AnyObject>? = nil
@@ -174,7 +174,7 @@ You can specify the sub-heading within this dialog using the
                                              .takeUnretainedValue()
         // Convert the data retrieved from the keychain into a string
         contentsOfKeychain = NSString(data: retrievedData,
-                                      encoding: NSUTF8StringEncoding)
+                                  encoding: NSUTF8StringEncoding) as? String
       } else {
         println("Nothing was retrieved from the keychain. Status code \(status)")
       }

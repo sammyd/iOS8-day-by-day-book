@@ -36,7 +36,7 @@ within the settings app. The __Take Me To Settings__ button has the following
 handler:
 
     @IBAction func handleTakeMeButtonPressed(sender: AnyObject) {
-      let settingsUrl = NSURL.URLWithString(UIApplicationOpenSettingsURLString)
+      let settingsUrl = NSURL(string: UIApplicationOpenSettingsURLString)!
       UIApplication.sharedApplication().openURL(settingsUrl)
     }
 
@@ -85,9 +85,6 @@ Don't forget that with `NSNotificationCenter` you must stop observing:
 This will mean that whenever the user updates any settings then the appearance
 will get updated appropriately.
 
-W> There is a bug in the iOS 8 betas (last checked beta 5), which means
-W> that the settings in the settings app are not persisted to NSUserDefaults.
-W> Therefore this app doesn't behave as expected. This will be fixed very soon.
 
 ## Conclusion
 
