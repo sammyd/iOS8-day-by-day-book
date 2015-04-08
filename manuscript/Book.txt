@@ -1,6 +1,7 @@
 frontmatter.txt
 
 preface.md
+update.md
 about-this-book.md
 
 
